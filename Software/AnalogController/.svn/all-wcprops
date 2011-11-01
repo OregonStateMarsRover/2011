@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/marsrover2011/!svn/ver/488/Software/AnalogController
+END
+adc_driver.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/marsrover2011/!svn/ver/442/Software/AnalogController/adc_driver.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/marsrover2011/!svn/ver/488/Software/AnalogController/main.c
+END
+adc_driver.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/marsrover2011/!svn/ver/442/Software/AnalogController/adc_driver.h
+END
+avr_compiler.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/marsrover2011/!svn/ver/442/Software/AnalogController/avr_compiler.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/marsrover2011/!svn/ver/442/Software/AnalogController/Makefile
+END

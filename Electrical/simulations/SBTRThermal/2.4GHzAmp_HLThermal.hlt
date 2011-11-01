@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<thermo>
+<import>
+<idf_board>C:\Documents and Settings\Scylla\Desktop\roverSVN\Electrical\padsDrawings\R-E-04-01(2.4GHz_Amplifier)\2.4GHzAmp_HLThermal.emn</idf_board>
+<idf_lib>C:\Documents and Settings\Scylla\Desktop\roverSVN\Electrical\padsDrawings\R-E-04-01(2.4GHz_Amplifier)\2.4GHzAmp_HLThermal.emp</idf_lib>
+<hyp>C:\Documents and Settings\Scylla\Desktop\roverSVN\Electrical\padsDrawings\R-E-04-01(2.4GHz_Amplifier)\2.4GHzAmp_HLThermal.hyp</hyp>
+</import>
+</thermo>

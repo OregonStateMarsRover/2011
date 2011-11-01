@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{D1100916-62DA-4D80-A9B4-55A1E7CCEEB3}") = "TripodBoard", "TripodBoard\TripodBoard.avrgccproj", "{20A10DA7-1ADE-48E4-A032-0D3B2DFA6B4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20A10DA7-1ADE-48E4-A032-0D3B2DFA6B4C}.Debug|AVR.ActiveCfg = Debug|AVR
+		{20A10DA7-1ADE-48E4-A032-0D3B2DFA6B4C}.Debug|AVR.Build.0 = Debug|AVR
+		{20A10DA7-1ADE-48E4-A032-0D3B2DFA6B4C}.Release|AVR.ActiveCfg = Release|AVR
+		{20A10DA7-1ADE-48E4-A032-0D3B2DFA6B4C}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

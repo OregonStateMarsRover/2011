@@ -1,0 +1,72 @@
+img-path	= :/Maps/Utah.jpg
+img-width	= 4158
+img-height	= 4158
+map-top		= 38.426600
+map-left	= -110.815389
+map-width	= 0.047438
+map-height	= 0.037570
+
+#img-path	= :/Maps/Test.jpg
+#img-width		= 1280
+#img-height	= 773
+#map-top			= 38.426600		# Not the real coordinates
+#map-left	= -110.815389
+#map-width		= 0.047438
+#map-height	= 0.037570
+
+#img-path	= :/Maps/adair-park.jpg
+#img-width	= 962
+#img-height	= 896
+#map-top		= 44.676580
+#map-left	= -123.214644
+#map-width	= 0.0053
+#map-height	= 0.0035
+
+#img-path	= :/Maps/osu-map.jpg
+#img-width	= 962
+#img-height	= 896
+#map-top		= 44.568019
+#map-left	= -123.276710
+#map-width	= 0.0063
+#map-height	= 0.0042
+
+#img-path	= :/Maps/mlk-park.jpg
+#img-width	= 1028
+#img-height	= 896
+#map-top		= 44.593160
+#map-left	= -123.314178
+#map-width	= 0.007437
+#map-height	= 0.0044861111
+
+#img-path	= GUI/Resources/Maps/mlk-big.jpg
+#img-width	= 3544
+#img-height	= 2014
+#map-top		= 44.5950824791088 #44.595082222222224 #44.595082
+#map-left	= -123.316920334242 #-123.31692033333333 #-123.31692
+#map-width	= 0.022371715303 # 123.29454861111111 #0.022371 # 123.294549
+#map-height	= 0.0091252234849  # 44.58595725 #0.009125 # 44.585957
+
+#img-path	= GUI/Resources/Maps/AveryPark.jpg
+#img-width	= 1412
+#img-height	= 904
+#map-top	= 44.555754
+#map-left	= -123.277361
+#map-width	= 0.008581 # 0.00612222222
+#map-height	= 0.003909 # 0.00389722222
+
+#img-path	= /home/taj/Downloads/33922228.jpg
+#img-width	= 3544
+#img-height	= 1868
+#map-top		= 44.5954243534168
+#map-left	= -123.322195087703
+#map-width	= 0.022369277144
+#map-height	= 0.0084690716828
+
+#img-path	= GUI/Resources/Maps/south-site.jpg
+#img-width	= 1412
+#img-height	= 903
+#map-top		= 38.396170
+#map-left	= -110.802838
+#map-width	= 0.023078
+#map-height	= 0.011507
+

@@ -1,0 +1,237 @@
+=============================================================
+Add Reuse Report -- Thu Oct 14 01:22:54 2010
+
+=============================================================
+Design File: Untitled
+Reuse  File: tmpreu30.reu
+Reuse  Date: Thu Oct 14 01:22:52 2010
+
+=============Checking reuse/design compatibility=============
+=============================================================
+Total ERRORS:   0
+Total WARNINGS: 0
+=============================================================
+
+============= Adding reuse  to design =======================
+
+49 free text items  added to design
+16 non symbol drawing items added to design
+Part U200 added to design with name U207
+Part Y200 added to design with name Y202
+Part C211 added to design with name C230
+Part C210 added to design with name C229
+Part L200 added to design with name L201
+Part C206 added to design with name C225
+Part R203 added to design with name R223
+Part U100 added to design with name U102
+Part C100 added to design with name C106
+Part C102 added to design with name C108
+Part C101 added to design with name C107
+Part R100 added to design with name R102
+Part D100 added to design with name D102
+Part R201 added to design with name R221
+Part R202 added to design with name R222
+Part U202 added to design with name U209
+Part U203 added to design with name U210
+Part U204 added to design with name U211
+Part R101 added to design with name R103
+Part D302 added to design with name D314
+Part D300 added to design with name D312
+Part J308 added to design with name J324
+Part D301 added to design with name D313
+Part R300 added to design with name R313
+Part R312 added to design with name R325
+Part U101 added to design with name U103
+Part D101 added to design with name D103
+Part C105 added to design with name C111
+Part C103 added to design with name C109
+Part C104 added to design with name C110
+Part U201 added to design with name U208
+Part C209 added to design with name C228
+Part R205 added to design with name R225
+Part U205 added to design with name U212
+Part C213 added to design with name C232
+Part C212 added to design with name C231
+Part Y201 added to design with name Y203
+Part U206 added to design with name U213
+Part J301 added to design with name J317
+Part J300 added to design with name J316
+Part J302 added to design with name J318
+Part D303 added to design with name D315
+Part R303 added to design with name R316
+Part R301 added to design with name R314
+Part R302 added to design with name R315
+Part D304 added to design with name D316
+Part D305 added to design with name D317
+Part R305 added to design with name R318
+Part R304 added to design with name R317
+Part D306 added to design with name D318
+Part D307 added to design with name D319
+Part R307 added to design with name R320
+Part R306 added to design with name R319
+Part R206 added to design with name R226
+Part R207 added to design with name R227
+Part R204 added to design with name R224
+Part R208 added to design with name R228
+Part R209 added to design with name R229
+Part R200 added to design with name R220
+Part J303 added to design with name J319
+Part J304 added to design with name J320
+Part J305 added to design with name J321
+Part J306 added to design with name J322
+Part J307 added to design with name J323
+Part J309 added to design with name J325
+Part J312 added to design with name J328
+Part J313 added to design with name J329
+Part J310 added to design with name J326
+Part J311 added to design with name J327
+Part J100 added to design with name J101
+Part J200 added to design with name J201
+Part D308 added to design with name D320
+Part D309 added to design with name D321
+Part R309 added to design with name R322
+Part R308 added to design with name R321
+Part D310 added to design with name D322
+Part D311 added to design with name D323
+Part R311 added to design with name R324
+Part R310 added to design with name R323
+Part R210 added to design with name R230
+Part R211 added to design with name R231
+Part R212 added to design with name R232
+Part R213 added to design with name R233
+Part R214 added to design with name R234
+Part C214 added to design with name C233
+Part C215 added to design with name C234
+Part C216 added to design with name C235
+Part C217 added to design with name C236
+Part C218 added to design with name C237
+Part C200 added to design with name C219
+Part C201 added to design with name C220
+Part C202 added to design with name C221
+Part C203 added to design with name C222
+Part C204 added to design with name C223
+Part C205 added to design with name C224
+Part C207 added to design with name C226
+Part C208 added to design with name C227
+Part R216 added to design with name R236
+Part R217 added to design with name R237
+Part R219 added to design with name R239
+Part J314 added to design with name J330
+Part R218 added to design with name R238
+Part R215 added to design with name R235
+Part J315 added to design with name J331
+104 parts added to design
+Reuse signal XTAL2 added to design with name XTAL2A
+Reuse signal XTAL1 added to design with name XTAL1A
+Reuse signal D100+ added to design with name D100+A
+Reuse signal GND added to design with name GNDA
+Reuse signal ADC1 added to design with name ADC1A
+Reuse signal +5V added to design with name +5VA
+Reuse signal D101+ added to design with name D101+A
+Reuse signal D301+ added to design with name D301+A
+Reuse signal D300- added to design with name D300-A
+Reuse signal IND0 added to design with name IND0A
+Reuse signal ANTBIAS added to design with name ANTBIASA
+Reuse signal RXAT added to design with name RXATA
+Reuse signal TXENAT added to design with name TXENATA
+Reuse signal TXAT added to design with name TXATA
+Reuse signal A4 added to design with name A4A
+Reuse signal B4 added to design with name B4A
+Reuse signal D303+ added to design with name D303+A
+Reuse signal IND1 added to design with name IND1A
+Reuse signal D302- added to design with name D302-A
+Reuse signal D305+ added to design with name D305+A
+Reuse signal IND2 added to design with name IND2A
+Reuse signal D304- added to design with name D304-A
+Reuse signal D307+ added to design with name D307+A
+Reuse signal IND3 added to design with name IND3A
+Reuse signal D306- added to design with name D306-A
+Reuse signal ADCAT6 added to design with name ADCAT6A
+Reuse signal AREFAT added to design with name AREFATA
+Reuse signal +3.3V added to design with name +3.3VA
+Reuse signal ADCAT7 added to design with name ADCAT7A
+Reuse signal GPIO0 added to design with name GPIO0A
+Reuse signal GPIO1 added to design with name GPIO1A
+Reuse signal GPIO2 added to design with name GPIO2A
+Reuse signal GPIO3 added to design with name GPIO3A
+Reuse signal GPIO4 added to design with name GPIO4A
+Reuse signal GPIO5 added to design with name GPIO5A
+Reuse signal GPIO6 added to design with name GPIO6A
+Reuse signal GPIO7 added to design with name GPIO7A
+Reuse signal GPIOAT0 added to design with name GPIOAT0A
+Reuse signal GPIOAT1 added to design with name GPIOAT1A
+Reuse signal GPIOAT2 added to design with name GPIOAT2A
+Reuse signal GPIOAT3 added to design with name GPIOAT3A
+Reuse signal GPIOAT4 added to design with name GPIOAT4A
+Reuse signal GPIOAT5 added to design with name GPIOAT5A
+Reuse signal GPIOAT6 added to design with name GPIOAT6A
+Reuse signal GPIOAT7 added to design with name GPIOAT7A
+Reuse signal GPIOAT8 added to design with name GPIOAT8A
+Reuse signal GPIOAT9 added to design with name GPIOAT9A
+Reuse signal GPIOAT10 added to design with name GPIOAT10A
+Reuse signal GPIOAT11 added to design with name GPIOAT11A
+Reuse signal INDAT0 added to design with name INDAT0A
+Reuse signal INDAT1 added to design with name INDAT1A
+Reuse signal OC0A added to design with name OC0AA
+Reuse signal DAC0 added to design with name DAC0A
+Reuse signal DAC1 added to design with name DAC1A
+Reuse signal ADC2 added to design with name ADC2A
+Reuse signal ADC3 added to design with name ADC3A
+Reuse signal ADC4 added to design with name ADC4A
+Reuse signal ADC5 added to design with name ADC5A
+Reuse signal GPIO8 added to design with name GPIO8A
+Reuse signal TXEN5 added to design with name TXEN5A
+Reuse signal XCK5 added to design with name XCK5A
+Reuse signal RX5 added to design with name RX5A
+Reuse signal TX5 added to design with name TX5A
+Reuse signal XCK6 added to design with name XCK6A
+Reuse signal RX6 added to design with name RX6A
+Reuse signal TX6 added to design with name TX6A
+Reuse signal TXEN6 added to design with name TXEN6A
+Reuse signal ~RESETX_PULL added to design with name ~RESETX_PULLA
+Reuse signal ~RESETX/PDICLK added to design with name ~RESETX/PDICLKA
+Reuse signal D308- added to design with name D308-A
+Reuse signal D309+ added to design with name D309+A
+Reuse signal D310- added to design with name D310-A
+Reuse signal D311+ added to design with name D311+A
+Reuse signal B0 added to design with name B0A
+Reuse signal A0 added to design with name A0A
+Reuse signal B1 added to design with name B1A
+Reuse signal A1 added to design with name A1A
+Reuse signal B2 added to design with name B2A
+Reuse signal A2 added to design with name A2A
+Reuse signal B3 added to design with name B3A
+Reuse signal A3 added to design with name A3A
+Reuse signal ATMISO added to design with name ATMISOA
+Reuse signal ATSCK added to design with name ATSCKA
+Reuse signal ATMOSI added to design with name ATMOSIA
+Reuse signal ~RESETAT added to design with name ~RESETATA
+Reuse signal VIN added to design with name VINA
+Reuse signal TXEN0 added to design with name TXEN0A
+Reuse signal RX0 added to design with name RX0A
+Reuse signal TX0 added to design with name TX0A
+Reuse signal TXEN1 added to design with name TXEN1A
+Reuse signal RX1 added to design with name RX1A
+Reuse signal TX1 added to design with name TX1A
+Reuse signal TXEN2 added to design with name TXEN2A
+Reuse signal RX2 added to design with name RX2A
+Reuse signal TX2 added to design with name TX2A
+Reuse signal TXEN3 added to design with name TXEN3A
+Reuse signal RX3 added to design with name RX3A
+Reuse signal TX3 added to design with name TX3A
+Reuse signal RX4 added to design with name RX4A
+Reuse signal TX4 added to design with name TX4A
+Reuse signal TCK added to design with name TCKA
+Reuse signal TDO added to design with name TDOA
+Reuse signal TMS added to design with name TMSA
+Reuse signal TDI added to design with name TDIA
+Reuse signal PDI added to design with name PDIA
+Reuse signal AVCCX added to design with name AVCCXA
+Reuse signal AREFX added to design with name AREFXA
+Reuse signal XTALAT2 added to design with name XTALAT2A
+Reuse signal XTALAT1 added to design with name XTALAT1A
+109 signal in reuse definition file
+2 copper pours added to design
+=============================================================
+Numbers of WARNINGS on adding reuse component stage: 0
+=============================================================

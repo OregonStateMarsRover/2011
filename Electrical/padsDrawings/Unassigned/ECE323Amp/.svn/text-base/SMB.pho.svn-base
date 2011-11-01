@@ -1,0 +1,93 @@
+*
+*
+G04 PADS 9.2 Build Number: 406656 generated Gerber (RS-274-X) file*
+G04 PC Version=2.1*
+*
+%IN "ECE323Amp.pcb"*%
+*
+%MOIN*%
+*
+%FSLAX35Y35*%
+*
+*
+*
+*
+G04 PC Standard Apertures*
+*
+*
+G04 Thermal Relief Aperture macro.*
+%AMTER*
+1,1,$1,0,0*
+1,0,$1-$2,0,0*
+21,0,$3,$4,0,0,45*
+21,0,$3,$4,0,0,135*
+%
+*
+*
+G04 Annular Aperture macro.*
+%AMANN*
+1,1,$1,0,0*
+1,0,$2,0,0*
+%
+*
+*
+G04 Odd Aperture macro.*
+%AMODD*
+1,1,$1,0,0*
+1,0,$1-0.005,0,0*
+%
+*
+*
+G04 PC Custom Aperture Macros*
+*
+*
+*
+*
+*
+*
+G04 PC Aperture Table*
+*
+%ADD010C,0.001*%
+%ADD024C,0.075*%
+%ADD027O,0.188X0.188*%
+*
+*
+*
+*
+G04 PC Circuitry*
+G04 Layer Name ECE323Amp.pcb - circuitry*
+%LPD*%
+*
+*
+G04 PC Custom Flashes*
+G04 Layer Name ECE323Amp.pcb - flashes*
+%LPD*%
+*
+*
+G04 PC Circuitry*
+G04 Layer Name ECE323Amp.pcb - circuitry*
+%LPD*%
+*
+G54D10*
+G54D24*
+G01X118000Y364000D03*
+Y354000D03*
+X296000Y260000D03*
+Y270000D03*
+X270000Y382000D03*
+X280000D03*
+X445000Y280000D03*
+X435000D03*
+X118000Y160000D03*
+Y170000D03*
+X270000Y144000D03*
+X280000D03*
+X445000Y245000D03*
+X435000D03*
+G54D27*
+X113000Y411000D03*
+X497000D03*
+Y113000D03*
+X113000D03*
+X0Y0D02*
+M02*

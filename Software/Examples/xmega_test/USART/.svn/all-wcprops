@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/marsrover2011/!svn/ver/76/Software/Examples/xmega_test/USART
+END
+usart_driver.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/marsrover2011/!svn/ver/76/Software/Examples/xmega_test/USART/usart_driver.h
+END
+avr_compiler.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/marsrover2011/!svn/ver/76/Software/Examples/xmega_test/USART/avr_compiler.h
+END
+usart_driver.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/marsrover2011/!svn/ver/76/Software/Examples/xmega_test/USART/usart_driver.c
+END

@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/Maps">
+        <file>Test.jpg</file>
+        <file>Utah.jpg</file>
+        <file>adair-park.jpg</file>
+        <file>osu-map.jpg</file>
+        <file>mlk-park.jpg</file>
+    </qresource>
+</RCC>

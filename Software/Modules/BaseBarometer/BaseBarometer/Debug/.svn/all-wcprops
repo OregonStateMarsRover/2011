@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/marsrover2011/!svn/ver/580/Software/Modules/BaseBarometer/BaseBarometer/Debug
+END
+usb_rawhid_debug.d
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/marsrover2011/!svn/ver/580/Software/Modules/BaseBarometer/BaseBarometer/Debug/usb_rawhid_debug.d
+END
+BaseBarometer.elf
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/marsrover2011/!svn/ver/580/Software/Modules/BaseBarometer/BaseBarometer/Debug/BaseBarometer.elf
+END
+twimaster.d
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/marsrover2011/!svn/ver/580/Software/Modules/BaseBarometer/BaseBarometer/Debug/twimaster.d
+END
+Timers.d
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/marsrover2011/!svn/ver/580/Software/Modules/BaseBarometer/BaseBarometer/Debug/Timers.d
+END
+main.d
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/marsrover2011/!svn/ver/580/Software/Modules/BaseBarometer/BaseBarometer/Debug/main.d
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/marsrover2011/!svn/ver/580/Software/Modules/BaseBarometer/BaseBarometer/Debug/Makefile
+END
+barometerBase.d
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/marsrover2011/!svn/ver/580/Software/Modules/BaseBarometer/BaseBarometer/Debug/barometerBase.d
+END
+BaseBarometer.hex
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/marsrover2011/!svn/ver/580/Software/Modules/BaseBarometer/BaseBarometer/Debug/BaseBarometer.hex
+END

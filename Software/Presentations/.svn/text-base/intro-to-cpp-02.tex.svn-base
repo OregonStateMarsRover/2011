@@ -1,0 +1,152 @@
+\documentclass{beamer}
+\usetheme{Warsaw}
+\usecolortheme[RGB={205, 106, 0}]{structure}
+
+\usepackage{beamerthemesplit}
+\usepackage{multicol}
+\usepackage{listings}
+
+
+\title{An Introduction to Programming/C++ - Week 2}
+\author{Ben Goska \\ Oregon State University}
+\date{\today}
+
+\begin{document}
+
+\lstset{language=c++,
+        numbers=left,
+        showspaces=false,
+	showstringspaces=false,
+	basicstyle=\footnotesize
+	}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\section[Outline]{}
+\frame{\tableofcontents}
+
+\section{Functions}
+
+\subsection{Why Functions?}
+
+\begin{frame}
+	\frametitle{Why Functions?}
+	Functions are useful for two reasons:
+	\begin{itemize}
+		\item Stop code copying
+		\item Break code into simple chunks
+	\end{itemize}
+	Recall from math that standard functions look like
+	$f:x \rightarrow y$, in C++ (or any programming language)
+	the idea is similar. A function has a name, some input
+	and some output. We can perform any operation in a function.
+\end{frame}
+
+\subsection{Defining Functions}
+
+\begin{frame}[fragile]
+	\frametitle{Defining Functions}
+	A function definition looks something like:
+	\begin{lstlisting}
+	output_type function_name(inputs...)
+	\end{lstlisting}
+	An example of this could look similar to our main function from
+	hello world.
+	\begin{lstlisting}
+	int main(void) {
+	    //things to do in here
+	    //...
+	    return 0;
+	}
+	\end{lstlisting}
+	This function returns an integer (as signified by 'int') is 
+	called 'main', and takes nothing as an input (ie 'void').
+\end{frame}
+
+\subsection{Example}
+
+\begin{frame}[fragile]
+	\frametitle{Example}
+	Time to show some examples, try to follow along (the code can 
+	be found in the SVN if you want to review it later). \\
+	\begin{itemize}
+		\item Basic functions (w2BasicFunc.cpp)
+		\item Scope example (w2Scope.cpp)
+		\item Recursion (w2Recursion.cpp)
+	\end{itemize}
+\end{frame}
+
+\section{Headers and Multiple Files}
+
+\subsection{Header Files}
+
+\begin{frame}[fragile]
+	\frametitle{Header Files}
+	It's important to remember that functions must be defined before being used.
+	They can be defined in a seperate file, remember the include that we have done
+	many times:
+	\begin{lstlisting}
+	#include <iostream>
+	\end{lstlisting}
+	Now, if we want to define a function in another file (say myHeader.h) we would do:
+	\begin{lstlisting}
+	#include "myHeader.h"
+	\end{lstlisting}
+	Lets look at an example. (w2Header.cpp).
+\end{frame}
+
+\subsection{Multiple Files}
+
+\begin{frame}[fragile]
+	\frametitle{Multiple Files}
+	Now, the problem with header files is that if you include them into multiple cpp files
+	that built into a single program the compiler gets very angry. This is because we defined
+	something with the same name multiple times. \\
+	To fix this we will use another techinque. We can break a program into multiple cpp files 
+	and only define the actual functions. See the following example (w2Multi.cpp, 
+	w2MultiHeader.h, w2MultiHeader.cpp).
+\end{frame}
+
+\section{The Preprocessor}
+
+\subsection{Defines}
+
+\begin{frame}[fragile]
+	\frametitle{Defines}
+	The preprocessor can do more for us than just include files. We can use it to name constants.
+	This is can make code more readable, constants are defined in the following manner:
+	\begin{lstlisting}
+	#define PI 3.1416
+	\end{lstlisting}
+	Then later we can just use the constant by name, such as:
+	\begin{lstlisting}
+	std::cout << PI << std::endl;
+	\end{lstlisting}
+\end{frame}
+
+\subsection{Macros}
+
+\begin{frame}[fragile]
+	\frametitle{Macros}
+	Macros are a mix between constants and functions. They are useful for defining simple functions,
+	there are a few differences between functions and macros, but they are fairly significant.
+	\begin{lstlisting}
+	#define SQUARE_VALUE(x) (x*x)
+	\end{lstlisting}
+	And we can use it by:
+	\begin{lstlisting}
+	std::cout << SQUARE_VALUE(10) << std::endl;
+	\end{lstlisting}
+\end{frame}
+
+\subsection{Preprocessor Magic}
+
+\begin{frame}
+	\frametitle{Preprocessor Magic}
+	The preprocessor has a bit more magic in store for us, in fact we can use it to change code layout
+	on compile. This is illistrated through the code in (w2Preprocessor.cpp).
+\end{frame}
+
+\end{document}

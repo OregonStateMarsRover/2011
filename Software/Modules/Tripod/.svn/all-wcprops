@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/marsrover2011/!svn/ver/631/Software/Modules/Tripod
+END
+SerialLocker.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/marsrover2011/!svn/ver/506/Software/Modules/Tripod/SerialLocker.c
+END
+PanTilt.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/marsrover2011/!svn/ver/563/Software/Modules/Tripod/PanTilt.h
+END
+SerialProtocol.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/marsrover2011/!svn/ver/563/Software/Modules/Tripod/SerialProtocol.c
+END
+ProtocolDefines.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/marsrover2011/!svn/ver/563/Software/Modules/Tripod/ProtocolDefines.h
+END
+SerialLocker.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/marsrover2011/!svn/ver/506/Software/Modules/Tripod/SerialLocker.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/marsrover2011/!svn/ver/506/Software/Modules/Tripod/main.c
+END
+SerialProtocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/marsrover2011/!svn/ver/563/Software/Modules/Tripod/SerialProtocol.h
+END
+Camera.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/marsrover2011/!svn/ver/625/Software/Modules/Tripod/Camera.c
+END
+PanTilt.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/marsrover2011/!svn/ver/563/Software/Modules/Tripod/PanTilt.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/marsrover2011/!svn/ver/506/Software/Modules/Tripod/Makefile
+END
+Camera.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/marsrover2011/!svn/ver/625/Software/Modules/Tripod/Camera.h
+END

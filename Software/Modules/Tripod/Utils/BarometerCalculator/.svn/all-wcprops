@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/marsrover2011/!svn/ver/544/Software/Modules/Tripod/Utils/BarometerCalculator
+END
+widget.ui
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/marsrover2011/!svn/ver/544/Software/Modules/Tripod/Utils/BarometerCalculator/widget.ui
+END
+widget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/marsrover2011/!svn/ver/544/Software/Modules/Tripod/Utils/BarometerCalculator/widget.cpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/marsrover2011/!svn/ver/544/Software/Modules/Tripod/Utils/BarometerCalculator/main.cpp
+END
+BarometerCalculator.pro.user
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/marsrover2011/!svn/ver/544/Software/Modules/Tripod/Utils/BarometerCalculator/BarometerCalculator.pro.user
+END
+BarometerCalculator.pro
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/marsrover2011/!svn/ver/544/Software/Modules/Tripod/Utils/BarometerCalculator/BarometerCalculator.pro
+END
+widget.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/marsrover2011/!svn/ver/544/Software/Modules/Tripod/Utils/BarometerCalculator/widget.h
+END

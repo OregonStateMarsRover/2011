@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/marsrover2011/!svn/ver/287/Software/Examples/xmega_test
+END
+xmega_test.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/marsrover2011/!svn/ver/287/Software/Examples/xmega_test/xmega_test.c
+END
+xmega_test.aps
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/marsrover2011/!svn/ver/45/Software/Examples/xmega_test/xmega_test.aps
+END
+xmega_test.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/marsrover2011/!svn/ver/287/Software/Examples/xmega_test/xmega_test.h
+END
+xmega_test.aws
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/marsrover2011/!svn/ver/45/Software/Examples/xmega_test/xmega_test.aws
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/marsrover2011/!svn/ver/76/Software/Examples/xmega_test/Makefile
+END

@@ -1,0 +1,39 @@
+<RCC>
+  <qresource prefix="Icons">
+    <file>arrow-down.png</file>
+    <file>arrow-left.png</file>
+    <file>arrow-right.png</file>
+    <file>arrow-up.png</file>
+    <file>button-add.png</file>
+    <file>button-cancel.png</file>
+    <file>button-close.png</file>
+    <file>button-delete.png</file>
+    <file>button-fastforward.png</file>
+    <file>button-first.png</file>
+    <file>button-help.png</file>
+    <file>button-info.png</file>
+    <file>button-last.png</file>
+    <file>button-next.png</file>
+    <file>button-pause.png</file>
+    <file>button-play.png</file>
+    <file>button-previous.png</file>
+    <file>button-refresh.png</file>
+    <file>button-reload.png</file>
+    <file>button-rewind.png</file>
+    <file>button-stop.png</file>
+    <file>closed.png</file>
+    <file>correct.png</file>
+    <file>exclamation-mark.png</file>
+    <file>info.png</file>
+    <file>message.png</file>
+    <file>minus.png</file>
+    <file>pdf.png</file>
+    <file>plus.png</file>
+    <file>preview.png</file>
+    <file>question-mark.png</file>
+    <file>save.png</file>
+    <file>search.png</file>
+    <file>still-camera.png</file>
+    <file>text-document.png</file>
+  </qresource>
+</RCC>

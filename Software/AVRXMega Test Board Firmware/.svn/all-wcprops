@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/marsrover2011/!svn/ver/451/Software/AVRXMega%20Test%20Board%20Firmware
+END
+AVRXMega Test Board Firmware.zip
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/marsrover2011/!svn/ver/63/Software/AVRXMega%20Test%20Board%20Firmware/AVRXMega%20Test%20Board%20Firmware.zip
+END
+xmega_test.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/marsrover2011/!svn/ver/63/Software/AVRXMega%20Test%20Board%20Firmware/xmega_test.c
+END
+xmega_test.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/marsrover2011/!svn/ver/63/Software/AVRXMega%20Test%20Board%20Firmware/xmega_test.h
+END

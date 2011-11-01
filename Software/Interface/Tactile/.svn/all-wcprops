@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/marsrover2011/!svn/ver/619/Software/Interface/Tactile
+END
+Joystick.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/marsrover2011/!svn/ver/519/Software/Interface/Tactile/Joystick.cpp
+END
+BaseBarometer.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/marsrover2011/!svn/ver/619/Software/Interface/Tactile/BaseBarometer.h
+END
+Joystick.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/marsrover2011/!svn/ver/526/Software/Interface/Tactile/Joystick.h
+END
+TactileInterface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/marsrover2011/!svn/ver/568/Software/Interface/Tactile/TactileInterface.cpp
+END
+BaseBarometer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/marsrover2011/!svn/ver/619/Software/Interface/Tactile/BaseBarometer.cpp
+END
+TactileInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/marsrover2011/!svn/ver/568/Software/Interface/Tactile/TactileInterface.h
+END

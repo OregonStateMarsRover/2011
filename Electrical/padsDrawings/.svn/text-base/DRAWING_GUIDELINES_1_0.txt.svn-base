@@ -1,0 +1,53 @@
+-2011 Rover Electrical Drawing Guidelines-
+Rev. 1.0 
+Last Revised: 10/19/2010
+
+Please read over and understand the following document. Adhering
+to guidelines and formalities 
+
+--Parts Library Management--
+Add datasheets to the datasheets directory when new parts are
+added
+
+New part creation:
+Rover_NEWPARTS Library:
+Rover Library:
+
+--Part Numbering--
+To comply with the overarching part numbering system,
+all modules must be assigned a part number and all drawings
+must indicate what part number they are for. A part number 
+must be assigned and categorized by the team lead. If you need 
+a part number, check that it hasn't already been assigned, and 
+request that a directory be made on the network. All 
+network folders and files will adhere to this.
+
+All drawings will adhere to the following naming convention
+X-E-XX-XX_REVX
+Top Level:
+R: Rover, T: Test, A: Arm
+-
+E: Electrical Systems
+-
+Category:
+01: Wiring Harness
+02: Connectors
+03: Power Systems
+04: Communications
+05: Main Board
+06: Tripod Systems
+07: Video Systems
+08: Drive Systems
+-
+Part:
+2 Digit part code in category, refer to the master parts list
+in the bill of materials for specific part numbers
+
+--File Archiving--
+Whenever a design is set to be reviewed, or is being sent out 
+for manufacturing, create a zipped folder containing all relevant
+.sch and .pcb files for archival purposes. These archived files 
+should be backed up on creation and on a regular basis. Once
+and archive file is zipped, the files should stay zipped. Any 
+files sent out for manufacturing must be archived and have no 
+further changes made without creating a new revision.

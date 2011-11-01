@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/marsrover2011/!svn/ver/63/Software/AVRXMega%20Test%20Board%20Firmware/xmega_test/default
+END
+xmega_test.lss
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/marsrover2011/!svn/ver/63/Software/AVRXMega%20Test%20Board%20Firmware/xmega_test/default/xmega_test.lss
+END
+xmega_test.hex
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/marsrover2011/!svn/ver/63/Software/AVRXMega%20Test%20Board%20Firmware/xmega_test/default/xmega_test.hex
+END
+xmega_test.elf
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/marsrover2011/!svn/ver/63/Software/AVRXMega%20Test%20Board%20Firmware/xmega_test/default/xmega_test.elf
+END
+xmega_test.eep
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/marsrover2011/!svn/ver/63/Software/AVRXMega%20Test%20Board%20Firmware/xmega_test/default/xmega_test.eep
+END
+xmega_test.map
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/marsrover2011/!svn/ver/63/Software/AVRXMega%20Test%20Board%20Firmware/xmega_test/default/xmega_test.map
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/marsrover2011/!svn/ver/63/Software/AVRXMega%20Test%20Board%20Firmware/xmega_test/default/Makefile
+END

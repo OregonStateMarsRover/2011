@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/marsrover2011/!svn/ver/484/Electrical/simulations
+END
+PiAttenuator.asc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/marsrover2011/!svn/ver/294/Electrical/simulations/PiAttenuator.asc
+END
+bridgedTAtten22dBm.ffs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/marsrover2011/!svn/ver/113/Electrical/simulations/bridgedTAtten22dBm.ffs
+END
+bridgedTAtten22dBm.pjh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/marsrover2011/!svn/ver/113/Electrical/simulations/bridgedTAtten22dBm.pjh
+END
+powerAssertion.asc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/marsrover2011/!svn/ver/484/Electrical/simulations/powerAssertion.asc
+END
+RFPowerAmpEnableDriver.asc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/marsrover2011/!svn/ver/177/Electrical/simulations/RFPowerAmpEnableDriver.asc
+END

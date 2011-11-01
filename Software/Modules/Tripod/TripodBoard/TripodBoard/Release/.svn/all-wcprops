@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/marsrover2011/!svn/ver/602/Software/Modules/Tripod/TripodBoard/TripodBoard/Release
+END
+USART.d
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/Release/USART.d
+END
+SerialProtocol.d
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/Release/SerialProtocol.d
+END
+main.d
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/marsrover2011/!svn/ver/573/Software/Modules/Tripod/TripodBoard/TripodBoard/Release/main.d
+END
+RingBuffer.d
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/Release/RingBuffer.d
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/marsrover2011/!svn/ver/573/Software/Modules/Tripod/TripodBoard/TripodBoard/Release/Makefile
+END
+PanTilt.d
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/Release/PanTilt.d
+END
+CommInterface.d
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/Release/CommInterface.d
+END
+TripodBoard.elf
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/marsrover2011/!svn/ver/602/Software/Modules/Tripod/TripodBoard/TripodBoard/Release/TripodBoard.elf
+END

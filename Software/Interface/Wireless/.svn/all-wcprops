@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/marsrover2011/!svn/ver/593/Software/Interface/Wireless
+END
+SerialDevice.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/marsrover2011/!svn/ver/539/Software/Interface/Wireless/SerialDevice.cpp
+END
+SerialDevice.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/marsrover2011/!svn/ver/539/Software/Interface/Wireless/SerialDevice.h
+END
+WirelessDispatcher.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/marsrover2011/!svn/ver/593/Software/Interface/Wireless/WirelessDispatcher.cpp
+END
+WirelessPacket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/marsrover2011/!svn/ver/481/Software/Interface/Wireless/WirelessPacket.cpp
+END
+WirelessDispatcher.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/marsrover2011/!svn/ver/593/Software/Interface/Wireless/WirelessDispatcher.h
+END
+WirelessPacket.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/marsrover2011/!svn/ver/481/Software/Interface/Wireless/WirelessPacket.h
+END

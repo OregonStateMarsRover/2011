@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/marsrover2011/!svn/ver/620/Software/Interface/Common
+END
+USBDevice.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/marsrover2011/!svn/ver/592/Software/Interface/Common/USBDevice.h
+END
+Matrix.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/marsrover2011/!svn/ver/556/Software/Interface/Common/Matrix.cpp
+END
+AltitudeCalculator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/marsrover2011/!svn/ver/620/Software/Interface/Common/AltitudeCalculator.cpp
+END
+Configuration.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/marsrover2011/!svn/ver/361/Software/Interface/Common/Configuration.cpp
+END
+Matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/marsrover2011/!svn/ver/556/Software/Interface/Common/Matrix.h
+END
+USBDevice.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/marsrover2011/!svn/ver/598/Software/Interface/Common/USBDevice.cpp
+END
+AltitudeCalculator.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/marsrover2011/!svn/ver/600/Software/Interface/Common/AltitudeCalculator.h
+END
+Configuration.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/marsrover2011/!svn/ver/361/Software/Interface/Common/Configuration.h
+END

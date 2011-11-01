@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/marsrover2011/!svn/ver/550/Software/Modules/Tripod/TripodBoard/TripodBoard/Debug
+END
+USART.d
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/Debug/USART.d
+END
+twimaster.d
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/Debug/twimaster.d
+END
+SerialProtocol.d
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/Debug/SerialProtocol.d
+END
+Timers.d
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/Debug/Timers.d
+END
+main.d
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/marsrover2011/!svn/ver/550/Software/Modules/Tripod/TripodBoard/TripodBoard/Debug/main.d
+END
+Camera.d
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/Debug/Camera.d
+END
+RingBuffer.d
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/Debug/RingBuffer.d
+END
+Accelerometer.d
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/marsrover2011/!svn/ver/550/Software/Modules/Tripod/TripodBoard/TripodBoard/Debug/Accelerometer.d
+END
+TripodBoard.hex
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/marsrover2011/!svn/ver/550/Software/Modules/Tripod/TripodBoard/TripodBoard/Debug/TripodBoard.hex
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/marsrover2011/!svn/ver/550/Software/Modules/Tripod/TripodBoard/TripodBoard/Debug/Makefile
+END
+PanTilt.d
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/Debug/PanTilt.d
+END
+CommInterface.d
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/Debug/CommInterface.d
+END
+TripodBoard.elf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/marsrover2011/!svn/ver/550/Software/Modules/Tripod/TripodBoard/TripodBoard/Debug/TripodBoard.elf
+END

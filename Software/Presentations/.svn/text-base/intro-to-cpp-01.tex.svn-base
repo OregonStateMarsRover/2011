@@ -1,0 +1,296 @@
+\documentclass{beamer}
+\usetheme{Warsaw}
+\usecolortheme[RGB={205, 106, 0}]{structure}
+
+\usepackage{beamerthemesplit}
+\usepackage{multicol}
+\usepackage{listings}
+
+
+\title{An Introduction to Programming/C++ - Week 1}
+\author{Ben Goska \\ Oregon State University}
+\date{\today}
+
+\begin{document}
+
+\lstset{language=c++,
+        numbers=left,
+        showspaces=false,
+	showstringspaces=false,
+	basicstyle=\footnotesize
+	}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\section[Outline]{}
+\frame{\tableofcontents}
+
+\section{The Tools}
+
+\subsection{Compiler and Editor}
+
+\begin{frame}
+	\frametitle{Compiler and Editor}
+	The main tool that is used for C++ development is the compiler. There
+	are many avaliable, but we will use g++. To install g++:
+	\begin{itemize}
+		\item Windows: Download and install Dev-C++
+		\item Linux: You should have g++, if not install it with the package manager
+	\end{itemize}
+	For editing code one of the following editors is recommended.
+	\begin{itemize}
+		\item gedit - windows + linux
+		\item scite - windows + linux
+		\item vi,vim,gvim - windows + linux
+		\item notepad++ - windows
+	\end{itemize}
+\end{frame}
+
+\subsection{Compiling}
+
+\begin{frame}
+	\frametitle{Compling}
+	To compile a program using g++ you usually use the command line with a command 
+	similar to: \\
+	g++ file.cpp -o myProg \\
+	which would compile file.cpp into a program called myProg
+\end{frame}
+
+\section{Programming Concepts}
+
+\subsection{Pseudocode}
+
+\begin{frame}[fragile]
+	\frametitle{Writing down what we want to happen}
+	Pseudocode: Writing down exactly what you want to happen \\
+	Example of pseudocode to make peanut and jelly sandwich
+	\begin{lstlisting}
+	Get bread, peanut butter, jelly
+	put peanut butter on bread
+	put jelly on bread
+	\end{lstlisting}
+\end{frame}
+
+\subsection{Variables}
+
+\begin{frame}[fragile]
+	\frametitle{Types of Variables}
+	Variables can be used to store things, this includes strings (text), 
+	whole numbers, decimal numbers, or even arrays (lists) of numbers. \\
+	Example of pseudocode to do a little math $10 \frac {2}{14}+6$
+	\begin{lstlisting}
+	result = 0;
+	result = result + 10;
+	result = result * 2;
+	result = result / 14;
+	result = result + 6;
+	\end{lstlisting}
+\end{frame}
+
+\subsection{Loops}
+\begin{frame}[fragile]
+	\frametitle{Loops and things}
+	Loops are used to do something repeatedly, there are many types of loops.
+	The most important kind of loop is a simple "while" loop. This type of
+	loop runs while some condition is true, this is best shown in an example,
+	here is an example of a loop to add up the numbers from 1 to 10.
+	\begin{lstlisting}
+	sum = 0;            //start the sum at 0
+	i = 1;              //start counting at 1
+	while (i < = 10) {   //loop until i > 10
+	    sum = sum + i;
+	    i = i + 1;
+	}
+	\end{lstlisting}
+\end{frame}
+
+\section{Introduction to C++}
+
+\subsection{Basic C++}
+
+\begin{frame}
+	\frametitle{Pseudocode to C++}
+	Moving from being able to write pseudocode to writing C++ is not too
+	difficult, the main thing to remember is that C++ is very picky about
+	how you write things.\\
+	As a good rule you should start by writing pseudocode for what you want
+	to accompilsh.
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Hello World}
+	This is the most basic, but complete, C++ program.
+	\begin{lstlisting}
+	#include <iostream>
+
+	int main(void) {
+	    std::cout << "Hello World" << std::endl;
+	    return 0;
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Hello World, explained}
+	Line 1: This line includes the standard functions for outputting text to the screen. \\
+	Line 3: This is the basic definition of a program, this is where code starts to be executed. \\
+	Line 4: This puts the string "Hello World" into the output "cout", or writes "Hello World" to the console. \\
+	Line 5: The program ends on this line, returning the value "0" to the operating system (this indicates no failure occured). 
+\end{frame}
+
+\subsection{Variables in C++}
+
+\begin{frame}
+	\frametitle{Types of variables}
+	A few basic types in C++
+	\begin{itemize}
+		\item int - Integer, holds whole numbers (32-bit)
+		\item char - character, holds one character (8-bit)
+		\item double - Floating point, holds decimal numbers
+		\item std::string - String, holds text
+	\end{itemize}
+	Modifiers that can be applied to variables
+	\begin{itemize}
+		\item unsigned - only holds non-negative numbers
+		\item volatile - can change at any time (shouldn't ever be needed in normal code)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Declaring variables}
+	When you declare a variable you must include the following things:
+	\begin{itemize}
+		\item type
+		\item name
+	\end{itemize}
+	And you may or may not have
+	\begin{itemize}
+		\item modifiers
+		\item initial value
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Declaring variables}
+	Example: declare an unsigned integer, with an initial value of 0
+	\begin{lstlisting}
+	unsigned int myInteger = 0;
+	\end{lstlisting}
+	Note that variable names cannot have spaces, or special characters. 
+	So you may use any letters (A-Z, a-z), numbers (0 - 9).
+\end{frame}
+
+\begin{frame}
+	\frametitle{Using variables}
+	All variables have operators that can be used, for numbers these 
+	are the familiar operations, that include:
+	\begin{itemize}
+		\item $+$ Addition
+		\item $-$ Subtraction
+		\item $*$ Multiplication
+		\item $/$ Division (NOTE: watch out for rounding)
+		\item $\%$ Modulo (remainder of division)
+		\item $=$ Assignment
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Using variables}
+	Now we can put all these together however we want to, including
+	the use of parentheses, an example that expands on our our hello
+	world program.
+	\begin{lstlisting}
+	#include <iostream>
+
+	int main(void) {
+	    int i = 0;  //make a variable to work with
+	    i = (i + 10) * 2;
+	    std::cout << i << std::endl;
+	    i = i - 2;
+	    std::cout << i << std::endl;
+	    i = i / 2;
+	    std::cout << i << std::endl;
+	    return 0;
+	}
+	\end{lstlisting}
+\end{frame}
+
+\subsection{Loops in C++}
+
+\begin{frame}
+	\frametitle{Types of loops}
+	C++ offers a number of different loop types, really they all perform
+	the same function, though some are better for certain situations.
+	\begin{itemize}
+		\item while - The while loop is the simplest loop, it does something while a condition is true
+		\item for - The for loop is just like a while loop but can initialize a variable and perform specific actions each loop
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{The while loop}
+	This program prints out the numbers 1 to 10
+	\begin{lstlisting}
+	#include <iostream>
+
+	int main(void) {
+	    int i = 1;
+	    while (i <= 10) {
+	        std::cout << i << std::endl;
+	        i++; //short hand for i = i + 1;
+	    }
+	    return 0;
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{The for loop}
+	This for loop does that same as the previous while loop.
+
+	\begin{lstlisting}
+	#include <iostream>
+
+	int main(void) {
+	    for(int i = 1; i <= 10; i++) {
+	        std::cout << i << std::endl;
+	    }
+	    return 0;
+	}
+	\end{lstlisting}
+\end{frame}
+
+\subsection{If statements}
+
+\begin{frame}[fragile]
+	\frametitle{The if statement}
+	The if statement is perhapse one of most useful statements in any programming language.
+	
+	\begin{lstlisting}
+	#include <iosteam>
+
+	int main(void) {
+	    for(int i = 1; i <= 100; i++) {
+	        if (i % 3 == 0) {
+	            std::cout << i << std::endl;
+	        }
+	    }
+	    return 0;
+	}
+	\end{lstlisting}
+\end{frame}
+
+\section{Exercises}
+
+\begin{frame}
+	\frametitle{Things to work on now}
+	A few quick things to try out now
+	\begin{itemize}
+		\item Make a loop that adds up the numbers between 1 and 100, print the result
+		\item Make a loop that adds up integers starting with 1 until the result is greater than 100
+	\end{itemize}
+\end{frame}
+
+\end{document}

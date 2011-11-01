@@ -1,0 +1,371 @@
+.HEADER
+LIBRARY_FILE    3.0    "PADS Layout 9.2"    2011/01/27.19:48:20    1
+.END_HEADER
+.ELECTRICAL
+SOIC8A                                       NCP3125                                      THOU      69.0                     
+0     -145.28                  -103.94                  0     
+0     145.28                   -103.94                  0     
+0     145.28                   111.0                    0     
+0     -145.28                  111.0                    0     
+0     -145.28                  -103.94                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+IND_MURATA_1200RS                            IND_THT_12RS223C                             THOU      414.0                    
+0     -127.19                  -146.87                  0     
+0     324.04                   -146.87                  0     
+0     324.04                   304.35                   0     
+0     -127.19                  304.35                   0     
+0     -127.19                  -146.87                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+1206-R                                       CAP-1206                                     THOU      80.0                     
+0     -97.5                    -35.0                    0     
+0     97.5                     -35.0                    0     
+0     97.5                     35.0                     0     
+0     -97.5                    35.0                     0     
+0     -97.5                    -35.0                    0     
+.END_ELECTRICAL
+.ELECTRICAL
+0603-R                                       CAP-0603                                     THOU      50.0                     
+0     -50.0                    -19.29                   0     
+0     50.0                     -19.29                   0     
+0     50.0                     18.9                     0     
+0     -50.0                    18.9                     0     
+0     -50.0                    -19.29                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+CAP_EL_RADIAL_8MM_5MMP                       CAP-RADIAL-8_5X11_3MMP                       THOU      440.0                    
+0     -140.3                   -174.29                  0     
+0     245.16                   -174.29                  0     
+0     245.16                   174.29                   0     
+0     -140.3                   174.29                   0     
+0     -140.3                   -174.29                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+0603-R                                       RES-0603                                     THOU      25.0                     
+0     -50.0                    -19.29                   0     
+0     50.0                     -19.29                   0     
+0     50.0                     18.9                     0     
+0     -50.0                    18.9                     0     
+0     -50.0                    -19.29                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+SOT-23                                       SCH_NXP_BAT754A                              THOU      43.0                     
+0     -72.99                   -17.87                   0     
+0     66.93                    -17.87                   0     
+0     66.93                    96.24                    0     
+0     -72.99                   96.24                    0     
+0     -72.99                   -17.87                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+TO-252AA                                     ZLDO1117                                     THOU      95.0                     
+0     -155.67                  -76.93                   0     
+0     137.8                    -76.93                   0     
+0     137.8                    409.45                   0     
+0     -155.67                  409.45                   0     
+0     -155.67                  -76.93                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+0805_POL                                     LED-0805_DIALIGHT_598-8150-107F              THOU      28.0                     
+0     -100.0                   -50.0                    0     
+0     126.3                    -50.0                    0     
+0     126.3                    50.0                     0     
+0     -100.0                   50.0                     0     
+0     -100.0                   -50.0                    0     
+.END_ELECTRICAL
+.ELECTRICAL
+CAP_EL_RAD10MM                               CAP-RADIAL-10X12_5_3MMP                      THOU      492.0                    
+0     -200.79                  -102.36                  0     
+0     200.79                   -102.36                  0     
+0     200.79                   402.02                   0     
+0     -200.79                  402.02                   0     
+0     -200.79                  -102.36                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+SIP-1P                                       TPNT                                         THOU      0.0                      
+0     -55.0                    -55.0                    0     
+0     55.0                     -55.0                    0     
+0     55.0                     55.0                     0     
+0     -55.0                    55.0                     0     
+0     -55.0                    -55.0                    0     
+.END_ELECTRICAL
+.ELECTRICAL
+TQFP64_0_8                                   ATXMEGA256A3                                 THOU      47.2                     
+0     -411.08                  -403.2                   0     
+0     403.2                    -403.2                   0     
+0     403.2                    403.2                    0     
+0     -411.08                  403.2                    0     
+0     -411.08                  -403.2                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+TQFP64_0_8                                   ATXMEGA192A3                                 THOU      47.2                     
+0     -411.08                  -403.2                   0     
+0     403.2                    -403.2                   0     
+0     403.2                    403.2                    0     
+0     -411.08                  403.2                    0     
+0     -411.08                  -403.2                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+SOT223-3LAA                                  ZLDO1117G50TA                                THOU      71.0                     
+0     -49.37                   -69.06                   0     
+0     217.6                    -69.06                   0     
+0     217.6                    270.67                   0     
+0     -49.37                   270.67                   0     
+0     -49.37                   -69.06                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+0805-R                                       CAP-0805                                     THOU      50.0                     
+0     -75.0                    -33.94                   0     
+0     75.0                     -33.94                   0     
+0     75.0                     33.94                    0     
+0     -75.0                    33.94                    0     
+0     -75.0                    -33.94                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+SOT-23_DBV5                                  TPS60403                                     THOU      44.0                     
+0     -67.09                   -88.74                   0     
+0     53.15                    -88.74                   0     
+0     53.15                    67.03                    0     
+0     -67.09                   67.03                    0     
+0     -67.09                   -88.74                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+3319P-1                                      POT_3319P-3-203                              THOU      250.0                    
+0     -276.65                  -80.87                   0     
+0     87.68                    -80.87                   0     
+0     87.68                    442.01                   0     
+0     -276.65                  442.01                   0     
+0     -276.65                  -80.87                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+SOIC8                                        SN65HVD32                                    THOU      69.0                     
+0     -145.28                  -103.94                  0     
+0     145.28                   -103.94                  0     
+0     145.28                   111.0                    0     
+0     -145.28                  111.0                    0     
+0     -145.28                  -103.94                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+0805_POL                                     LED-0805_DIALIGHT_598-8110-107F              THOU      28.0                     
+0     -100.0                   -50.0                    0     
+0     126.3                    -50.0                    0     
+0     126.3                    50.0                     0     
+0     -100.0                   50.0                     0     
+0     -100.0                   -50.0                    0     
+.END_ELECTRICAL
+.ELECTRICAL
+0805_POL                                     LED-0805_DIALIGHT_598-8170-107F              THOU      28.0                     
+0     -100.0                   -50.0                    0     
+0     126.3                    -50.0                    0     
+0     126.3                    50.0                     0     
+0     -100.0                   50.0                     0     
+0     -100.0                   -50.0                    0     
+.END_ELECTRICAL
+.ELECTRICAL
+0805-R                                       IND0805                                      THOU      100.0                    
+0     -75.0                    -33.94                   0     
+0     75.0                     -33.94                   0     
+0     75.0                     33.94                    0     
+0     -75.0                    33.94                    0     
+0     -75.0                    -33.94                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+AT49XTAL_THT                                 ABL-16_000MHZ-B2                             THOU      160.0                    
+0     -146.35                  -100.94                  0     
+0     344.73                   -100.94                  0     
+0     344.73                   106.94                   0     
+0     -146.35                  106.94                   0     
+0     -146.35                  -100.94                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+HDR_6P2R_100MIL_SHROUD                       HDR_PDI_6                                    THOU      364.0                    
+0     -162.36                  -400.39                  0     
+0     224.41                   -400.39                  0     
+0     224.41                   205.9                    0     
+0     -162.36                  205.9                    0     
+0     -162.36                  -400.39                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+SPST_6MM                                     SW_SPST_SWT6-E5M                             THOU      140.0                    
+0     -30.0                    -212.6                   0     
+0     285.91                   -212.6                   0     
+0     285.91                   31.49                    0     
+0     -30.0                    31.49                    0     
+0     -30.0                    -212.6                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+OS_SPDT                                      SW_SPDT_OS102011                             THOU      314.0                    
+0     -122.05                  -88.58                   0     
+0     279.53                   -88.58                   0     
+0     279.53                   88.58                    0     
+0     -122.05                  88.58                    0     
+0     -122.05                  -88.58                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+SOT-23                                       LM4040D30DBZR                                THOU      44.0                     
+0     -72.99                   -17.87                   0     
+0     66.93                    -17.87                   0     
+0     66.93                    96.24                    0     
+0     -72.99                   96.24                    0     
+0     -72.99                   -17.87                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+0603-R                                       BLM18TG221TNB                                THOU      24.0                     
+0     -50.0                    -19.29                   0     
+0     50.0                     -19.29                   0     
+0     50.0                     18.9                     0     
+0     -50.0                    18.9                     0     
+0     -50.0                    -19.29                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+SOIC8                                        SN65HVD12                                    THOU      69.0                     
+0     -145.28                  -103.94                  0     
+0     145.28                   -103.94                  0     
+0     145.28                   111.0                    0     
+0     -145.28                  111.0                    0     
+0     -145.28                  -103.94                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+QFN-COL-16                                   MMA8451Q                                     THOU      40.0                     
+0     -81.26                   -65.51                   0     
+0     64.96                    -65.51                   0     
+0     64.96                    64.96                    0     
+0     -81.26                   64.96                    0     
+0     -81.26                   -65.51                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+MSOP8                                        TC72-3_3MUA                                  THOU      34.0                     
+0     -132.05                  -55.12                   0     
+0     119.49                   -55.12                   0     
+0     119.49                   65.12                    0     
+0     -132.05                  65.12                    0     
+0     -132.05                  -55.12                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+GPS15X                                       GPS15X-W                                     THOU      309.0                    
+0     -5.0                     -27.0                    0     
+0     945.94                   -27.0                    0     
+0     945.94                   1693.98                  0     
+0     -5.0                     1693.98                  0     
+0     -5.0                     -27.0                    0     
+.END_ELECTRICAL
+.ELECTRICAL
+HDR_SHERLOCK_6P_V                            HDR_SHERLOCK_6P_V                            THOU      335.0                    
+0     -88.58                   -104.33                  0     
+0     482.28                   -104.33                  0     
+0     482.28                   140.89                   0     
+0     -88.58                   140.89                   0     
+0     -88.58                   -104.33                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+SOIC8                                        OPA2132U                                     THOU      69.0                     
+0     -145.28                  -103.94                  0     
+0     145.28                   -103.94                  0     
+0     145.28                   111.0                    0     
+0     -145.28                  111.0                    0     
+0     -145.28                  -103.94                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+0603-R                                       TVS_B72500D200A60V7                          THOU      40.0                     
+0     -50.0                    -19.29                   0     
+0     50.0                     -19.29                   0     
+0     50.0                     18.9                     0     
+0     -50.0                    18.9                     0     
+0     -50.0                    -19.29                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+SOT-23-5                                     LMV321AS5X_Q                                 THOU      40.0                     
+0     -70.0                    -80.0                    0     
+0     63.94                    -80.0                    0     
+0     63.94                    71.5                     0     
+0     -70.0                    71.5                     0     
+0     -70.0                    -80.0                    0     
+.END_ELECTRICAL
+.ELECTRICAL
+HDR_MFIT_JR_2R4P_VA                          HDR_MINIFIT_2R4P_V                           THOU      500.0                    
+0     -111.3                   -122.2                   0     
+0     276.65                   -122.2                   0     
+0     276.65                   316.02                   0     
+0     -111.3                   316.02                   0     
+0     -111.3                   -122.2                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+HDR_SHERLOCK_5P_V                            HDR_SHERLOCK_5P_V                            THOU      335.0                    
+0     -88.58                   -104.33                  0     
+0     403.54                   -104.33                  0     
+0     403.54                   140.89                   0     
+0     -88.58                   140.89                   0     
+0     -88.58                   -104.33                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+HDR_SHERLOCK_3P_V                            HDR_SHERLOCK_3P_V                            THOU      335.0                    
+0     -88.58                   -104.33                  0     
+0     246.06                   -104.33                  0     
+0     246.06                   143.86                   0     
+0     -88.58                   143.86                   0     
+0     -88.58                   -104.33                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+PHONE_JACK_KOBICONN_161-352N-EX              PHONE_JACK_161-352N-EX                       THOU      448.0                    
+0     -88.58                   -151.57                  0     
+0     509.84                   -151.57                  0     
+0     509.84                   151.57                   0     
+0     -88.58                   151.57                   0     
+0     -88.58                   -151.57                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+HDR_SHERLOCK_4P_V                            HDR_SHERLOCK_4P_V                            THOU      335.0                    
+0     -88.58                   -104.33                  0     
+0     324.8                    -104.33                  0     
+0     324.8                    140.89                   0     
+0     -88.58                   140.89                   0     
+0     -88.58                   -104.33                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+HDR_2P1R_100MIL                              HDR_2P1R_100MIL                              THOU      350.0                    
+0     -44.94                   -64.0                    0     
+0     143.94                   -64.0                    0     
+0     143.94                   42.44                    0     
+0     -44.94                   42.44                    0     
+0     -44.94                   -64.0                    0     
+.END_ELECTRICAL
+.ELECTRICAL
+0805-R                                       RES-0805                                     THOU      30.0                     
+0     -75.0                    -33.94                   0     
+0     75.0                     -33.94                   0     
+0     75.0                     33.94                    0     
+0     -75.0                    33.94                    0     
+0     -75.0                    -33.94                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+SSOT-6                                       FDC6322C_Q                                   THOU      40.0                     
+0     -78.9                    -60.19                   0     
+0     61.5                     -60.19                   0     
+0     61.5                     69.06                    0     
+0     -78.9                    69.06                    0     
+0     -78.9                    -60.19                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+HDR_SHERLOCK_2P_V                            HDR_SHERLOCK_2P_V                            THOU      335.0                    
+0     -88.58                   -104.33                  0     
+0     167.32                   -104.33                  0     
+0     167.32                   143.86                   0     
+0     -88.58                   143.86                   0     
+0     -88.58                   -104.33                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+SOT-23                                       TVS_MMBZ15VAL                                THOU      43.0                     
+0     -72.99                   -17.87                   0     
+0     66.93                    -17.87                   0     
+0     66.93                    96.24                    0     
+0     -72.99                   96.24                    0     
+0     -72.99                   -17.87                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+PLATED_HOLE__6                               PHOLE-_6                                     THOU      0.0                      
+0     -89.0                    -89.0                    0     
+0     89.0                     -89.0                    0     
+0     89.0                     89.0                     0     
+0     -89.0                    89.0                     0     
+0     -89.0                    -89.0                    0     
+.END_ELECTRICAL

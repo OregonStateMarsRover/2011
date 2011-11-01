@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CameraWidget</class>
+ <widget class="QWidget" name="CameraWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>832</width>
+    <height>592</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="1">
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QToolButton" name="longRangeButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Long Range</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="armButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Arm</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>99</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="2">
+    <spacer name="horizontalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>99</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>85</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="3">
+    <widget class="QSlider" name="zoomSlider">
+     <property name="maximum">
+      <number>3990</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetMaximumSize</enum>
+       </property>
+       <item row="0" column="1">
+        <widget class="QToolButton" name="tiltUpButton">
+         <property name="text">
+          <string>Tilt Up</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../Resources/Icons/Icons.qrc">
+           <normaloff>:/Icons/arrow-up.png</normaloff>:/Icons/arrow-up.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>128</width>
+           <height>128</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QToolButton" name="panLeftButton">
+         <property name="text">
+          <string>Pan Left</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../Resources/Icons/Icons.qrc">
+           <normaloff>:/Icons/arrow-left.png</normaloff>:/Icons/arrow-left.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>128</width>
+           <height>128</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QToolButton" name="tiltDownButton">
+         <property name="text">
+          <string>Tilt Down</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../Resources/Icons/Icons.qrc">
+           <normaloff>:/Icons/arrow-down.png</normaloff>:/Icons/arrow-down.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>128</width>
+           <height>128</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QToolButton" name="panRightButton">
+         <property name="text">
+          <string>Pan Right</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../Resources/Icons/Icons.qrc">
+           <normaloff>:/Icons/arrow-right.png</normaloff>:/Icons/arrow-right.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>128</width>
+           <height>128</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="1">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QSlider" name="tiltSlider">
+         <property name="minimum">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <number>1023</number>
+         </property>
+         <property name="singleStep">
+          <number>35</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="tickPosition">
+          <enum>QSlider::TicksBelow</enum>
+         </property>
+         <property name="tickInterval">
+          <number>1500</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="tiltLabel">
+         <property name="text">
+          <string>+000.00</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QSlider" name="panSlider">
+         <property name="minimum">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <number>1023</number>
+         </property>
+         <property name="singleStep">
+          <number>35</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="tickPosition">
+          <enum>QSlider::TicksBelow</enum>
+         </property>
+         <property name="tickInterval">
+          <number>1500</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="panLabel">
+         <property name="text">
+          <string>+000.00</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="2">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QToolButton" name="zoomInButton">
+         <property name="text">
+          <string>Zoom In</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../Resources/Icons/Icons.qrc">
+           <normaloff>:/Icons/button-add.png</normaloff>:/Icons/button-add.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>128</width>
+           <height>128</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="zoomOutButton">
+         <property name="text">
+          <string>Zoom Out</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../Resources/Icons/Icons.qrc">
+           <normaloff>:/Icons/button-delete.png</normaloff>:/Icons/button-delete.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>128</width>
+           <height>128</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="3">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QToolButton" name="presetButton1">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>18</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Preset 1</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="presetButton2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>18</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Preset 2</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="presetButton3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>18</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Preset 3</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="presetButton4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>18</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Preset 4</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="presetButton5">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>18</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Preset 5</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="2" column="0">
+      <widget class="QCheckBox" name="doublePanTiltRate">
+       <property name="text">
+        <string>Double Pan/Tilt Speed</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="centerPanTiltButton">
+       <property name="text">
+        <string>Center Pan/Tilt</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="resetServoButton">
+       <property name="text">
+        <string>Resend Servo Settings</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QComboBox" name="cameraCommandDropdown">
+       <item>
+        <property name="text">
+         <string>Auto White Balance</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Indoor White Balance</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Outdoor White Balance</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>One Push White Balance</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Auto Tracing White Balance</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Full Auto Exposure</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bright Auto Exposure</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QSlider" name="manualExposureSlider">
+       <property name="minimum">
+        <number>0</number>
+       </property>
+       <property name="maximum">
+        <number>256</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Manual Exposure Brightness</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2" colspan="2">
+      <widget class="QSlider" name="exposureCompenstaion">
+       <property name="minimum">
+        <number>-7</number>
+       </property>
+       <property name="maximum">
+        <number>7</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2" colspan="2">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Exposure Compensation</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QCheckBox" name="ExposureComp">
+       <property name="text">
+        <string>Exposure Comp.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QPushButton" name="sendCameraCommand">
+       <property name="text">
+        <string>Send Command</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../Resources/Icons/Icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

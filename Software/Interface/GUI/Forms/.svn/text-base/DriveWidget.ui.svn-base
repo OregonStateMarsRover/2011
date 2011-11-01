@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DriveWidget</class>
+ <widget class="QWidget" name="DriveWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1214</width>
+    <height>692</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="sendTestMsg">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>171</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Send Test Message</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="testLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>161</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>N/A</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sendNumbersButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>161</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Send Numbers</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="numbersStatusLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>131</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="delayBox">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>110</y>
+     <width>131</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>1000</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="stopButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>91</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Stop</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="countBox">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>150</y>
+     <width>131</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>1000000</number>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="motorStatusTable">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>20</y>
+     <width>431</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="rowCount">
+    <number>10</number>
+   </property>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <column>
+    <property name="text">
+     <string>Motor</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Status</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Failures</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Current</string>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="text">
+     <string>Left Front</string>
+    </property>
+   </item>
+   <item row="1" column="0">
+    <property name="text">
+     <string>Left Mid</string>
+    </property>
+   </item>
+   <item row="2" column="0">
+    <property name="text">
+     <string>Left Rear</string>
+    </property>
+   </item>
+   <item row="3" column="0">
+    <property name="text">
+     <string>Right Rear</string>
+    </property>
+   </item>
+   <item row="4" column="0">
+    <property name="text">
+     <string>Right Mid</string>
+    </property>
+   </item>
+   <item row="5" column="0">
+    <property name="text">
+     <string>Right Front</string>
+    </property>
+   </item>
+   <item row="6" column="0">
+    <property name="text">
+     <string>Left Front A</string>
+    </property>
+   </item>
+   <item row="7" column="0">
+    <property name="text">
+     <string>Left Rear A</string>
+    </property>
+   </item>
+   <item row="8" column="0">
+    <property name="text">
+     <string>Right Rear A</string>
+    </property>
+   </item>
+   <item row="9" column="0">
+    <property name="text">
+     <string>Right Front A</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QCheckBox" name="actuatedBox">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>370</y>
+     <width>92</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Actuated</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="watchdogBox">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>390</y>
+     <width>161</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Watchdog Timeout</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="startTimingButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>240</y>
+     <width>161</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Start Timing</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lagLabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>290</y>
+     <width>62</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Lag</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="timingDelayBox">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>240</y>
+     <width>131</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>1000</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="timingCountBox">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>280</y>
+     <width>131</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>1000000</number>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="passThroughReply">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>360</y>
+     <width>351</width>
+     <height>86</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="enableWatchdogBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>320</y>
+     <width>151</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Enable Watchdog</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sendCmdButton">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>450</y>
+     <width>91</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Send Cmd</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="idBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>450</y>
+     <width>50</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cmdEdit">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>450</y>
+     <width>191</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>73 00 00</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>73 01 FF</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>73 05 DC</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>73 FA 24</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>76</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>77</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>78 13 88</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>78 1F 40</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>78 27 10</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>490</y>
+     <width>141</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Driving Joystick Type:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="joystickProfileBox">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>480</y>
+     <width>241</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Thrustmaster!</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PS2 Controller</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>520</y>
+     <width>141</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Driving Joystick Dev:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="joystickDevName">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>510</y>
+     <width>241</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="rescanJsButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>610</y>
+     <width>91</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Rescan</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="reopenJsButton">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>610</y>
+     <width>91</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Reopen</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="disableMosfetsButton">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>430</y>
+     <width>331</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Disable MOSFETS</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="pwmModeBox">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>490</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PWM Mode</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>550</y>
+     <width>131</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Speed Scale Factor:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>580</y>
+     <width>151</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Direction Scale Factor:</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="speedScaleBox">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>540</y>
+     <width>141</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="value">
+    <double>1.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="dirScaleBox">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>570</y>
+     <width>141</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="value">
+    <double>1.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="useCurveBox">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>640</y>
+     <width>181</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Use Exponential Curve</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>610</y>
+     <width>181</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Primary Direction Divisor:</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="directionDivisorBox">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>600</y>
+     <width>141</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="value">
+    <double>1.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>510</y>
+     <width>91</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Stall Current:</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="stallCurrentBox">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>500</y>
+     <width>141</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="value">
+    <double>5.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>580</y>
+     <width>141</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Arm Joystick Dev:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>550</y>
+     <width>141</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Arm Joystick Type:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="armStickDevName">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>570</y>
+     <width>241</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="armStickTypeBox">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>540</y>
+     <width>241</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>PS2 Controller</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="getCurrentButton">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>380</y>
+     <width>91</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Get Current</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="inStrafeModeBox">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>660</y>
+     <width>141</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>In Strafe Mode</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>519</x>
+     <y>420</y>
+     <width>91</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Max Speed</string>
+   </property>
+   <widget class="QSlider" name="maxSpeedSlider">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>19</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::NoTicks</enum>
+    </property>
+    <property name="tickInterval">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="maxSpeedBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>190</y>
+      <width>81</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <double>100.000000000000000</double>
+    </property>
+    <property name="value">
+     <double>100.000000000000000</double>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>10</y>
+     <width>81</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Data Errors:</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="dataErrorWidget">
+   <property name="geometry">
+    <rect>
+     <x>990</x>
+     <y>30</y>
+     <width>391</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <row>
+    <property name="text">
+     <string>Start Byte Inside Pkt</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Unexpected Start Byte</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Unknown Escaped</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Too Long</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Bad Checksum</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Bad Buffer</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Rcvd Ignore Byte</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>Rover</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Base</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

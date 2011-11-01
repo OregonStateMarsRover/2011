@@ -1,0 +1,171 @@
+.HEADER
+LIBRARY_FILE    3.0    "PADS Layout 9.2"    2011/03/18.23:15:49    1
+.END_HEADER
+.ELECTRICAL
+DNT900C_TH                                   DNT900                                       THOU      700.0                    
+0     -740.0                   -1025.0                  0     
+0     685.0                    -1025.0                  0     
+0     685.0                    1035.0                   0     
+0     -740.0                   1035.0                   0     
+0     -740.0                   -1025.0                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+OS_SPDT                                      SW_SPDT_OS102011                             THOU      314.0                    
+0     -122.05                  -88.58                   0     
+0     279.53                   -88.58                   0     
+0     279.53                   88.58                    0     
+0     -122.05                  88.58                    0     
+0     -122.05                  -88.58                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+SMA-50-TH                                    SMA-TH-50                                    THOU      500.0                    
+0     -150.0                   -150.0                   0     
+0     150.0                    -150.0                   0     
+0     150.0                    150.0                    0     
+0     -150.0                   150.0                    0     
+0     -150.0                   -150.0                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+U_FL                                         U_FL                                         THOU      50.0                     
+0     -78.94                   -19.69                   0     
+0     78.94                    -19.69                   0     
+0     78.94                    127.05                   0     
+0     -78.94                   127.05                   0     
+0     -78.94                   -19.69                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+DDPAK                                        REG104-33                                    THOU      100.0                    
+0     -210.63                  -576.93                  0     
+0     210.63                   -576.93                  0     
+0     210.63                   19.29                    0     
+0     -210.63                  19.29                    0     
+0     -210.63                  -576.93                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+SOIC8                                        SN65HVD32                                    THOU      69.0                     
+0     -145.28                  -103.94                  0     
+0     145.28                   -103.94                  0     
+0     145.28                   111.0                    0     
+0     -145.28                  111.0                    0     
+0     -145.28                  -103.94                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+0603-R                                       RES-0603                                     THOU      10.0                     
+0     -50.0                    -19.29                   0     
+0     50.0                     -19.29                   0     
+0     50.0                     18.9                     0     
+0     -50.0                    18.9                     0     
+0     -50.0                    -19.29                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+0805_POL                                     LED-0805_DIALIGHT_598-8170-107F              THOU      28.0                     
+0     -100.0                   -50.0                    0     
+0     126.3                    -50.0                    0     
+0     126.3                    50.0                     0     
+0     -100.0                   50.0                     0     
+0     -100.0                   -50.0                    0     
+.END_ELECTRICAL
+.ELECTRICAL
+0805_POL                                     LED-0805_DIALIGHT_598-8150-107F              THOU      28.0                     
+0     -100.0                   -50.0                    0     
+0     126.3                    -50.0                    0     
+0     126.3                    50.0                     0     
+0     -100.0                   50.0                     0     
+0     -100.0                   -50.0                    0     
+.END_ELECTRICAL
+.ELECTRICAL
+0603-R                                       CAP-0603                                     THOU      15.0                     
+0     -50.0                    -19.29                   0     
+0     50.0                     -19.29                   0     
+0     50.0                     18.9                     0     
+0     -50.0                    18.9                     0     
+0     -50.0                    -19.29                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+SOT505-2                                     74HCT2G125                                   THOU      48.0                     
+0     -98.43                   -62.99                   0     
+0     98.43                    -62.99                   0     
+0     98.43                    62.99                    0     
+0     -98.43                   62.99                    0     
+0     -98.43                   -62.99                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+1206-R                                       CAP-1206                                     THOU      25.0                     
+0     -97.5                    -35.0                    0     
+0     97.5                     -35.0                    0     
+0     97.5                     35.0                     0     
+0     -97.5                    35.0                     0     
+0     -97.5                    -35.0                    0     
+.END_ELECTRICAL
+.ELECTRICAL
+HDR_SHERLOCK_6P_V                            HDR_SHERLOCK_6P_V                            THOU      335.0                    
+0     -88.58                   -104.33                  0     
+0     482.28                   -104.33                  0     
+0     482.28                   140.89                   0     
+0     -88.58                   140.89                   0     
+0     -88.58                   -104.33                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+HDR_SHERLOCK_3P_V                            HDR_SHERLOCK_3P_V                            THOU      335.0                    
+0     -88.58                   -104.33                  0     
+0     246.06                   -104.33                  0     
+0     246.06                   143.86                   0     
+0     -88.58                   143.86                   0     
+0     -88.58                   -104.33                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+SOT-23                                       TVS_MMBZ15VAL                                THOU      43.0                     
+0     -72.99                   -17.87                   0     
+0     66.93                    -17.87                   0     
+0     66.93                    96.24                    0     
+0     -72.99                   96.24                    0     
+0     -72.99                   -17.87                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+SPST_6MM                                     SW_SPST_SWT6-E5M                             THOU      140.0                    
+0     -30.0                    -212.6                   0     
+0     285.91                   -212.6                   0     
+0     285.91                   31.49                    0     
+0     -30.0                    31.49                    0     
+0     -30.0                    -212.6                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+0603-R                                       TVS_B72500D200A60V7                          THOU      40.0                     
+0     -50.0                    -19.29                   0     
+0     50.0                     -19.29                   0     
+0     50.0                     18.9                     0     
+0     -50.0                    18.9                     0     
+0     -50.0                    -19.29                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+HDR_2P1R_100MIL                              HDR_2P1R_100MIL                              THOU      350.0                    
+0     -44.94                   -64.0                    0     
+0     143.94                   -64.0                    0     
+0     143.94                   42.44                    0     
+0     -44.94                   42.44                    0     
+0     -44.94                   -64.0                    0     
+.END_ELECTRICAL
+.ELECTRICAL
+HDR_MFITJR_2R2P-V                            HDR_MINIFITJR_2R2P-V                         THOU      400.0                    
+0     -244.09                  -93.58                   0     
+0     244.09                   -93.58                   0     
+0     244.09                   317.99                   0     
+0     -244.09                  317.99                   0     
+0     -244.09                  -93.58                   0     
+.END_ELECTRICAL
+.ELECTRICAL
+SMC-R                                        SCH_B540C-13-F                               THOU      99.0                     
+0     -49.21                   -110.23                  0     
+0     327.83                   -110.23                  0     
+0     327.83                   114.17                   0     
+0     -49.21                   114.17                   0     
+0     -49.21                   -110.23                  0     
+.END_ELECTRICAL
+.ELECTRICAL
+PLATED_HOLE__4                               PHOLE-_4                                     THOU      0.0                      
+0     -75.0                    -75.0                    0     
+0     75.0                     -75.0                    0     
+0     75.0                     75.0                     0     
+0     -75.0                    75.0                     0     
+0     -75.0                    -75.0                    0     
+.END_ELECTRICAL

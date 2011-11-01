@@ -1,0 +1,177 @@
+.HEADER
+BOARD_FILE    3.0    "PADS Layout 9.2"    2011/03/18.23:15:49    1
+"c:\users\mobilebase\desktop\padslibrary\electrical\padsdrawings\r-e-04-02(dnt900_interface)\solidworks\r-e-04-02.emn"    THOU
+.END_HEADER
+.BOARD_OUTLINE    UNOWNED
+12.7
+0     0.0                           0.0                           0     
+0     2090.0                        0.0                           0     
+0     2090.0                        2980.0                        0     
+0     0.0                           2980.0                        0     
+0     0.0                           0.0                           0     
+.END_BOARD_OUTLINE
+.DRILLED_HOLES
+70.000000 560.000000 98.578635 PTH    J1    PIN    UNOWNED
+116.000000 140.000000 140.000000 PTH    X1    PIN    UNOWNED
+116.000000 1960.000000 140.000000 PTH    X4    PIN    UNOWNED
+70.000000 418.578635 240.000000 PTH    J1    PIN    UNOWNED
+65.000000 560.000000 240.000000 PTH    J1    PIN    UNOWNED
+70.000000 701.421365 240.000000 PTH    J1    PIN    UNOWNED
+55.118110 1490.000000 290.000000 PTH    J7    PIN    UNOWNED
+55.118110 1706.535433 290.000000 PTH    J7    PIN    UNOWNED
+70.000000 560.000000 381.421365 PTH    J1    PIN    UNOWNED
+59.055118 200.000000 681.842520 PTH    S1    PIN    UNOWNED
+40.000000 490.000000 640.000000 PTH    U1    PIN    UNOWNED
+40.000000 1750.000000 640.000000 PTH    U1    PIN    UNOWNED
+31.496063 200.000000 764.519685 PTH    S1    PIN    UNOWNED
+40.000000 490.000000 740.000000 PTH    U1    PIN    UNOWNED
+40.000000 1750.000000 740.000000 PTH    U1    PIN    UNOWNED
+31.496063 200.000000 843.259843 PTH    S1    PIN    UNOWNED
+40.000000 490.000000 840.000000 PTH    U1    PIN    UNOWNED
+40.000000 1750.000000 840.000000 PTH    U1    PIN    UNOWNED
+59.055118 200.000000 1004.677165 PTH    S1    PIN    UNOWNED
+31.496063 200.000000 922.000000 PTH    S1    PIN    UNOWNED
+40.000000 490.000000 940.000000 PTH    U1    PIN    UNOWNED
+40.000000 1750.000000 940.000000 PTH    U1    PIN    UNOWNED
+40.000000 490.000000 1040.000000 PTH    U1    PIN    UNOWNED
+40.000000 1750.000000 1040.000000 PTH    U1    PIN    UNOWNED
+35.000000 76.094488 1154.000000 PTH    S2    PIN    UNOWNED
+35.000000 332.000000 1154.000000 PTH    S2    PIN    UNOWNED
+40.000000 490.000000 1140.000000 PTH    U1    PIN    UNOWNED
+40.000000 1750.000000 1140.000000 PTH    U1    PIN    UNOWNED
+40.000000 490.000000 1240.000000 PTH    U1    PIN    UNOWNED
+40.000000 1750.000000 1240.000000 PTH    U1    PIN    UNOWNED
+35.000000 76.094488 1331.165354 PTH    S2    PIN    UNOWNED
+35.000000 332.000000 1331.165354 PTH    S2    PIN    UNOWNED
+40.000000 490.000000 1340.000000 PTH    U1    PIN    UNOWNED
+40.000000 1750.000000 1340.000000 PTH    U1    PIN    UNOWNED
+40.000000 490.000000 1440.000000 PTH    U1    PIN    UNOWNED
+40.000000 1750.000000 1440.000000 PTH    U1    PIN    UNOWNED
+40.000000 490.000000 1540.000000 PTH    U1    PIN    UNOWNED
+25.000000 1600.000000 1590.000000 PTH    BOARD    VIA    UNOWNED
+40.000000 1750.000000 1540.000000 PTH    U1    PIN    UNOWNED
+40.000000 490.000000 1640.000000 PTH    U1    PIN    UNOWNED
+40.000000 1750.000000 1640.000000 PTH    U1    PIN    UNOWNED
+40.000000 490.000000 1740.000000 PTH    U1    PIN    UNOWNED
+40.000000 1750.000000 1740.000000 PTH    U1    PIN    UNOWNED
+40.000000 490.000000 1840.000000 PTH    U1    PIN    UNOWNED
+40.000000 1750.000000 1840.000000 PTH    U1    PIN    UNOWNED
+40.000000 490.000000 1940.000000 PTH    U1    PIN    UNOWNED
+40.000000 1750.000000 1940.000000 PTH    U1    PIN    UNOWNED
+40.000000 490.000000 2040.000000 PTH    U1    PIN    UNOWNED
+40.000000 1750.000000 2040.000000 PTH    U1    PIN    UNOWNED
+40.000000 490.000000 2140.000000 PTH    U1    PIN    UNOWNED
+40.000000 1750.000000 2140.000000 PTH    U1    PIN    UNOWNED
+40.000000 490.000000 2240.000000 PTH    U1    PIN    UNOWNED
+40.000000 1750.000000 2240.000000 PTH    U1    PIN    UNOWNED
+40.000000 490.000000 2340.000000 PTH    U1    PIN    UNOWNED
+40.000000 1750.000000 2340.000000 PTH    U1    PIN    UNOWNED
+40.000000 490.000000 2440.000000 PTH    U1    PIN    UNOWNED
+40.000000 1750.000000 2440.000000 PTH    U1    PIN    UNOWNED
+35.000000 270.000000 2540.000000 PTH    J6    PIN    UNOWNED
+40.000000 490.000000 2540.000000 PTH    U1    PIN    UNOWNED
+40.000000 1750.000000 2540.000000 PTH    U1    PIN    UNOWNED
+35.000000 270.000000 2640.000000 PTH    J6    PIN    UNOWNED
+116.000000 140.000000 2840.000000 PTH    X2    PIN    UNOWNED
+31.496063 416.299213 2850.000000 PTH    J3    PIN    UNOWNED
+31.496063 495.039370 2850.000000 PTH    J3    PIN    UNOWNED
+31.496063 573.779528 2850.000000 PTH    J3    PIN    UNOWNED
+31.496063 652.519685 2850.000000 PTH    J3    PIN    UNOWNED
+31.496063 731.259843 2850.000000 PTH    J3    PIN    UNOWNED
+31.496063 810.000000 2850.000000 PTH    J3    PIN    UNOWNED
+31.496063 1092.519685 2850.000000 PTH    J4    PIN    UNOWNED
+31.496063 1171.259843 2850.000000 PTH    J4    PIN    UNOWNED
+31.496063 1250.000000 2850.000000 PTH    J4    PIN    UNOWNED
+31.496063 1532.519685 2850.000000 PTH    J5    PIN    UNOWNED
+31.496063 1611.259843 2850.000000 PTH    J5    PIN    UNOWNED
+31.496063 1690.000000 2850.000000 PTH    J5    PIN    UNOWNED
+116.000000 1960.000000 2840.000000 PTH    X3    PIN    UNOWNED
+.END_DRILLED_HOLES
+.PLACEMENT
+DNT900C_TH                                   DNT900                                       U1                                           
+1120.0                        1590.0                        0.0                           0.0       TOP       PLACED    
+OS_SPDT                                      SW_SPDT_OS102011                             S1                                           
+200.0                         922.0                         0.0                           270.0     TOP       PLACED    
+SMA-50-TH                                    SMA-TH-50                                    J1                                           
+560.0                         240.0                         0.0                           135.0     TOP       PLACED    
+U_FL                                         U_FL                                         J2                                           
+760.0                         440.0                         0.0                           0.0       TOP       PLACED    
+DDPAK                                        REG104-33                                    U2                                           
+1120.0                        100.0                         0.0                           180.0     TOP       PLACED    
+SOIC8                                        SN65HVD32                                    U4                                           
+850.0                         2330.0                        0.0                           90.0      TOP       PLACED    
+0603-R                                       RES-0603                                     R1                                           
+360.0                         890.0                         0.0                           270.0     TOP       PLACED    
+0805_POL                                     LED-0805_DIALIGHT_598-8170-107F              D1                                           
+1930.0                        830.0                         0.0                           270.0     TOP       PLACED    
+0603-R                                       RES-0603                                     R2                                           
+1880.0                        1010.0                        0.0                           270.0     TOP       PLACED    
+0603-R                                       RES-0603                                     R3                                           
+1880.0                        1170.0                        0.0                           90.0      TOP       PLACED    
+0805_POL                                     LED-0805_DIALIGHT_598-8150-107F              D2                                           
+1930.0                        1350.0                        0.0                           90.0      TOP       PLACED    
+0603-R                                       CAP-0603                                     C3                                           
+1150.0                        790.0                         0.0                           180.0     TOP       PLACED    
+SOT505-2                                     74HCT2G125                                   U3                                           
+1920.0                        2000.0                        0.0                           90.0      TOP       PLACED    
+1206-R                                       CAP-1206                                     C2                                           
+1190.0                        870.0                         0.0                           180.0     TOP       PLACED    
+0603-R                                       CAP-0603                                     C4                                           
+620.0                         710.0                         0.0                           90.0      TOP       PLACED    
+0603-R                                       CAP-0603                                     C5                                           
+1090.0                        730.0                         0.0                           0.0       TOP       PLACED    
+0603-R                                       RES-0603                                     R4                                           
+1880.0                        2190.0                        0.0                           270.0     TOP       PLACED    
+0603-R                                       RES-0603                                     R5                                           
+1880.0                        1810.0                        0.0                           90.0      TOP       PLACED    
+1206-R                                       CAP-1206                                     C1                                           
+850.0                         2100.0                        0.0                           180.0     TOP       PLACED    
+0805_POL                                     LED-0805_DIALIGHT_598-8170-107F              D3                                           
+1930.0                        1620.0                        0.0                           270.0     TOP       PLACED    
+0805_POL                                     LED-0805_DIALIGHT_598-8170-107F              D4                                           
+1930.0                        2380.0                        0.0                           90.0      TOP       PLACED    
+0603-R                                       RES-0603                                     R6                                           
+360.0                         710.0                         0.0                           90.0      TOP       PLACED    
+0805_POL                                     LED-0805_DIALIGHT_598-8170-107F              D5                                           
+180.0                         390.0                         0.0                           270.0     TOP       PLACED    
+HDR_SHERLOCK_6P_V                            HDR_SHERLOCK_6P_V                            J3                                           
+810.0                         2850.0                        0.0                           180.0     TOP       PLACED    
+HDR_SHERLOCK_3P_V                            HDR_SHERLOCK_3P_V                            J4                                           
+1250.0                        2850.0                        0.0                           180.0     TOP       PLACED    
+HDR_SHERLOCK_3P_V                            HDR_SHERLOCK_3P_V                            J5                                           
+1690.0                        2850.0                        0.0                           180.0     TOP       PLACED    
+SOT-23                                       TVS_MMBZ15VAL                                D6                                           
+1610.0                        2680.0                        0.0                           0.0       BOTTOM    PLACED    
+SOT-23                                       TVS_MMBZ15VAL                                D7                                           
+1170.0                        2680.0                        0.0                           0.0       BOTTOM    PLACED    
+SPST_6MM                                     SW_SPST_SWT6-E5M                             S2                                           
+332.0                         1154.0                        0.0                           180.0     TOP       PLACED    
+0603-R                                       RES-0603                                     R7                                           
+790.0                         2540.0                        0.0                           0.0       TOP       PLACED    
+0603-R                                       RES-0603                                     R8                                           
+910.0                         2540.0                        0.0                           180.0     TOP       PLACED    
+1206-R                                       CAP-1206                                     C6                                           
+1600.0                        2040.0                        0.0                           270.0     TOP       PLACED    
+0603-R                                       TVS_B72500D200A60V7                          D9                                           
+496.0                         2726.0                        0.0                           270.0     BOTTOM    PLACED    
+0603-R                                       TVS_B72500D200A60V7                          D10                                          
+732.0                         2726.0                        0.0                           270.0     BOTTOM    PLACED    
+0603-R                                       TVS_B72500D200A60V7                          D11                                          
+574.0                         2726.0                        0.0                           270.0     BOTTOM    PLACED    
+0603-R                                       TVS_B72500D200A60V7                          D12                                          
+652.0                         2726.0                        0.0                           270.0     BOTTOM    PLACED    
+HDR_2P1R_100MIL                              HDR_2P1R_100MIL                              J6                                           
+270.0                         2540.0                        0.0                           90.0      TOP       PLACED    
+HDR_MFITJR_2R2P-V                            HDR_MINIFITJR_2R2P-V                         J7                                           
+1490.0                        290.0                         0.0                           270.0     TOP       PLACED    
+SMC-R                                        SCH_B540C-13-F                               D8                                           
+1460.0                        560.0                         0.0                           90.0      TOP       PLACED    
+PLATED_HOLE__4                               PHOLE-_4                                     X1                                           
+140.0                         140.0                         0.0                           0.0       TOP       PLACED    
+PLATED_HOLE__4                               PHOLE-_4                                     X2                                           
+140.0                         2840.0                        0.0                           0.0       TOP       PLACED    
+PLATED_HOLE__4                               PHOLE-_4                                     X3                                           
+1960.0                        2840.0                        0.0                           0.0       TOP       PLACED    
+PLATED_HOLE__4                               PHOLE-_4                                     X4                                           
+1960.0                        140.0                         0.0                           0.0       TOP       PLACED    
+.END_PLACEMENT

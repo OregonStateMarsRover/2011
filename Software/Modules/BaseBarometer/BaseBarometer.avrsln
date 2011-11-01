@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{D1100916-62DA-4D80-A9B4-55A1E7CCEEB3}") = "BaseBarometer", "BaseBarometer\BaseBarometer.avrgccproj", "{03949220-8E18-43E4-B6DE-C126119D51BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03949220-8E18-43E4-B6DE-C126119D51BC}.Debug|AVR.ActiveCfg = Debug|AVR
+		{03949220-8E18-43E4-B6DE-C126119D51BC}.Debug|AVR.Build.0 = Debug|AVR
+		{03949220-8E18-43E4-B6DE-C126119D51BC}.Release|AVR.ActiveCfg = Release|AVR
+		{03949220-8E18-43E4-B6DE-C126119D51BC}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

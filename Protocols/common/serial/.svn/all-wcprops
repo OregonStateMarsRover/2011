@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/marsrover2011/!svn/ver/103/Protocols/common/serial
+END
+SerialProtocol.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/marsrover2011/!svn/ver/103/Protocols/common/serial/SerialProtocol.c
+END
+SerialProtocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/marsrover2011/!svn/ver/103/Protocols/common/serial/SerialProtocol.h
+END

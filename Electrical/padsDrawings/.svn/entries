@@ -1,0 +1,107 @@
+10
+
+dir
+632
+https://code.oregonstate.edu/svn/marsrover2011/Electrical/padsDrawings
+https://code.oregonstate.edu/svn/marsrover2011
+
+
+
+2011-05-29T16:45:19.718886Z
+618
+hymanc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8fdccc8f-2872-4cc0-97d2-7131bebc01eb
+
+T-E-01-01(Test_Fixture_Control_Board)
+dir
+
+R-E-05-01(Main_Board)
+dir
+
+DRAWING_GUIDELINES_1_0.txt
+file
+
+
+
+
+2011-10-02T21:13:28.926235Z
+a9411314ea8deff1d38d94064b49ed9b
+2010-10-20T23:48:54.537044Z
+5
+slonet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1672
+
+R-E-04-02(DNT900_Interface)
+dir
+
+R-E-04-03(50OHM_Attenuator)
+dir
+
+T-E-01-02 (ATMega Serial Module)
+dir
+
+R-E-06-02(Tripod_Sensor_Board)
+dir
+
+R-E-04-01(2.4GHz_Amplifier)
+dir
+
+Example
+dir
+
+R-E-03-03(Power_Supply)
+dir
+
+R-E-06-01(Tripod_Control_Board)
+dir
+
+Unassigned
+dir
+
+R-E-04-08 (USB_To_RS485_Module)
+dir
+
+R-E-03-06 (LED Board)
+dir
+
+R-E-04-04 (Serial Adapter)
+dir
+
+R-E-05-02(Analog Interface)
+dir
+

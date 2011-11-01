@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/marsrover2011/!svn/ver/631/Software/Modules/Tripod/TripodBoard/TripodBoard
+END
+RingBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/RingBuffer.h
+END
+USART.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/marsrover2011/!svn/ver/602/Software/Modules/Tripod/TripodBoard/TripodBoard/USART.c
+END
+i2cmaster.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/i2cmaster.h
+END
+SerialProtocol.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/SerialProtocol.c
+END
+Accelerometer_8b.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/marsrover2011/!svn/ver/617/Software/Modules/Tripod/TripodBoard/TripodBoard/Accelerometer_8b.c
+END
+Timers.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/marsrover2011/!svn/ver/550/Software/Modules/Tripod/TripodBoard/TripodBoard/Timers.c
+END
+USART.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/marsrover2011/!svn/ver/628/Software/Modules/Tripod/TripodBoard/TripodBoard/USART.h
+END
+ProtocolDefines.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/marsrover2011/!svn/ver/631/Software/Modules/Tripod/TripodBoard/TripodBoard/ProtocolDefines.h
+END
+SerialProtocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/SerialProtocol.h
+END
+Accelerometer_8b.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/marsrover2011/!svn/ver/617/Software/Modules/Tripod/TripodBoard/TripodBoard/Accelerometer_8b.h
+END
+Timers.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/marsrover2011/!svn/ver/550/Software/Modules/Tripod/TripodBoard/TripodBoard/Timers.h
+END
+Accelerometer.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/marsrover2011/!svn/ver/628/Software/Modules/Tripod/TripodBoard/TripodBoard/Accelerometer.c
+END
+PanTilt.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/marsrover2011/!svn/ver/602/Software/Modules/Tripod/TripodBoard/TripodBoard/PanTilt.c
+END
+CommInterface.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/marsrover2011/!svn/ver/628/Software/Modules/Tripod/TripodBoard/TripodBoard/CommInterface.c
+END
+TWI_Master.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/TWI_Master.c
+END
+SerialLocker.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/SerialLocker.c
+END
+Accelerometer.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/marsrover2011/!svn/ver/628/Software/Modules/Tripod/TripodBoard/TripodBoard/Accelerometer.h
+END
+twimaster.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/twimaster.c
+END
+PanTilt.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/marsrover2011/!svn/ver/628/Software/Modules/Tripod/TripodBoard/TripodBoard/PanTilt.h
+END
+barometer.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/marsrover2011/!svn/ver/628/Software/Modules/Tripod/TripodBoard/TripodBoard/barometer.c
+END
+CommInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/marsrover2011/!svn/ver/628/Software/Modules/Tripod/TripodBoard/TripodBoard/CommInterface.h
+END
+TWI_Master.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/TWI_Master.h
+END
+SerialLocker.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/SerialLocker.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/marsrover2011/!svn/ver/631/Software/Modules/Tripod/TripodBoard/TripodBoard/main.c
+END
+barometer.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/marsrover2011/!svn/ver/628/Software/Modules/Tripod/TripodBoard/TripodBoard/barometer.h
+END
+TripodBoard.avrgccproj
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/marsrover2011/!svn/ver/573/Software/Modules/Tripod/TripodBoard/TripodBoard/TripodBoard.avrgccproj
+END
+Camera.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/marsrover2011/!svn/ver/628/Software/Modules/Tripod/TripodBoard/TripodBoard/Camera.c
+END
+RingBuffer.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/marsrover2011/!svn/ver/545/Software/Modules/Tripod/TripodBoard/TripodBoard/RingBuffer.c
+END
+Camera.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/marsrover2011/!svn/ver/628/Software/Modules/Tripod/TripodBoard/TripodBoard/Camera.h
+END

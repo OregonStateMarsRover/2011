@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/marsrover2011/!svn/ver/632/Software/Interface/GUI
+END
+ScienceSite.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/marsrover2011/!svn/ver/304/Software/Interface/GUI/ScienceSite.cpp
+END
+CameraWidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/marsrover2011/!svn/ver/632/Software/Interface/GUI/CameraWidget.h
+END
+IntersectionLineItem.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/marsrover2011/!svn/ver/400/Software/Interface/GUI/IntersectionLineItem.h
+END
+NavigationPlace.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/marsrover2011/!svn/ver/411/Software/Interface/GUI/NavigationPlace.cpp
+END
+TriangulationSidebar.ui
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/marsrover2011/!svn/ver/600/Software/Interface/GUI/TriangulationSidebar.ui
+END
+TriangulationInputLine.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/marsrover2011/!svn/ver/360/Software/Interface/GUI/TriangulationInputLine.cpp
+END
+NavigationWidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/marsrover2011/!svn/ver/594/Software/Interface/GUI/NavigationWidget.h
+END
+VideoWidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/marsrover2011/!svn/ver/106/Software/Interface/GUI/VideoWidget.cpp
+END
+ArmGLWidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/marsrover2011/!svn/ver/593/Software/Interface/GUI/ArmGLWidget.h
+END
+NavigationView.config
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/marsrover2011/!svn/ver/632/Software/Interface/GUI/NavigationView.config
+END
+NavigationRover.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/marsrover2011/!svn/ver/361/Software/Interface/GUI/NavigationRover.cpp
+END
+DriveWidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/marsrover2011/!svn/ver/598/Software/Interface/GUI/DriveWidget.cpp
+END
+TriangulationSidebar.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/marsrover2011/!svn/ver/600/Software/Interface/GUI/TriangulationSidebar.h
+END
+MainWindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/marsrover2011/!svn/ver/304/Software/Interface/GUI/MainWindow.h
+END
+ScienceWidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/marsrover2011/!svn/ver/304/Software/Interface/GUI/ScienceWidget.h
+END
+NavigationPlaceDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/marsrover2011/!svn/ver/578/Software/Interface/GUI/NavigationPlaceDialog.cpp
+END
+TriangulationWidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/marsrover2011/!svn/ver/594/Software/Interface/GUI/TriangulationWidget.cpp
+END
+ArmWidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/marsrover2011/!svn/ver/620/Software/Interface/GUI/ArmWidget.h
+END
+StatusWidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/marsrover2011/!svn/ver/619/Software/Interface/GUI/StatusWidget.h
+END
+CameraWidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/marsrover2011/!svn/ver/632/Software/Interface/GUI/CameraWidget.cpp
+END
+IntersectionLineItem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/marsrover2011/!svn/ver/400/Software/Interface/GUI/IntersectionLineItem.cpp
+END
+NavigationView.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/marsrover2011/!svn/ver/594/Software/Interface/GUI/NavigationView.h
+END
+ScienceSite.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/marsrover2011/!svn/ver/304/Software/Interface/GUI/ScienceSite.h
+END
+NavigationWidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/marsrover2011/!svn/ver/594/Software/Interface/GUI/NavigationWidget.cpp
+END
+ArmGLWidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/marsrover2011/!svn/ver/624/Software/Interface/GUI/ArmGLWidget.cpp
+END
+NavigationPlace.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/marsrover2011/!svn/ver/400/Software/Interface/GUI/NavigationPlace.h
+END
+TriangulationSidebar.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/marsrover2011/!svn/ver/600/Software/Interface/GUI/TriangulationSidebar.cpp
+END
+MainWindow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/marsrover2011/!svn/ver/342/Software/Interface/GUI/MainWindow.cpp
+END
+ScienceWidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/marsrover2011/!svn/ver/304/Software/Interface/GUI/ScienceWidget.cpp
+END
+TriangulationInputLine.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/marsrover2011/!svn/ver/320/Software/Interface/GUI/TriangulationInputLine.h
+END
+VideoWidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/marsrover2011/!svn/ver/106/Software/Interface/GUI/VideoWidget.h
+END
+NavigationRover.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/marsrover2011/!svn/ver/361/Software/Interface/GUI/NavigationRover.h
+END
+DriveWidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/marsrover2011/!svn/ver/598/Software/Interface/GUI/DriveWidget.h
+END
+ArmWidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/marsrover2011/!svn/ver/620/Software/Interface/GUI/ArmWidget.cpp
+END
+StatusWidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/marsrover2011/!svn/ver/620/Software/Interface/GUI/StatusWidget.cpp
+END
+NavigationPlaceDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/marsrover2011/!svn/ver/578/Software/Interface/GUI/NavigationPlaceDialog.h
+END
+TriangulationWidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/marsrover2011/!svn/ver/360/Software/Interface/GUI/TriangulationWidget.h
+END
+NavigationView.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/marsrover2011/!svn/ver/594/Software/Interface/GUI/NavigationView.cpp
+END

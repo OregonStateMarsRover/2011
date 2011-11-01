@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/marsrover2011/!svn/ver/462/Software/Interface/UIMockups/VideoFeed
+END
+VideoForm.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/marsrover2011/!svn/ver/462/Software/Interface/UIMockups/VideoFeed/VideoForm.h
+END
+RoverStatusWidget.ui
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/marsrover2011/!svn/ver/377/Software/Interface/UIMockups/VideoFeed/RoverStatusWidget.ui
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/marsrover2011/!svn/ver/462/Software/Interface/UIMockups/VideoFeed/main.cpp
+END
+RoverStatusWidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/marsrover2011/!svn/ver/377/Software/Interface/UIMockups/VideoFeed/RoverStatusWidget.cpp
+END
+VideoFeed.pro.user
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/marsrover2011/!svn/ver/372/Software/Interface/UIMockups/VideoFeed/VideoFeed.pro.user
+END
+VideoForm.ui
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/marsrover2011/!svn/ver/462/Software/Interface/UIMockups/VideoFeed/VideoForm.ui
+END
+VideoFeed.pro
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/marsrover2011/!svn/ver/462/Software/Interface/UIMockups/VideoFeed/VideoFeed.pro
+END
+RoverStatusWidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/marsrover2011/!svn/ver/373/Software/Interface/UIMockups/VideoFeed/RoverStatusWidget.h
+END
+VideoFeed.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/marsrover2011/!svn/ver/372/Software/Interface/UIMockups/VideoFeed/VideoFeed.cpp
+END
+VideoForm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/marsrover2011/!svn/ver/462/Software/Interface/UIMockups/VideoFeed/VideoForm.cpp
+END
+qled.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/marsrover2011/!svn/ver/372/Software/Interface/UIMockups/VideoFeed/qled.h
+END
