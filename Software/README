@@ -1,0 +1,7 @@
+AnalogController - Motor controller and port set-up
+* TEST Board Firmware - set-up to test chips
+Common - Comm, LinkedList, Timer library set-up, set-up for ATMEGA, X86, XMEGA SPI/TWI and Buffers
+Interface - Base Station interface code
+Modules - code for boards not on the main rover board
+Presentations - For C++ code ** IMPORTANT **
+Rover - Code to be placed on Rover
