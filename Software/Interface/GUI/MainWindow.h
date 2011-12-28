@@ -10,13 +10,32 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QMenu>
+#include <QLabel>
+#include <QAction>
+#include<QLineEdit>
+
 
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget * parent = 0);
+    MainWindow();
+    void createMyMenu();
+
+private:
+    QLabel* label1;
+    QMenu *bar;
+    QMenu *bar1;
+    QLineEdit *line;
+    QAction* showAct;
+    QAction* hideAct;
+    QAction* exitAct;
+    QAction* copy;
+    QAction* cut;
+    QAction* paste;
+
 };
 
 #endif // MAINWINDOW_H

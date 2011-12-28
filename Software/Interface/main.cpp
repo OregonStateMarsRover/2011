@@ -20,8 +20,8 @@ int main(int argc, char *argv[])
     TactileInterface::setDrivingJoystick(); // load with default settings
     TactileInterface::setArmJoystick();
 
-    MainWindow w;
-    w.show();
+    MainWindow *w = new MainWindow();
+    w->showMaximized();
 //	VideoWidget v;
 //	v.show();
 
