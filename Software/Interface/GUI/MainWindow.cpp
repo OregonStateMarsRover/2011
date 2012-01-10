@@ -37,51 +37,40 @@ MainWindow::MainWindow()
         */
     QWidget *w = new QWidget(this);
     LeftMainWidget *LeftMain = new LeftMainWidget(w);
-    VideoViewWidget *VideoView = new VideoViewWidget(w);
     RightMainWidget *RightMain = new RightMainWidget(w);
+    VideoViewWidget *VideoView = new VideoViewWidget(w);
+
     QGridLayout *layout = new QGridLayout;
-         layout->addWidget(LeftMain,0,0);
-         layout->addWidget(VideoView,0,1);
-         layout->addWidget(RightMain,0,2);
+    bool single = false;
+    if(single){
+        layout->addWidget(LeftMain,0,0);
+        layout->addWidget(VideoView,0,1);
+        layout->addWidget(RightMain,0,2);
+    }else{
+        layout->addWidget(LeftMain,0,0);
+        layout->addWidget(RightMain,0,1);
+        QMainWindow *videoWindow = new QMainWindow();
+        videoWindow->setCentralWidget(VideoView);
+        videoWindow->show();
+    }
     w->setLayout(layout);
     this->setCentralWidget(w);
-}
-
-void MainWindow::createMyMenu()
-{
-
-    //label1= new QLabel();
-            line=new QLineEdit("Hello");
-            setCentralWidget(line);
-            //setCentralWidget(label1);
-            showAct = new QAction(("&Show"), this);
-            connect(showAct, SIGNAL(triggered()),line, SLOT(show()));
-            hideAct = new QAction(("&Hide"), this);
-            connect(hideAct, SIGNAL(triggered()),line, SLOT(hide()));
-            exitAct = new QAction(("&Exit"), this);
-            connect(exitAct, SIGNAL(triggered()),qApp, SLOT(quit()));
-            cut=new QAction(("&Cut"),this);
-            connect(cut,SIGNAL(triggered()),line,SLOT(cut()));
-            copy=new QAction(("C&opy"),this);
-            connect(copy,SIGNAL(triggered()),line,SLOT(copy()));
-            paste=new QAction(("&Paste"),this);
-            connect(paste,SIGNAL(triggered()),line,SLOT(paste()));
-            QMenuBar *mainBar = this->menuBar();
-            //bar = mainBar->addMenu("&File");
-            bar = menuBar()->addMenu(tr("&File"));
-            bar1= mainBar->addMenu("&Edit");
 
 
-            bar->setTearOffEnabled(1);
-            bar->addAction(showAct);
-            bar->addSeparator();
-            bar->setSeparatorsCollapsible(true);
-            bar->addAction(hideAct);
-            bar->addSeparator();
-            bar->addAction(exitAct);
-            bar1->addAction(cut);
-            bar1->addAction(copy);
-            bar1->addSeparator();
-            bar1->addAction(paste);
-
+    QMainWindow *old = new QMainWindow();
+    QTabWidget *tabWidget = new QTabWidget(old);
+    DriveWidget *driveWidget = new DriveWidget(old);
+    tabWidget->addTab(driveWidget, "Drive");
+    ArmWidget *armWidget = new ArmWidget(old);
+    tabWidget->addTab(armWidget, "Arm");
+    CameraWidget *camWidget = new CameraWidget(old);
+    tabWidget->addTab(camWidget, "Cameras");
+    StatusWidget *statWidget = new StatusWidget(old);
+    tabWidget->addTab(statWidget, "Status");
+    NavigationWidget *navWidget = new NavigationWidget(old);
+    tabWidget->addTab(navWidget, "Navigation");
+    ScienceWidget *sciWidget = new ScienceWidget(old);
+    tabWidget->addTab(sciWidget, "Science");
+    old->setCentralWidget(tabWidget);
+    old->show();
 }

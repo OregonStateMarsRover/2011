@@ -105,6 +105,9 @@ void DriveWidget::gotRoverDataErrorCount(QByteArray count) {
 void DriveWidget::gotMotorStatusUpdate(QByteArray msg) {
     int i;
     for (i=1;i<11;i++) {
+        //***Changed here***
+        if(QString::number(msg.at(i)).compare(motorStatusTable->itemAt(i-1,1)->text()) == 0)
+            emit statusChanged(i, QString::number(msg.at(i)));
         motorStatusTable->setItem(i-1,1,new QTableWidgetItem(QString::number(msg.at(i))));
     }
 

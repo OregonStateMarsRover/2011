@@ -59,6 +59,8 @@ private slots:
     void gotMotorCurrentData(QByteArray msg);
     void gotRoverDataErrorCount(QByteArray count);
 
+    void on_getCurrentButton_clicked();
+
 private:
     QString niceProfileNameToActual(QString profile);
     int counter;
@@ -69,6 +71,8 @@ private:
     QTimer * timingTimer;
     QTimer * dataErrorTimer;
     QTime * elapsedTime;
+signals:
+    void statusChanged(int index, QString status);
 };
 
 #endif // DRIVEWIDGET_H
