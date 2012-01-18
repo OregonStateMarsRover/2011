@@ -13,50 +13,55 @@
 #include "LeftMainWidget.h"
 #include "VideoViewWidget.h"
 #include "RightMainWidget.h"
+#include "TaskStarter.h"
+
+#include <QMenuBar>
 
 #include "MainWindow.h"
 
 
 MainWindow::MainWindow()
 {
-        /*
-        QTabWidget *tabWidget = new QTabWidget(this);
-        DriveWidget *driveWidget = new DriveWidget(this);
-	tabWidget->addTab(driveWidget, "Drive");
-	ArmWidget *armWidget = new ArmWidget(this);
-	tabWidget->addTab(armWidget, "Arm");
-	CameraWidget *camWidget = new CameraWidget(this);
-	tabWidget->addTab(camWidget, "Cameras");
-	StatusWidget *statWidget = new StatusWidget(this);
-	tabWidget->addTab(statWidget, "Status");
-	NavigationWidget *navWidget = new NavigationWidget(this);
-	tabWidget->addTab(navWidget, "Navigation");
-	ScienceWidget *sciWidget = new ScienceWidget(this);
-	tabWidget->addTab(sciWidget, "Science");
-        setCentralWidget(tabWidget);
-        */
-    QWidget *w = new QWidget(this);
-    LeftMainWidget *LeftMain = new LeftMainWidget(w);
-    RightMainWidget *RightMain = new RightMainWidget(w);
-    VideoViewWidget *VideoView = new VideoViewWidget(w);
 
+    QWidget *w = new QWidget(this);
+    Task = new TaskStarter(w);
     QGridLayout *layout = new QGridLayout;
+    layout->addWidget(Task,0,0);
+/*    LeftMainWidget *LeftMain = new LeftMainWidget(w);
+    RightMainWidget *RightMain = new RightMainWidget(w);
+    //VideoViewWidget *VideoView = new VideoViewWidget(w);
+
     bool single = false;
     if(single){
         layout->addWidget(LeftMain,0,0);
-        layout->addWidget(VideoView,0,1);
+        //layout->addWidget(VideoView,0,1);
         layout->addWidget(RightMain,0,2);
     }else{
         layout->addWidget(LeftMain,0,0);
         layout->addWidget(RightMain,0,1);
-        QMainWindow *videoWindow = new QMainWindow();
-        videoWindow->setCentralWidget(VideoView);
-        videoWindow->show();
-    }
+    }*/
     w->setLayout(layout);
     this->setCentralWidget(w);
 
+    showAct = new QAction(tr("&Show"), this);
+    hideAct = new QAction(tr("&Hide"), this);
+    exitAct = new QAction(tr("&Exit"), this);
 
+
+    fileMenu = menuBar()->addMenu(tr("&File"));
+         fileMenu->addAction(showAct);
+         fileMenu->addAction(hideAct);
+         fileMenu->addAction(exitAct);
+         fileMenu->addSeparator();
+
+
+    connect(this,SIGNAL(moved(int,int)),Task,SLOT(setNewPos(int,int)));
+
+    QMainWindow *old = new QMainWindow();
+    NavigationWidget *navWidget = new NavigationWidget(old);
+    old->setCentralWidget(navWidget);
+    old->show();
+/*
     QMainWindow *old = new QMainWindow();
     QTabWidget *tabWidget = new QTabWidget(old);
     DriveWidget *driveWidget = new DriveWidget(old);
@@ -73,4 +78,9 @@ MainWindow::MainWindow()
     tabWidget->addTab(sciWidget, "Science");
     old->setCentralWidget(tabWidget);
     old->show();
+*/
+}
+
+void MainWindow::moveEvent ( QMoveEvent * event ){
+    emit moved(this->x(),this->y());
 }

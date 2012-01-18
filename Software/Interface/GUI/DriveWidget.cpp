@@ -106,8 +106,8 @@ void DriveWidget::gotMotorStatusUpdate(QByteArray msg) {
     int i;
     for (i=1;i<11;i++) {
         //***Changed here***
-        if(QString::number(msg.at(i)).compare(motorStatusTable->itemAt(i-1,1)->text()) == 0)
-            emit statusChanged(i, QString::number(msg.at(i)));
+        //if(QString::number(msg.at(i)).compare(motorStatusTable->itemAt(i-1,1)->text()) == 0)
+        //    emit statusChanged(i, QString::number(msg.at(i)));
         motorStatusTable->setItem(i-1,1,new QTableWidgetItem(QString::number(msg.at(i))));
     }
 
@@ -301,4 +301,9 @@ void DriveWidget::on_maxSpeedBox_valueChanged(double val)
 void DriveWidget::on_maxSpeedSlider_valueChanged(int value)
 {
     maxSpeedBox->setValue(value);
+}
+
+void DriveWidget::on_getCurrentButton_clicked()
+{
+
 }

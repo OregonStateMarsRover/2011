@@ -1,8 +1,8 @@
 /********************************************************************************
 ** Form generated from reading UI file 'DriveWidget.ui'
 **
-** Created: Sun Oct 9 13:50:34 2011
-**      by: Qt User Interface Compiler version 4.7.2
+** Created: Thu Jan 12 09:42:20 2012
+**      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/

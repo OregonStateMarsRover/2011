@@ -14,6 +14,7 @@
 #include <QLabel>
 #include <QAction>
 #include<QLineEdit>
+#include "TaskStarter.h"
 
 
 class MainWindow : public QMainWindow
@@ -24,9 +25,13 @@ public:
     MainWindow();
     void createMyMenu();
 
+protected:
+  virtual void moveEvent ( QMoveEvent * event);
+
 private:
+    TaskStarter *Task;
     QLabel* label1;
-    QMenu *bar;
+    QMenu *fileMenu;
     QMenu *bar1;
     QLineEdit *line;
     QAction* showAct;
@@ -35,6 +40,10 @@ private:
     QAction* copy;
     QAction* cut;
     QAction* paste;
+
+signals:
+  void moved(int x,int y);
+
 
 };
 

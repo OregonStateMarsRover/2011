@@ -21,7 +21,8 @@ int main(int argc, char *argv[])
     TactileInterface::setArmJoystick();
 
     MainWindow *w = new MainWindow();
-    w->showMaximized();
+
+    w->show();
 //	VideoWidget v;
 //	v.show();
 

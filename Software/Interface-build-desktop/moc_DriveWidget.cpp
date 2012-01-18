@@ -1,8 +1,8 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'DriveWidget.h'
 **
-** Created: Sun Oct 9 13:53:03 2011
-**      by: The Qt Meta Object Compiler version 62 (Qt 4.7.2)
+** Created: Thu Jan 12 09:42:48 2012
+**      by: The Qt Meta Object Compiler version 62 (Qt 4.7.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -11,7 +11,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'DriveWidget.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 62
-#error "This file was generated using the moc from 4.7.2. It"
+#error "This file was generated using the moc from 4.7.0. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -23,50 +23,55 @@ static const uint qt_meta_data_DriveWidget[] = {
        5,       // revision
        0,       // classname
        0,    0, // classinfo
-      30,   14, // methods
+      32,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       0,       // signalCount
+       1,       // signalCount
+
+ // signals: signature, parameters, type, tag, flags
+      26,   13,   12,   12, 0x05,
 
  // slots: signature, parameters, type, tag, flags
-      19,   13,   12,   12, 0x08,
-      55,   12,   12,   12, 0x08,
-      91,   12,   12,   12, 0x08,
-     120,   12,   12,   12, 0x08,
+      59,   53,   12,   12, 0x08,
+      95,   12,   12,   12, 0x08,
+     131,   12,   12,   12, 0x08,
      160,   12,   12,   12, 0x08,
-     204,   12,   12,   12, 0x08,
-     229,   12,   12,   12, 0x08,
-     265,   12,   12,   12, 0x08,
-     303,   12,   12,   12, 0x08,
-     327,   12,   12,   12, 0x08,
-     375,   12,   12,   12, 0x08,
-     403,   12,   12,   12, 0x08,
-     435,  431,   12,   12, 0x08,
-     486,   12,   12,   12, 0x08,
-     517,   12,   12,   12, 0x08,
-     544,   12,   12,   12, 0x08,
-     575,   12,   12,   12, 0x08,
-     599,   12,   12,   12, 0x08,
-     630,   12,   12,   12, 0x08,
-     655,  431,   12,   12, 0x08,
-     686,  431,   12,   12, 0x08,
-     730,  719,   12,   12, 0x08,
-     764,  755,   12,   12, 0x08,
-     788,   12,   12,   12, 0x08,
-     812,   12,   12,   12, 0x08,
-     831,   12,   12,   12, 0x08,
-     847,  431,   12,   12, 0x08,
-     881,  431,   12,   12, 0x08,
-     908,  431,   12,   12, 0x08,
-     946,  940,   12,   12, 0x08,
+     200,   12,   12,   12, 0x08,
+     244,   12,   12,   12, 0x08,
+     269,   12,   12,   12, 0x08,
+     305,   12,   12,   12, 0x08,
+     343,   12,   12,   12, 0x08,
+     367,   12,   12,   12, 0x08,
+     415,   12,   12,   12, 0x08,
+     443,   12,   12,   12, 0x08,
+     475,  471,   12,   12, 0x08,
+     526,   12,   12,   12, 0x08,
+     557,   12,   12,   12, 0x08,
+     584,   12,   12,   12, 0x08,
+     615,   12,   12,   12, 0x08,
+     639,   12,   12,   12, 0x08,
+     670,   12,   12,   12, 0x08,
+     695,  471,   12,   12, 0x08,
+     726,  471,   12,   12, 0x08,
+     770,  759,   12,   12, 0x08,
+     804,  795,   12,   12, 0x08,
+     828,   12,   12,   12, 0x08,
+     852,   12,   12,   12, 0x08,
+     871,   12,   12,   12, 0x08,
+     887,  471,   12,   12, 0x08,
+     921,  471,   12,   12, 0x08,
+     948,  471,   12,   12, 0x08,
+     986,  980,   12,   12, 0x08,
+    1021,   12,   12,   12, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_DriveWidget[] = {
-    "DriveWidget\0\0value\0"
+    "DriveWidget\0\0index,status\0"
+    "statusChanged(int,QString)\0value\0"
     "on_maxSpeedSlider_valueChanged(int)\0"
     "on_maxSpeedBox_valueChanged(double)\0"
     "on_inStrafeModeBox_clicked()\0"
@@ -95,6 +100,7 @@ static const char qt_meta_stringdata_DriveWidget[] = {
     "gotTimeoutData(QByteArray)\0"
     "gotMotorCurrentData(QByteArray)\0count\0"
     "gotRoverDataErrorCount(QByteArray)\0"
+    "on_getCurrentButton_clicked()\0"
 };
 
 const QMetaObject DriveWidget::staticMetaObject = {
@@ -126,40 +132,49 @@ int DriveWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: on_maxSpeedSlider_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 1: on_maxSpeedBox_valueChanged((*reinterpret_cast< double(*)>(_a[1]))); break;
-        case 2: on_inStrafeModeBox_clicked(); break;
-        case 3: on_stallCurrentBox_valueChanged((*reinterpret_cast< double(*)>(_a[1]))); break;
-        case 4: on_directionDivisorBox_valueChanged((*reinterpret_cast< double(*)>(_a[1]))); break;
-        case 5: on_useCurveBox_clicked(); break;
-        case 6: on_dirScaleBox_valueChanged((*reinterpret_cast< double(*)>(_a[1]))); break;
-        case 7: on_speedScaleBox_valueChanged((*reinterpret_cast< double(*)>(_a[1]))); break;
-        case 8: on_pwmModeBox_clicked(); break;
-        case 9: on_joystickDevName_currentIndexChanged((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 10: on_reopenJsButton_clicked(); break;
-        case 11: on_rescanJsButton_clicked(); break;
-        case 12: on_joystickProfileBox_currentIndexChanged((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 13: on_enableWatchdogBox_clicked(); break;
-        case 14: on_sendCmdButton_clicked(); break;
-        case 15: on_startTimingButton_clicked(); break;
-        case 16: on_stopButton_clicked(); break;
-        case 17: on_sendNumbersButton_clicked(); break;
-        case 18: on_sendTestMsg_clicked(); break;
-        case 19: gotWirelessMessage((*reinterpret_cast< QByteArray(*)>(_a[1]))); break;
-        case 20: gotMotorStatusUpdate((*reinterpret_cast< QByteArray(*)>(_a[1]))); break;
-        case 21: gotWatchdogTimeout((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 22: strafeModeChanged((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 23: slowModeButtonToggled(); break;
-        case 24: sendMessageTimer(); break;
-        case 25: timingTimeout(); break;
-        case 26: gotPassthroughMessage((*reinterpret_cast< QByteArray(*)>(_a[1]))); break;
-        case 27: gotTimeoutData((*reinterpret_cast< QByteArray(*)>(_a[1]))); break;
-        case 28: gotMotorCurrentData((*reinterpret_cast< QByteArray(*)>(_a[1]))); break;
-        case 29: gotRoverDataErrorCount((*reinterpret_cast< QByteArray(*)>(_a[1]))); break;
+        case 0: statusChanged((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
+        case 1: on_maxSpeedSlider_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 2: on_maxSpeedBox_valueChanged((*reinterpret_cast< double(*)>(_a[1]))); break;
+        case 3: on_inStrafeModeBox_clicked(); break;
+        case 4: on_stallCurrentBox_valueChanged((*reinterpret_cast< double(*)>(_a[1]))); break;
+        case 5: on_directionDivisorBox_valueChanged((*reinterpret_cast< double(*)>(_a[1]))); break;
+        case 6: on_useCurveBox_clicked(); break;
+        case 7: on_dirScaleBox_valueChanged((*reinterpret_cast< double(*)>(_a[1]))); break;
+        case 8: on_speedScaleBox_valueChanged((*reinterpret_cast< double(*)>(_a[1]))); break;
+        case 9: on_pwmModeBox_clicked(); break;
+        case 10: on_joystickDevName_currentIndexChanged((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 11: on_reopenJsButton_clicked(); break;
+        case 12: on_rescanJsButton_clicked(); break;
+        case 13: on_joystickProfileBox_currentIndexChanged((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 14: on_enableWatchdogBox_clicked(); break;
+        case 15: on_sendCmdButton_clicked(); break;
+        case 16: on_startTimingButton_clicked(); break;
+        case 17: on_stopButton_clicked(); break;
+        case 18: on_sendNumbersButton_clicked(); break;
+        case 19: on_sendTestMsg_clicked(); break;
+        case 20: gotWirelessMessage((*reinterpret_cast< QByteArray(*)>(_a[1]))); break;
+        case 21: gotMotorStatusUpdate((*reinterpret_cast< QByteArray(*)>(_a[1]))); break;
+        case 22: gotWatchdogTimeout((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 23: strafeModeChanged((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 24: slowModeButtonToggled(); break;
+        case 25: sendMessageTimer(); break;
+        case 26: timingTimeout(); break;
+        case 27: gotPassthroughMessage((*reinterpret_cast< QByteArray(*)>(_a[1]))); break;
+        case 28: gotTimeoutData((*reinterpret_cast< QByteArray(*)>(_a[1]))); break;
+        case 29: gotMotorCurrentData((*reinterpret_cast< QByteArray(*)>(_a[1]))); break;
+        case 30: gotRoverDataErrorCount((*reinterpret_cast< QByteArray(*)>(_a[1]))); break;
+        case 31: on_getCurrentButton_clicked(); break;
         default: ;
         }
-        _id -= 30;
+        _id -= 32;
     }
     return _id;
+}
+
+// SIGNAL 0
+void DriveWidget::statusChanged(int _t1, QString _t2)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_END_MOC_NAMESPACE

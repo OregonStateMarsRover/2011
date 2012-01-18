@@ -44,7 +44,8 @@ SOURCES += main.cpp \
     Common/AltitudeCalculator.cpp \
     GUI/LeftMainWidget.cpp \
     GUI/VideoViewWidget.cpp \
-    GUI/RightMainWidget.cpp
+    GUI/RightMainWidget.cpp \
+    GUI/TaskStarter.cpp
 HEADERS += GUI/MainWindow.h \
     GUI/DriveWidget.h \
     GUI/ArmWidget.h \
@@ -83,7 +84,8 @@ HEADERS += GUI/MainWindow.h \
     Common/AltitudeCalculator.h \
     GUI/LeftMainWidget.h \
     GUI/VideoViewWidget.h \
-    GUI/RightMainWidget.h
+    GUI/RightMainWidget.h \
+    GUI/TaskStarter.h
 FORMS += GUI/Forms/DriveWidget.ui \
     GUI/Forms/ArmWidget.ui \
     GUI/Forms/CameraWidget.ui \
@@ -96,7 +98,8 @@ FORMS += GUI/Forms/DriveWidget.ui \
     GUI/TriangulationSidebar.ui \
     GUI/Forms/LeftMainWidget.ui \
     GUI/Forms/VideoViewWidget.ui \
-    GUI/Forms/RightMainWidget.ui
+    GUI/Forms/RightMainWidget.ui \
+    GUI/Forms/TaskStarter.ui
 RESOURCES += GUI/Resources/Icons/Icons.qrc \
     GUI/Resources/Maps/Maps.qrc
 INCLUDEPATH += ../Common/CommInterface/

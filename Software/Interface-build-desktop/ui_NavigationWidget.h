@@ -1,8 +1,8 @@
 /********************************************************************************
 ** Form generated from reading UI file 'NavigationWidget.ui'
 **
-** Created: Sun Oct 9 13:50:35 2011
-**      by: Qt User Interface Compiler version 4.7.2
+** Created: Tue Jan 17 16:30:51 2012
+**      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -52,7 +52,7 @@ public:
     {
         if (NavigationWidget->objectName().isEmpty())
             NavigationWidget->setObjectName(QString::fromUtf8("NavigationWidget"));
-        NavigationWidget->resize(1046, 407);
+        NavigationWidget->resize(991, 407);
         horizontalLayout_3 = new QHBoxLayout(NavigationWidget);
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
         horizontalLayout_2 = new QHBoxLayout();
