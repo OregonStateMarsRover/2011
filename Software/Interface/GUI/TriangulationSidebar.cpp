@@ -57,7 +57,7 @@ void TriangulationSidebar::addLine(const QPointF point1, const QPointF point2) {
 }
 
 void TriangulationSidebar::addLandmark(QPointF line) {
-    QString str = "Landmark "+QString::number(landmarksListWidget->count()+1);
+    QString str = "Landmark "+QString::number(landmarksListWidget->count()+1)+": "+QString::number(line.y())+", "+QString::number(line.x());
     QListWidgetItem *item = new QListWidgetItem(str);
     item->setData(Qt::UserRole, line);
     landmarksListWidget->addItem(item);

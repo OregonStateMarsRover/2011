@@ -1,3 +1,4 @@
 *.o
 Software/Interface-build-desktop
 Interface.pro.user
+Software/Interface-build-desktop-backup
