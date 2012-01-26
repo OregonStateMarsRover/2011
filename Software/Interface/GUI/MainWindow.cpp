@@ -15,6 +15,8 @@
 #include "RightMainWidget.h"
 #include "TaskStarter.h"
 
+#include "RoverControls.h"
+
 #include <QMenuBar>
 
 #include "MainWindow.h"
@@ -79,6 +81,13 @@ MainWindow::MainWindow()
     old->setCentralWidget(tabWidget);
     old->show();
 */
+
+
+    //John's widget
+    QMainWindow *John = new QMainWindow();
+    RoverControls *rover_control = new RoverControls(John);
+    John->setCentralWidget(rover_control);
+    John->show();
 }
 
 void MainWindow::moveEvent ( QMoveEvent * event ){
