@@ -45,7 +45,12 @@ SOURCES += main.cpp \
     GUI/LeftMainWidget.cpp \
     GUI/VideoViewWidget.cpp \
     GUI/RightMainWidget.cpp \
-    GUI/TaskStarter.cpp
+    GUI/TaskStarter.cpp \
+    GUI/rovercontrols.cpp \
+    GUI/RoverControls.cpp \
+    GUI/ArmControls.cpp \
+    GUI/PanTiltControls.cpp \
+    GUI/DriveModes.cpp
 HEADERS += GUI/MainWindow.h \
     GUI/DriveWidget.h \
     GUI/ArmWidget.h \
@@ -85,7 +90,13 @@ HEADERS += GUI/MainWindow.h \
     GUI/LeftMainWidget.h \
     GUI/VideoViewWidget.h \
     GUI/RightMainWidget.h \
-    GUI/TaskStarter.h
+    GUI/TaskStarter.h \
+    GUI/rovercontrols.h \
+    GUI/RoverControls.h \
+    GUI/ArmControls.h \
+    GUI/ArmcControls.h \
+    GUI/PanTiltControls.h \
+    GUI/DriveModes.h
 FORMS += GUI/Forms/DriveWidget.ui \
     GUI/Forms/ArmWidget.ui \
     GUI/Forms/CameraWidget.ui \
@@ -99,7 +110,12 @@ FORMS += GUI/Forms/DriveWidget.ui \
     GUI/Forms/LeftMainWidget.ui \
     GUI/Forms/VideoViewWidget.ui \
     GUI/Forms/RightMainWidget.ui \
-    GUI/Forms/TaskStarter.ui
+    GUI/Forms/TaskStarter.ui \
+    GUI/Forms/rovercontrols.ui \
+    GUI/Forms/RoverControls.ui \
+    GUI/Forms/ArmControls.ui \
+    GUI/Forms/PanTiltControls.ui \
+    GUI/Forms/DriveModes.ui
 RESOURCES += GUI/Resources/Icons/Icons.qrc \
     GUI/Resources/Maps/Maps.qrc
 INCLUDEPATH += ../Common/CommInterface/
