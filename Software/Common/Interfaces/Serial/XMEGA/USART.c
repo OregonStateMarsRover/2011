@@ -413,7 +413,7 @@ ISR(USARTE1_TXC_vect)
 
 ISR(USARTE1_DRE_vect)
 {
-//	USART_DataRegEmpty(5);
+	USART_DataRegEmpty(5);
 }
 
 ISR(USARTF0_RXC_vect)

@@ -8,12 +8,14 @@
 
 #include <avr/io.h>
 
-#define LED_TRIPOD 0
+#define LED_FWV 0
 #define LED_RBOG 1
 #define LED_BBOG 2
 #define LED_LBOG 3
-#define LED_DNT 4
-#define LED_STATUS 5
+#define LED_TRI 4
+#define LED_ARM 5
+#define LED_INT 6
+#define LED_GPS 7
 
 void LedInit();
 void LedOn(char which);

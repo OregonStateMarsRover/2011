@@ -4,6 +4,7 @@
 
 #include "USART.h"
 #include "Common/CommInterface/CommInterface.h"
+#include "ProcessManager/ProcessManager.h"
 #include "GPSController/GPSController.h"
 #include "TestController/TestController.h"
 #include "MotorController/MotorController.h"
@@ -38,25 +39,28 @@ void CCPWrite( volatile uint8_t * address, uint8_t value )
 #endif
 }
 
+/**
+ * ISR to handle external oscillator failure.
+ */
 ISR(OSC_XOSCF_vect)
 {
 	cli();
 	while(1)
 	{
-		LedOff(LED_STATUS);
+/*		LedOff(LED_STATUS);
 		_delay_ms(500);
 		LedOn(LED_STATUS);
 		_delay_ms(500);
 
 		LedOff(LED_DNT);
-		_delay_ms(100);	
+		_delay_ms(100);	*/
 		LedOff(LED_LBOG);
 		_delay_ms(100);
 		LedOff(LED_BBOG);
 		_delay_ms(100);
 		LedOff(LED_RBOG);
 		_delay_ms(100);
-		
+/*		
 		LedOn(LED_DNT);
 		_delay_ms(100);
 		
@@ -65,19 +69,22 @@ ISR(OSC_XOSCF_vect)
 		LedOn(LED_BBOG);
 		_delay_ms(100);
 		LedOn(LED_RBOG);
-		_delay_ms(100);
+		_delay_ms(100);*/
 	}
 }
 
+/*
+ * ISR handler for non-existant ISRs
+ */
 ISR(BADISR_vect) {
 	cli();
 	while(1) {
-		LedOff(LED_DNT);
+/*		LedOff(LED_DNT);
 		
 		LedOff(LED_STATUS);
 		_delay_ms(500);
 		LedOn(LED_STATUS);
-		_delay_ms(500);
+		_delay_ms(500);*/
 		
 		LedOff(LED_LBOG);
 		_delay_ms(100);
@@ -97,7 +104,7 @@ ISR(BADISR_vect) {
 
 void ChangeClockFreq() {
 	uint8_t clkCtrl;
-	LedOff(LED_STATUS);
+	LedOff(LED_INT);
 	CCPWrite( &OSC.XOSCFAIL, ( OSC_XOSCFDIF_bm | OSC_XOSCFDEN_bm ) );
 	char failed = 0;
 	
@@ -121,7 +128,7 @@ void ChangeClockFreq() {
 	clkCtrl = ( CLK.CTRL & ~CLK_SCLKSEL_gm ) | CLK_SCLKSEL_XOSC_gc;
 	CCPWrite( &CLK.CTRL, clkCtrl );
 	
-	LedOn(LED_STATUS);
+	LedOn(LED_INT);
 }
 
 int main(void) {
@@ -137,9 +144,9 @@ int main(void) {
 	//_delay_ms(500);
 	LedInit();
 	LedAllOff();
-	LedOn(LED_TRIPOD);
+	LedOn(LED_TRI);
 	ChangeClockFreq(); // use 16MHz clock
-	sei();
+	sei(); // Enables global interrupt
 	
 	PORTA.DIRSET = PIN0_bm;
 	PORTA.DIRSET = PIN1_bm;
@@ -153,7 +160,7 @@ int main(void) {
 	InitTimers();
 	InitRover(&rov);
 	TestControllerInit();
-	MotorControllerInit();
+	/*MotorControllerInit();
 	TripodControllerInit();
 	GPSInitialize();
 	ArmControllerInit();
@@ -163,20 +170,26 @@ int main(void) {
 	RegisterModule(&rov, TARGET_TEST_CONTROLLER, &TestControllerHandleMessage, &TestControllerTick);
 	RegisterModule(&rov, TARGET_TRIPOD_CONTROLLER, &TripodControllerHandleMessage, &TripodControllerTick);
 	RegisterModule(&rov, TARGET_ARM_CONTROLLER, &ArmControllerHandleMessage, &ArmControllerTick);
-	
+*/	
+
+	RegisterModule(&rov, TARGET_TEST_CONTROLLER, &TestControllerHandleMessage, &TestControllerTick);
+	//USART_Open(&debugPort, 5, USART_BAUD_115200, 255, 255, false, false);
 	_delay_ms(500);
-	LedOff(LED_TRIPOD);
+	LedOff(LED_TRI);
 	while(1) {
 		
 		DispatchMessages(&rov); // allow all modules to process received packets
 		RunModules(&rov); // run each module's Tick() method
+
+		//USART_Write(&debugPort, "\xAA", 1);
+		//_delay_ms(1000);
 
 		ledTimer++;
 		if (ledTimer>5000) 
 		{
 			ledTimer = 0;
 			cli();
-			LedToggle(LED_DNT);
+			LedToggle(LED_FWV);
 			LedToggle(LED_BBOG);
 			LedToggle(LED_LBOG);
 			sei();

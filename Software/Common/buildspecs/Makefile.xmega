@@ -1,4 +1,4 @@
-MCU = atxmega256a3
+MCU = atxmega192a3
 TARGET = $(PROJECT).elf
 CC = avr-gcc
 AVRTYPE = XMEGA
@@ -7,10 +7,11 @@ AVRTYPE = XMEGA
 COMMON = -mmcu=$(MCU)
 
 ## Compile options common for all C compilation units.
-CFLAGS = $(COMMON) -D__AVR_ATxmega256A3__
+CFLAGS = $(COMMON) -D__AVR_ATxmega192A3__
 CFLAGS += -D AVRGCC -Wall -gdwarf-2  -Os -fsigned-char
 #CFLAGS += -MD -MP -MT $(*F).o -MF dep/$(@F).d 
 CFLAGS += -I$(COMMON_DIR)/Interfaces/Serial/$(AVRTYPE) -I$(COMMON_DIR)/Timer/$(AVRTYPE) -DF_CPU=16000000UL
+#CFLAGS += -I$(COMMON_DIR)/Interfaces/Serial/$(AVRTYPE) -I$(COMMON_DIR)/Timer/$(AVRTYPE) -DF_CPU=2000000UL
 
 ## Assembly specific flags
 ASMFLAGS = $(COMMON)

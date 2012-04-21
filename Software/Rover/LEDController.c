@@ -9,39 +9,47 @@
 #include "LEDController.h"
 
 void LedInit() {
-	LedGetPort(LED_TRIPOD)->DIRSET |= GetLedMask(LED_TRIPOD);
+	LedGetPort(LED_TRI)->DIRSET |= GetLedMask(LED_TRI);
 	LedGetPort(LED_RBOG)->DIRSET |= GetLedMask(LED_RBOG);
 	LedGetPort(LED_BBOG)->DIRSET |= GetLedMask(LED_BBOG);
 	LedGetPort(LED_LBOG)->DIRSET |= GetLedMask(LED_LBOG);
-	LedGetPort(LED_DNT)->DIRSET |= GetLedMask(LED_DNT);
-	LedGetPort(LED_STATUS)->DIRSET |= GetLedMask(LED_STATUS);
+	LedGetPort(LED_FWV)->DIRSET |= GetLedMask(LED_FWV);
+	LedGetPort(LED_ARM)->DIRSET |= GetLedMask(LED_ARM);
+	LedGetPort(LED_INT)->DIRSET |= GetLedMask(LED_INT);
+	LedGetPort(LED_GPS)->DIRSET |= GetLedMask(LED_GPS);
 }
 
 void LedAllOn() {
-	LedOn(LED_TRIPOD);
+	LedOn(LED_TRI);
 	LedOn(LED_RBOG);
 	LedOn(LED_BBOG);
 	LedOn(LED_LBOG);
-	LedOn(LED_DNT);
-	LedOn(LED_STATUS);
+	LedOn(LED_FWV);
+	LedOn(LED_ARM);
+	LedOn(LED_INT);
+	LedOn(LED_GPS);
 }
 
 void LedAllOff() {
-	LedOff(LED_TRIPOD);
+	LedOff(LED_TRI);
 	LedOff(LED_RBOG);
 	LedOff(LED_BBOG);
 	LedOff(LED_LBOG);
-	LedOff(LED_DNT);
-	LedOff(LED_STATUS);
+	LedOff(LED_FWV);
+	LedOff(LED_ARM);
+	LedOff(LED_INT);
+	LedOff(LED_GPS);
 }
 
 void LedAllToggle() {
-	LedToggle(LED_TRIPOD);
+	LedToggle(LED_TRI);
 	LedToggle(LED_RBOG);
 	LedToggle(LED_BBOG);
 	LedToggle(LED_LBOG);
-	LedToggle(LED_DNT);
-	LedToggle(LED_STATUS);
+	LedToggle(LED_FWV);
+	LedToggle(LED_ARM);
+	LedToggle(LED_INT);
+	LedToggle(LED_GPS);
 }
 
 void LedOn(char which) {
@@ -58,35 +66,43 @@ void LedToggle(char which) {
 
 PORT_t * LedGetPort(char which) {
 	switch (which) {
-		case LED_TRIPOD:
-			return &PORTC;
+		case LED_FWV:
+			return &PORTB;
 		case LED_RBOG:
-			return &PORTD;
+			return &PORTB;
 		case LED_BBOG:
-			return &PORTD;
+			return &PORTB;
 		case LED_LBOG:
-			return &PORTE;
-		case LED_DNT:
-			return &PORTE;
-		case LED_STATUS:
+			return &PORTB;
+		case LED_TRI:
+			return &PORTB;
+		case LED_ARM:
+			return &PORTB;
+		case LED_INT:
+			return &PORTB;
+		case LED_GPS:
 		default:
-			return &PORTF;
+			return &PORTB;
 	}
 }
 
 char GetLedMask(char which) {
 	switch (which) {
-		case LED_TRIPOD:
-			return PIN4_bm;
+		case LED_FWV:
+			return PIN0_bm;
 		case LED_RBOG:
-			return PIN0_bm;
+			return PIN1_bm;
 		case LED_BBOG:
-			return PIN4_bm;
+			return PIN2_bm;
 		case LED_LBOG:
-			return PIN0_bm;
-		case LED_DNT:
+			return PIN3_bm;
+		case LED_TRI:
+			return PIN4_bm;
+		case LED_ARM:
 			return PIN5_bm;
-		case LED_STATUS:
+		case LED_INT:
+			return PIN6_bm;
+		case LED_GPS:
 		default:
 			return PIN7_bm;
 	}
