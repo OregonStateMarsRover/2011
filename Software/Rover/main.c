@@ -160,14 +160,15 @@ int main(void) {
 	InitTimers();
 	InitRover(&rov);
 	TestControllerInit();
-	/*MotorControllerInit();
-	TripodControllerInit();
+	MotorControllerInit();
+	/*TripodControllerInit();
 	GPSInitialize();
 	ArmControllerInit();
 
 	RegisterModule(&rov, TARGET_GPS_CONTROLLER, &GPSControllerHandleMessage, &GPSControllerTick);
+	*/
 	RegisterModule(&rov, TARGET_MOTOR_CONTROLLER, &MotorControllerHandleMessage, &MotorControllerTick);
-	RegisterModule(&rov, TARGET_TEST_CONTROLLER, &TestControllerHandleMessage, &TestControllerTick);
+	/*RegisterModule(&rov, TARGET_TEST_CONTROLLER, &TestControllerHandleMessage, &TestControllerTick);
 	RegisterModule(&rov, TARGET_TRIPOD_CONTROLLER, &TripodControllerHandleMessage, &TripodControllerTick);
 	RegisterModule(&rov, TARGET_ARM_CONTROLLER, &ArmControllerHandleMessage, &ArmControllerTick);
 */	
@@ -176,13 +177,33 @@ int main(void) {
 	//USART_Open(&debugPort, 5, USART_BAUD_115200, 255, 255, false, false);
 	_delay_ms(500);
 	LedOff(LED_TRI);
+	int i = 0;
 	while(1) {
 		
 		DispatchMessages(&rov); // allow all modules to process received packets
 		RunModules(&rov); // run each module's Tick() method
 
-		//USART_Write(&debugPort, "\xAA", 1);
+		//USART_Write(&debugPort, "A", 1);
 		//_delay_ms(1000);
+
+		char dat[10];
+		dat[0]=i;
+		//dat[0]='X';
+		dat[1]='M';
+		dat[2]='E';
+		dat[3]='G';
+		dat[4]='A';
+		dat[5]= i+48;
+		i++;
+		if(i == 10){
+			i = 0;
+		}
+
+		CommPacket respPkt;
+		respPkt.target = TARGET_GUI;
+		respPkt.length = 1;
+		respPkt.data = dat;
+		//SendMessage(&rov,&respPkt);
 
 		ledTimer++;
 		if (ledTimer>5000) 

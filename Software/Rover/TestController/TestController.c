@@ -15,6 +15,8 @@ void TestControllerInit() {
 }
 
 void TestControllerHandleMessage(Rover * rov, CommPacket * pkt) {
+
+
 	char dat[10];
 	
 	if (pkt->data[0]=='T') { // timing packet

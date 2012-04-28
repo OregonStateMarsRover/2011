@@ -2,6 +2,7 @@
 #include "SerialProtocol.h"
 
 
+
 /** Serial Packet Definition:
 //
 // START_BYTE     start byte
@@ -347,6 +348,11 @@ char SerialTransmit(SerialData * s, byte address, byte length)
 
     s->transmit_address = address;
     s->transmit_length = length;
+    if (length > 2){
+       int i;
+       i = 1;
+    }
+    printf("%s", s->transmit_data);
     s->transmit_data_ptr = s->transmit_data;
     s->transmit_escaped_char = 0;
     s->transmit_state = PROC_STATE_TRANSMIT_ADDRESS;

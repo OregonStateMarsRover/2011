@@ -81,7 +81,7 @@ struct SMotorBus {
 	char doDisableMosfets;
 };
 typedef struct SMotorBus MotorBus;
-
+/*
 struct MotorControllerData {
 	CommInterface rbog, lbog, bbog;
 	USART rbogPort, lbogPort, bbogPort;
@@ -107,9 +107,22 @@ struct MotorControllerData {
 	MotorBus lbogBus, rbogBus, bbogBus;
 	char doPwmMode;
 };
+*/
 
+typedef struct sBogieData{
+	char pos;
+	char velocity;
+}BogieData;
+
+/*
+typedef struct MotorControllerData{
+	BogieData Bogies[6];
+}MotorController;
+*/
+
+/*
 struct MotorControllerData motorController;
-
+*/
 void RunMotorBus(MotorBus * bus, Rover * rov);
 
 void MotorControllerInit();

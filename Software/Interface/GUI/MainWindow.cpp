@@ -59,11 +59,11 @@ MainWindow::MainWindow()
 
     connect(this,SIGNAL(moved(int,int)),Task,SLOT(setNewPos(int,int)));
 
-    QMainWindow *old = new QMainWindow();
-    NavigationWidget *navWidget = new NavigationWidget(old);
-    old->setCentralWidget(navWidget);
-    old->show();
-/*
+    //QMainWindow *old = new QMainWindow();
+    //NavigationWidget *navWidget = new NavigationWidget(old);
+    //old->setCentralWidget(navWidget);
+    //old->show();
+
     QMainWindow *old = new QMainWindow();
     QTabWidget *tabWidget = new QTabWidget(old);
     DriveWidget *driveWidget = new DriveWidget(old);
@@ -80,14 +80,14 @@ MainWindow::MainWindow()
     tabWidget->addTab(sciWidget, "Science");
     old->setCentralWidget(tabWidget);
     old->show();
-*/
+
 
 
     //John's widget
-    QMainWindow *John = new QMainWindow();
+    /*QMainWindow *John = new QMainWindow();
     RoverControls *rover_control = new RoverControls(John);
     John->setCentralWidget(rover_control);
-    John->show();
+    John->show();*/
 }
 
 void MainWindow::moveEvent ( QMoveEvent * event ){
