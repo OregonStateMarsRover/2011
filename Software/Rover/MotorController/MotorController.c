@@ -32,7 +32,8 @@ Functions
 #include "MotorController.h"
 #include "../ProcessManager/ProcessManager.h"
 
-/*BogieData Bogies[6];*/
+//6 Bogie structs that hold 2 bytes each (pos, vel)
+BogieData Bogies[6]; //One Position, One Velocity
 
 void MotorControllerInit(){
     USART_Open(&motorController.rbogPort, 2, MOTOR_CONTROLLER_BAUD, 10, 10, true, true);
@@ -54,7 +55,7 @@ void MotorControllerHandleMessage(Rover * rov, CommPacket * pkt){
         status report - Save status data from wheel*/
 
 
-    char dat[10];
+    char dat[20];
     
     if (pkt->data[0]=='T') { // timing packet
         dat[0]='T';
@@ -67,15 +68,28 @@ void MotorControllerHandleMessage(Rover * rov, CommPacket * pkt){
         respPkt.data = dat;
         SendMessage(rov,&respPkt);
     }else if(pkt->data[0]=='M'){ //movement packet
-    	dat[0] = 'M';
-
+        
+        //just packaging
+        int c = 1; //Counts so that you increment through the pkt->data array
+        for(int i = 0; i < 6; i++){
+            Bogies[i].position = pkt->data[c];
+            c++;
+            Bogies[i].velocity = pkt->data[c];
+            c++;
+        }
+        
+        
+        
+        
+        
+        /*
     	dat[1]=pkt->data[1];
     	dat[2]=pkt->data[2];
 		CommPacket respPkt;
         respPkt.target = TARGET_GUI;
         respPkt.length = 3;
         respPkt.data = dat;
-        SendMessage(rov,&respPkt);
+        SendMessage(rov,&respPkt);*/
 
         
 
@@ -99,6 +113,31 @@ void MotorControllerHandleMessage(Rover * rov, CommPacket * pkt){
 }
 void MotorControllerTick(Rover * rov){
 
+    //send
+    //wait, send next
+    
+    //If the wheel ID's are 2-7, then
+    int c = 1; //Counts so that you increment through the pkt->data array
+    for(int i = 2; i < 7; i++){
+        SendMessage(/* i, pkt->data[c] */); //Position Pack
+        c++;
+        while(/*Wait for ACK*/); //Needs Timeout?
+        if(/* Message sent back */){
+            //Okay :)
+        }else{
+            //HOLY FUCKING SHIT!!!!
+        }
+        
+        SendMessage(/* i, pkt->data[c] */); //Velocity Pack
+        c++;
+        while(/*Wait for ACK*/);
+        if(/* Message sent back */){
+            //Okay :)
+        }else{
+            //HOLY FUCKING SHIT!!!!
+    }
+    
+    
     /*Send message to each wheel (one at a time) to ask for wheel position and speed
     if message sent back wheel still okay*/
 }
