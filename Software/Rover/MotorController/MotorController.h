@@ -112,6 +112,8 @@ struct MotorControllerData {
 typedef struct sBogieData{
 	char position;
 	char velocity;
+	char currentPosition;
+	char currentVelocity;
 }BogieData;
 
 
