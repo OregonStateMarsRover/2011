@@ -32,7 +32,7 @@ Functions
 #include "MotorController.h"
 #include "../ProcessManager/ProcessManager.h"
 
-BogieData Bogies[6];
+/*BogieData Bogies[6];*/
 
 void MotorControllerInit(){
     USART_Open(&motorController.rbogPort, 2, MOTOR_CONTROLLER_BAUD, 10, 10, true, true);
