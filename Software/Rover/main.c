@@ -183,12 +183,13 @@ int main(void) {
 		DispatchMessages(&rov); // allow all modules to process received packets
 		RunModules(&rov); // run each module's Tick() method
 
+
 		//USART_Write(&debugPort, "A", 1);
-		//_delay_ms(1000);
+		//_delay_ms(500);
 
 		char dat[10];
-		dat[0]=i;
-		//dat[0]='X';
+		//dat[0]=i;
+		dat[0]='X';
 		dat[1]='M';
 		dat[2]='E';
 		dat[3]='G';
@@ -201,7 +202,7 @@ int main(void) {
 
 		CommPacket respPkt;
 		respPkt.target = TARGET_GUI;
-		respPkt.length = 1;
+		respPkt.length = 6;
 		respPkt.data = dat;
 		//SendMessage(&rov,&respPkt);
 

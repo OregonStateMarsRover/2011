@@ -111,7 +111,10 @@ void DispatchMessages(Rover * rov) {
 	unsigned char data[20];
 	commPkt.data=data;
 	char ret;
-	char i;
+	char i; 
+
+
+
 
 	// check through each module to see if it's received a message
 	for (i=0; i<NUM_MODULES; i++) 
@@ -123,7 +126,26 @@ void DispatchMessages(Rover * rov) {
 		// have a message ready for processing	
 		if (rov->messageTargets[i].isProcessed==false) 
 		{ 			
-			commPkt.target = rov->messageTargets[i].pkt.target;
+
+		char dat[10];
+		//dat[0]=i;
+		dat[0]='R';
+		dat[1]='E';
+		dat[2]='C';
+		//dat[3]=rov->messageTargets[i].pkt.target;
+		dat[3]=2;
+		dat[4]=rov->messageTargets[i].pkt.data[0];
+
+		CommPacket respPkt;
+		respPkt.target = TARGET_GUI;
+		respPkt.length = 5;
+		respPkt.data = dat;
+		//SendMessage(rov,&respPkt);
+
+
+			//commPkt.target = rov->messageTargets[i].pkt.target;
+			
+			commPkt.target = 2;
 			commPkt.length = rov->messageTargets[i].pkt.length;
 			memcpy(commPkt.data, rov->messageTargets[i].pkt.data, commPkt.length);
 			rov->messageTargets[i].isProcessed=true;

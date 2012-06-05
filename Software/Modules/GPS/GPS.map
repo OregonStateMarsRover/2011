@@ -1,0 +1,1112 @@
+Archive member included because of file (symbol)
+
+../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+                              main.o (CommRXPacketsAvailable)
+../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+                              ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega) (SerialDataInitialize)
+../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                              main.o (USART_InitPortStructs)
+../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+                              ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega) (RingBufferAddByte)
+/usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_udivmodhi4.o)
+                              ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega) (__udivmodhi4)
+/usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o (exit)
+/usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_clear_bss.o)
+                              GPS.o (__do_clear_bss)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(malloc.o)
+                              ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega) (malloc)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(atoi.o)
+                              GPS.o (atoi)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(memcpy.o)
+                              ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega) (memcpy)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(memset.o)
+                              ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega) (memset)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strcmp.o)
+                              GPS.o (strcmp)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(mul10.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(atoi.o) (__mulhi_const_10)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(printf.o)
+                              ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega) (printf)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(vfprintf_std.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(printf.o) (vfprintf)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strnlen_P.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(vfprintf_std.o) (strnlen_P)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strnlen.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(vfprintf_std.o) (strnlen)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(fputc.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(vfprintf_std.o) (fputc)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(iob.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(printf.o) (__iob)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(ultoa_invert.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(vfprintf_std.o) (__ultoa_invert)
+
+Allocating common symbols
+Common symbol       size              file
+
+usart_ports         0x31              main.o
+vtg                 0x8               GPS.o
+gsv                 0x9a              GPS.o
+__brkval            0x2               /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(malloc.o)
+USART_BSCALE_TABLE  0x8               main.o
+nmea                0xf               GPS.o
+USART_BAUD_TABLE    0x10              main.o
+__flp               0x2               /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(malloc.o)
+__iob               0x6               /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(iob.o)
+USART_Table         0xe               main.o
+rmc                 0xb               GPS.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00100000         xr
+data             0x00802000         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+LOAD GPS.o
+LOAD LEDController.o
+LOAD main.o
+LOAD ../../Common/CommInterface/libCommInterface.a-xmega
+LOAD ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libm.a
+LOAD /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a
+LOAD /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x2776
+ *(.vectors)
+ .vectors       0x00000000      0x1e8 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x000001e8                . = ALIGN (0x2)
+                0x000001e8                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000001e8        0x0 linker stubs
+ *(.trampolines*)
+                0x000001e8                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000001e8                __ctors_start = .
+ *(.ctors)
+                0x000001e8                __ctors_end = .
+                0x000001e8                __dtors_start = .
+ *(.dtors)
+                0x000001e8                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000001e8        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+                0x000001e8                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000001e8       0x10 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000001f8       0x1a /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+                0x000001f8                __do_copy_data
+ .init4         0x00000212       0x10 /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_clear_bss.o)
+                0x00000212                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000222        0x8 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+ *(.init9)
+ *(.text)
+ .text          0x0000022a        0x4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+                0x0000022a                __vector_38
+                0x0000022a                __vector_104
+                0x0000022a                __vector_22
+                0x0000022a                __vector_67
+                0x0000022a                __vector_32
+                0x0000022a                __vector_75
+                0x0000022a                __vector_71
+                0x0000022a                __vector_34
+                0x0000022a                __vector_77
+                0x0000022a                __vector_102
+                0x0000022a                __vector_24
+                0x0000022a                __vector_12
+                0x0000022a                __vector_55
+                0x0000022a                __vector_69
+                0x0000022a                __vector_81
+                0x0000022a                __vector_46
+                0x0000022a                __bad_interrupt
+                0x0000022a                __vector_72
+                0x0000022a                __vector_114
+                0x0000022a                __vector_6
+                0x0000022a                __vector_110
+                0x0000022a                __vector_31
+                0x0000022a                __vector_35
+                0x0000022a                __vector_78
+                0x0000022a                __vector_74
+                0x0000022a                __vector_117
+                0x0000022a                __vector_39
+                0x0000022a                __vector_107
+                0x0000022a                __vector_3
+                0x0000022a                __vector_105
+                0x0000022a                __vector_98
+                0x0000022a                __vector_23
+                0x0000022a                __vector_68
+                0x0000022a                __vector_73
+                0x0000022a                __vector_45
+                0x0000022a                __vector_11
+                0x0000022a                __vector_54
+                0x0000022a                __vector_99
+                0x0000022a                __vector_13
+                0x0000022a                __vector_17
+                0x0000022a                __vector_19
+                0x0000022a                __vector_56
+                0x0000022a                __vector_7
+                0x0000022a                __vector_49
+                0x0000022a                __vector_41
+                0x0000022a                __vector_86
+                0x0000022a                __vector_100
+                0x0000022a                __vector_101
+                0x0000022a                __vector_64
+                0x0000022a                __vector_109
+                0x0000022a                __vector_43
+                0x0000022a                __vector_5
+                0x0000022a                __vector_113
+                0x0000022a                __vector_33
+                0x0000022a                __vector_76
+                0x0000022a                __vector_115
+                0x0000022a                __vector_47
+                0x0000022a                __vector_52
+                0x0000022a                __vector_37
+                0x0000022a                __vector_95
+                0x0000022a                __vector_103
+                0x0000022a                __vector_96
+                0x0000022a                __vector_108
+                0x0000022a                __vector_4
+                0x0000022a                __vector_44
+                0x0000022a                __vector_82
+                0x0000022a                __vector_106
+                0x0000022a                __vector_118
+                0x0000022a                __vector_51
+                0x0000022a                __vector_9
+                0x0000022a                __vector_2
+                0x0000022a                __vector_21
+                0x0000022a                __vector_15
+                0x0000022a                __vector_66
+                0x0000022a                __vector_36
+                0x0000022a                __vector_79
+                0x0000022a                __vector_70
+                0x0000022a                __vector_83
+                0x0000022a                __vector_40
+                0x0000022a                __vector_85
+                0x0000022a                __vector_94
+                0x0000022a                __vector_8
+                0x0000022a                __vector_48
+                0x0000022a                __vector_116
+                0x0000022a                __vector_112
+                0x0000022a                __vector_111
+                0x0000022a                __vector_80
+                0x0000022a                __vector_14
+                0x0000022a                __vector_84
+                0x0000022a                __vector_57
+                0x0000022a                __vector_53
+                0x0000022a                __vector_10
+                0x0000022a                __vector_50
+                0x0000022a                __vector_16
+                0x0000022a                __vector_18
+                0x0000022a                __vector_97
+                0x0000022a                __vector_20
+                0x0000022a                __vector_42
+                0x0000022a                __vector_87
+                0x0000022a                __vector_65
+ .text          0x0000022e      0x4a6 GPS.o
+                0x0000022e                returnRmc
+                0x00000244                returnVtg
+                0x00000280                returnGsv
+                0x00000296                returnNmea
+                0x000002ac                GPSparser
+                0x000005fc                GPSinput
+ .text          0x000006d4      0x178 LEDController.o
+                0x000006d4                LedGetPort
+                0x000006f4                GetLedMask
+                0x00000712                LedToggle
+                0x0000073c                LedAllToggle
+                0x00000756                LedOff
+                0x00000780                LedAllOff
+                0x0000079a                LedOn
+                0x000007c4                LedAllOn
+                0x000007de                LedInit
+ .text          0x0000084c      0x37e main.o
+                0x0000084c                CCPWrite
+                0x00000876                __vector_1
+                0x00000884                __vector_default
+                0x00000892                ChangeClockFreq
+                0x00000928                main
+ .text          0x00000bca      0x3a6 ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+                0x00000bca                CommInterfaceSetRXCallback
+                0x00000bd6                CommInterfaceSetTXCallback
+                0x00000be2                CommRXPacketsAvailable
+                0x00000bf4                CommReceiveDataError
+                0x00000c10                CommTransmissionInProgress
+                0x00000c1c                CommPacketReceived
+                0x00000c92                CommPeekPacket
+                0x00000cf6                CommGetPacket
+                0x00000d62                CommQueueForTx
+                0x00000d76                CommByteTransmitted
+                0x00000d84                CommByteReceived
+                0x00000d92                CommDeletePacket
+                0x00000db6                CommDeleteInterface
+                0x00000df0                CommPktTxComplete
+                0x00000e32                CommSendPacket
+                0x00000eaa                CommInterfaceInit
+ .text          0x00000f70      0x2dc ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+                0x00000f70                SerialError
+                0x00000f82                SerialDataInitialize
+                0x00000fac                SerialStateMachineProcess
+                0x0000103c                ProcessDataChar
+                0x000010be                SerialByteTransmitComplete
+                0x000011ca                SerialTransferInProgress
+                0x000011da                SerialTransmit
+ .text          0x0000124c      0xb64 ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                0x0000124c                USART_InitPortStructs
+                0x000013da                USART_TransmitMode
+                0x00001428                USART_TXIntComplete
+                0x00001452                __vector_27
+                0x000014a4                __vector_30
+                0x000014f6                __vector_90
+                0x00001548                __vector_93
+                0x0000159a                __vector_60
+                0x000015ec                __vector_63
+                0x0000163e                __vector_121
+                0x00001690                USART_RXUsed
+                0x00001698                USART_TXUsed
+                0x000016a0                USART_DataRegEmpty
+                0x000016f6                __vector_120
+                0x00001748                __vector_62
+                0x0000179a                __vector_59
+                0x000017ec                __vector_92
+                0x0000183e                __vector_89
+                0x00001890                __vector_29
+                0x000018e2                __vector_26
+                0x00001934                USART_ReadByte
+                0x0000193c                USART_RXIntComplete
+                0x000019a2                __vector_119
+                0x000019f4                __vector_61
+                0x00001a46                __vector_58
+                0x00001a98                __vector_91
+                0x00001aea                __vector_88
+                0x00001b3c                __vector_28
+                0x00001b8e                __vector_25
+                0x00001be0                USART_RXFree
+                0x00001be8                USART_TXFree
+                0x00001bf0                USART_Read
+                0x00001bf8                USART_Write
+                0x00001c34                USART_WriteByte
+                0x00001c6a                USART_Open
+ .text          0x00001db0      0x1ae ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+                0x00001db0                RingBufferAddByte
+                0x00001e0c                RingBufferAdd
+                0x00001e56                RingBufferGetByte
+                0x00001e9a                RingBufferGetData
+                0x00001eee                RingBufferBytesUsed
+                0x00001ef6                RingBufferBytesFree
+                0x00001f08                RingBufferDelete
+                0x00001f2c                RingBufferInit
+ .text          0x00001f5e        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_udivmodhi4.o)
+ .text          0x00001f5e        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_exit.o)
+ .text          0x00001f5e        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_clear_bss.o)
+ .text          0x00001f5e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(malloc.o)
+ .text          0x00001f5e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(atoi.o)
+ .text          0x00001f5e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(memcpy.o)
+ .text          0x00001f5e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(memset.o)
+ .text          0x00001f5e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strcmp.o)
+ .text          0x00001f5e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(mul10.o)
+ .text          0x00001f5e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(printf.o)
+ .text          0x00001f5e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(vfprintf_std.o)
+ .text          0x00001f5e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strnlen_P.o)
+ .text          0x00001f5e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strnlen.o)
+ .text          0x00001f5e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(fputc.o)
+ .text          0x00001f5e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(iob.o)
+ .text          0x00001f5e        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(ultoa_invert.o)
+                0x00001f5e                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00001f5e       0x28 /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_udivmodhi4.o)
+                0x00001f5e                __udivmodhi4
+ .text.libgcc   0x00001f86        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_exit.o)
+ .text.libgcc   0x00001f86        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_clear_bss.o)
+ .text.avr-libc
+                0x00001f86      0x20a /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(malloc.o)
+                0x00001f86                malloc
+                0x000020e0                free
+ .text.avr-libc
+                0x00002190       0x3c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(atoi.o)
+                0x00002190                atoi
+ .text.avr-libc
+                0x000021cc       0x12 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(memcpy.o)
+                0x000021cc                memcpy
+ .text.avr-libc
+                0x000021de        0xe /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(memset.o)
+                0x000021de                memset
+ .text.avr-libc
+                0x000021ec       0x12 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strcmp.o)
+                0x000021ec                strcmp
+ .text.avr-libc
+                0x000021fe       0x10 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(mul10.o)
+                0x000021fe                __mulhi_const_10
+ .text.avr-libc
+                0x0000220e       0x24 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(printf.o)
+                0x0000220e                printf
+ .text.avr-libc
+                0x00002232      0x400 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(vfprintf_std.o)
+                0x00002232                vfprintf
+ .text.avr-libc
+                0x00002632       0x16 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strnlen_P.o)
+                0x00002632                strnlen_P
+ .text.avr-libc
+                0x00002648       0x16 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strnlen.o)
+                0x00002648                strnlen
+ .text.avr-libc
+                0x0000265e       0x58 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(fputc.o)
+                0x0000265e                fputc
+ .text.avr-libc
+                0x000026b6       0xbc /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(ultoa_invert.o)
+                0x000026b6                __ultoa_invert
+                0x00002772                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00002772        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_exit.o)
+                0x00002772                exit
+                0x00002772                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00002772        0x4 /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_exit.o)
+ *(.fini0)
+                0x00002776                _etext = .
+
+.data           0x00802000       0x20 load address 0x00002776
+                0x00802000                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00802000        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+ .data          0x00802000       0x17 GPS.o
+ .data          0x00802017        0x0 LEDController.o
+ .data          0x00802017        0x0 main.o
+ .data          0x00802017        0x0 ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+ .data          0x00802017        0x3 ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+ .data          0x0080201a        0x0 ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+ .data          0x0080201a        0x0 ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+ .data          0x0080201a        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_udivmodhi4.o)
+ .data          0x0080201a        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_exit.o)
+ .data          0x0080201a        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_clear_bss.o)
+ .data          0x0080201a        0x6 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(malloc.o)
+                0x0080201a                __malloc_margin
+                0x0080201c                __malloc_heap_start
+                0x0080201e                __malloc_heap_end
+ .data          0x00802020        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(atoi.o)
+ .data          0x00802020        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(memcpy.o)
+ .data          0x00802020        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(memset.o)
+ .data          0x00802020        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strcmp.o)
+ .data          0x00802020        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(mul10.o)
+ .data          0x00802020        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(printf.o)
+ .data          0x00802020        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(vfprintf_std.o)
+ .data          0x00802020        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strnlen_P.o)
+ .data          0x00802020        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strnlen.o)
+ .data          0x00802020        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(fputc.o)
+ .data          0x00802020        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(iob.o)
+ .data          0x00802020        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(ultoa_invert.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00802020                . = ALIGN (0x2)
+                0x00802020                _edata = .
+                0x00802020                PROVIDE (__data_end, .)
+
+.bss            0x00802020      0x18f
+                0x00802020                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00802020        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+ .bss           0x00802020       0x72 GPS.o
+ .bss           0x00802092        0x0 LEDController.o
+ .bss           0x00802092        0x0 main.o
+ .bss           0x00802092        0x0 ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+ .bss           0x00802092        0x0 ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+ .bss           0x00802092        0x0 ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+ .bss           0x00802092        0x0 ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+ .bss           0x00802092        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_udivmodhi4.o)
+ .bss           0x00802092        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_exit.o)
+ .bss           0x00802092        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_clear_bss.o)
+ .bss           0x00802092        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(malloc.o)
+ .bss           0x00802092        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(atoi.o)
+ .bss           0x00802092        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(memcpy.o)
+ .bss           0x00802092        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(memset.o)
+ .bss           0x00802092        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strcmp.o)
+ .bss           0x00802092        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(mul10.o)
+ .bss           0x00802092        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(printf.o)
+ .bss           0x00802092        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(vfprintf_std.o)
+ .bss           0x00802092        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strnlen_P.o)
+ .bss           0x00802092        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strnlen.o)
+ .bss           0x00802092        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(fputc.o)
+ .bss           0x00802092        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(iob.o)
+ .bss           0x00802092        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(ultoa_invert.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00802092       0xbc GPS.o
+                0x00802092                vtg
+                0x0080209a                gsv
+                0x00802134                nmea
+                0x00802143                rmc
+ COMMON         0x0080214e       0x57 main.o
+                0x0080214e                usart_ports
+                0x0080217f                USART_BSCALE_TABLE
+                0x00802187                USART_BAUD_TABLE
+                0x00802197                USART_Table
+ COMMON         0x008021a5        0x4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(malloc.o)
+                0x008021a5                __brkval
+                0x008021a7                __flp
+ COMMON         0x008021a9        0x6 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(iob.o)
+                0x008021a9                __iob
+                0x008021af                PROVIDE (__bss_end, .)
+                0x00002776                __data_load_start = LOADADDR (.data)
+                0x00002796                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008021af        0x0
+                0x008021af                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008021af                PROVIDE (__noinit_end, .)
+                0x008021af                _end = .
+                0x008021af                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x2598
+ *(.stab)
+ .stab          0x00000000      0x768 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+ .stab          0x00000768      0x6f0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(malloc.o)
+                                0x6fc (size before relaxing)
+ .stab          0x00000e58      0x174 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(atoi.o)
+                                0x180 (size before relaxing)
+ .stab          0x00000fcc       0x84 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(memcpy.o)
+                                 0x90 (size before relaxing)
+ .stab          0x00001050       0x6c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(memset.o)
+                                 0x78 (size before relaxing)
+ .stab          0x000010bc       0x84 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strcmp.o)
+                                 0x90 (size before relaxing)
+ .stab          0x00001140       0x78 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(mul10.o)
+                                 0x84 (size before relaxing)
+ .stab          0x000011b8      0x1e0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(printf.o)
+                                0x36c (size before relaxing)
+ .stab          0x00001398      0x948 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(vfprintf_std.o)
+                                0xb58 (size before relaxing)
+ .stab          0x00001ce0       0x9c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strnlen_P.o)
+                                 0xa8 (size before relaxing)
+ .stab          0x00001d7c       0x9c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strnlen.o)
+                                 0xa8 (size before relaxing)
+ .stab          0x00001e18      0x1d4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(fputc.o)
+                                0x3b4 (size before relaxing)
+ .stab          0x00001fec      0x12c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(iob.o)
+                                0x30c (size before relaxing)
+ .stab          0x00002118      0x480 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(ultoa_invert.o)
+                                0x48c (size before relaxing)
+
+.stabstr        0x00000000      0xf4d
+ *(.stabstr)
+ .stabstr       0x00000000      0xf4d /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0xe0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 GPS.o
+ .debug_aranges
+                0x00000020       0x20 LEDController.o
+ .debug_aranges
+                0x00000040       0x20 main.o
+ .debug_aranges
+                0x00000060       0x20 ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+ .debug_aranges
+                0x00000080       0x20 ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+ .debug_aranges
+                0x000000a0       0x20 ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+ .debug_aranges
+                0x000000c0       0x20 ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+
+.debug_pubnames
+                0x00000000      0x7f2
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x87 GPS.o
+ .debug_pubnames
+                0x00000087       0x8b LEDController.o
+ .debug_pubnames
+                0x00000112       0xcd main.o
+ .debug_pubnames
+                0x000001df      0x1d7 ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+ .debug_pubnames
+                0x000003b6       0xbc ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+ .debug_pubnames
+                0x00000472      0x2c2 ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+ .debug_pubnames
+                0x00000734       0xbe ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+
+.debug_info     0x00000000     0x3074
+ *(.debug_info)
+ .debug_info    0x00000000      0x425 GPS.o
+ .debug_info    0x00000425      0x310 LEDController.o
+ .debug_info    0x00000735      0xd26 main.o
+ .debug_info    0x0000145b      0xb45 ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+ .debug_info    0x00001fa0      0x35a ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+ .debug_info    0x000022fa      0xac0 ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+ .debug_info    0x00002dba      0x2ba ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0xab7
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x15a GPS.o
+ .debug_abbrev  0x0000015a       0xcf LEDController.o
+ .debug_abbrev  0x00000229      0x257 main.o
+ .debug_abbrev  0x00000480      0x195 ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+ .debug_abbrev  0x00000615      0x152 ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+ .debug_abbrev  0x00000767      0x21f ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+ .debug_abbrev  0x00000986      0x131 ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+
+.debug_line     0x00000000     0x1955
+ *(.debug_line)
+ .debug_line    0x00000000      0x206 GPS.o
+ .debug_line    0x00000206      0x1d9 LEDController.o
+ .debug_line    0x000003df      0x475 main.o
+ .debug_line    0x00000854      0x42d ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+ .debug_line    0x00000c81      0x3a9 ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+ .debug_line    0x0000102a      0x786 ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+ .debug_line    0x000017b0      0x1a5 ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+
+.debug_frame    0x00000000      0x5d0
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x70 GPS.o
+ .debug_frame   0x00000070       0xa0 LEDController.o
+ .debug_frame   0x00000110       0x60 main.o
+ .debug_frame   0x00000170      0x110 ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+ .debug_frame   0x00000280       0x80 ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+ .debug_frame   0x00000300      0x240 ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+ .debug_frame   0x00000540       0x90 ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+
+.debug_str      0x00000000      0xf49
+ *(.debug_str)
+ .debug_str     0x00000000      0x186 GPS.o
+                                0x1c4 (size before relaxing)
+ .debug_str     0x00000186      0x13d LEDController.o
+                                0x1e0 (size before relaxing)
+ .debug_str     0x000002c3      0x4ce main.o
+                                0x77a (size before relaxing)
+ .debug_str     0x00000791      0x1ad ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+                                0x653 (size before relaxing)
+ .debug_str     0x0000093e       0xa8 ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+                                0x2c6 (size before relaxing)
+ .debug_str     0x000009e6      0x489 ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                0x75f (size before relaxing)
+ .debug_str     0x00000e6f       0xda ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+                                0x14a (size before relaxing)
+
+.debug_loc      0x00000000      0xd63
+ *(.debug_loc)
+ .debug_loc     0x00000000       0xa1 GPS.o
+ .debug_loc     0x000000a1       0xa1 LEDController.o
+ .debug_loc     0x00000142       0x2b main.o
+ .debug_loc     0x0000016d      0x3b5 ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+ .debug_loc     0x00000522      0x22e ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+ .debug_loc     0x00000750      0x327 ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+ .debug_loc     0x00000a77      0x2ec ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(GPS.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000       0x48
+ .debug_ranges  0x00000000       0x48 main.o
+
+Cross Reference Table
+
+Symbol                                            File
+CCPWrite                                          main.o
+ChangeClockFreq                                   main.o
+CommByteReceived                                  ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+CommByteTransmitted                               ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+CommDeleteInterface                               ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+CommDeletePacket                                  ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+CommGetPacket                                     ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+                                                  main.o
+CommInterfaceInit                                 ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+                                                  main.o
+CommInterfaceSetRXCallback                        ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+CommInterfaceSetTXCallback                        ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+CommPacketReceived                                ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+CommPeekPacket                                    ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+CommPktTxComplete                                 ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+CommQueueForTx                                    ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+CommRXPacketsAvailable                            ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+                                                  main.o
+CommReceiveDataError                              ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+CommSendPacket                                    ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+                                                  main.o
+CommTransmissionInProgress                        ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+GPSinput                                          GPS.o
+                                                  main.o
+GPSparser                                         GPS.o
+GetLedMask                                        LEDController.o
+LedAllOff                                         LEDController.o
+                                                  main.o
+LedAllOn                                          LEDController.o
+LedAllToggle                                      LEDController.o
+LedGetPort                                        LEDController.o
+LedInit                                           LEDController.o
+                                                  main.o
+LedOff                                            LEDController.o
+                                                  main.o
+LedOn                                             LEDController.o
+                                                  main.o
+LedToggle                                         LEDController.o
+ProcessDataChar                                   ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+                                                  ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+RingBufferAdd                                     ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+                                                  ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+RingBufferAddByte                                 ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+                                                  ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+RingBufferBytesFree                               ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+                                                  ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+RingBufferBytesUsed                               ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+                                                  ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+RingBufferDelete                                  ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+RingBufferGetByte                                 ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+                                                  ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+RingBufferGetData                                 ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+                                                  ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+RingBufferInit                                    ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+                                                  ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+SerialByteTransmitComplete                        ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+                                                  ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+SerialDataInitialize                              ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+                                                  ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+SerialError                                       ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+SerialStateMachineProcess                         ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+SerialTransferInProgress                          ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+                                                  ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+SerialTransmit                                    ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+                                                  ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+USART_BAUD_TABLE                                  ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+                                                  main.o
+USART_BSCALE_TABLE                                ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+                                                  main.o
+USART_DataRegEmpty                                ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+USART_InitPortStructs                             ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  main.o
+USART_Open                                        ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  main.o
+USART_RXFree                                      ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+USART_RXIntComplete                               ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+USART_RXUsed                                      ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  main.o
+USART_Read                                        ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+USART_ReadByte                                    ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  main.o
+USART_TXFree                                      ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+USART_TXIntComplete                               ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+USART_TXUsed                                      ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+USART_Table                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+                                                  main.o
+USART_TransmitMode                                ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+USART_Write                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+USART_WriteByte                                   ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+__bad_interrupt                                   /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__brkval                                          /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(malloc.o)
+__bss_end                                         /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__data_load_start                                 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__data_start                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__do_clear_bss                                    /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_clear_bss.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(iob.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(malloc.o)
+                                                  ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+                                                  main.o
+                                                  GPS.o
+__do_copy_data                                    /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(malloc.o)
+                                                  ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+                                                  GPS.o
+__flp                                             /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(malloc.o)
+__heap_end                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(malloc.o)
+__heap_start                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(malloc.o)
+__init                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__iob                                             /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(iob.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(printf.o)
+__malloc_heap_end                                 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(malloc.o)
+__malloc_heap_start                               /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(malloc.o)
+__malloc_margin                                   /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(malloc.o)
+__mulhi_const_10                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(mul10.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(atoi.o)
+__stack                                           /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__udivmodhi4                                      /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_udivmodhi4.o)
+                                                  ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+__ultoa_invert                                    /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(ultoa_invert.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(vfprintf_std.o)
+__vector_1                                        main.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_10                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_100                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_101                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_102                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_103                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_104                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_105                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_106                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_107                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_108                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_109                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_11                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_110                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_111                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_112                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_113                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_114                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_115                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_116                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_117                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_118                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_119                                      ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_12                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_120                                      ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_121                                      ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_13                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_14                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_15                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_16                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_17                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_18                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_19                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_2                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_20                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_21                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_22                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_23                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_24                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_25                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_26                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_27                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_28                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_29                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_3                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_30                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_31                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_32                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_33                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_34                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_35                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_36                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_37                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_38                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_39                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_4                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_40                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_41                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_42                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_43                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_44                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_45                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_46                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_47                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_48                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_49                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_5                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_50                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_51                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_52                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_53                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_54                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_55                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_56                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_57                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_58                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_59                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_6                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_60                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_61                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_62                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_63                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_64                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_65                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_66                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_67                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_68                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_69                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_7                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_70                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_71                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_72                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_73                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_74                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_75                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_76                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_77                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_78                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_79                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_8                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_80                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_81                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_82                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_83                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_84                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_85                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_86                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_87                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_88                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_89                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_9                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_90                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_91                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_92                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_93                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_94                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_95                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_96                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_97                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_98                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_99                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vector_default                                  main.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+__vectors                                         /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+_exit                                             /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_exit.o)
+atoi                                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(atoi.o)
+                                                  GPS.o
+exit                                              /usr/lib/gcc/avr/4.3.5/avrxmega6/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+fputc                                             /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(fputc.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(vfprintf_std.o)
+free                                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(malloc.o)
+                                                  ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+                                                  ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+gsv                                               main.o
+                                                  GPS.o
+main                                              main.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/crtx192a3.o
+malloc                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(malloc.o)
+                                                  ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(RingBuffer.o-xmega)
+memcpy                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(memcpy.o)
+                                                  ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+memset                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(memset.o)
+                                                  ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+nmea                                              main.o
+                                                  GPS.o
+printf                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(printf.o)
+                                                  ../../Common/CommInterface/libCommInterface.a-xmega(SerialProtocol.o-xmega)
+returnGsv                                         GPS.o
+                                                  main.o
+returnNmea                                        GPS.o
+                                                  main.o
+returnRmc                                         GPS.o
+                                                  main.o
+returnVtg                                         GPS.o
+                                                  main.o
+rmc                                               main.o
+                                                  GPS.o
+strcmp                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strcmp.o)
+                                                  GPS.o
+strnlen                                           /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strnlen.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(vfprintf_std.o)
+strnlen_P                                         /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(strnlen_P.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(vfprintf_std.o)
+usart_ports                                       ../../Common/Interfaces/Serial/XMEGA/libUSART.a-xmega(USART.o-xmega)
+                                                  ../../Common/CommInterface/libCommInterface.a-xmega(CommInterface.o-xmega)
+                                                  main.o
+vfprintf                                          /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(vfprintf_std.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega6/libc.a(printf.o)
+vtg                                               main.o
+                                                  GPS.o

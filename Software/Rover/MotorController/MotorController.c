@@ -33,6 +33,9 @@ Functions
 #include "../ProcessManager/ProcessManager.h"
 #include "Timer.h"
 
+void SendBogieData(Rover * rov,int bogie_index);
+
+int v;
 //6 Bogie structs that hold 2 bytes each (pos, vel)
 BogieData Bogies[6]; //One Position, One Velocity
 int currentBogie;
@@ -41,11 +44,11 @@ unsigned short timeoutCounter;
 Timer pingTimer;
 
 void MotorControllerInit(){
-
+	v = 0;
 	currentBogie = 0;
 	timeoutCounter = 0;
-
-	for(int i = 0; i < 6; i++){
+	int i;
+	for(i = 0; i < 6; i++){
 		Bogies[i].position = 0;
 		Bogies[i].velocity = 0;
 		Bogies[i].currentPosition = 0;
@@ -53,13 +56,21 @@ void MotorControllerInit(){
 	}
 	StartTimer(&pingTimer);
 
-	USART_Open(&motorController.rbogPort, 2, MOTOR_CONTROLLER_BAUD, 10, 10, true, true);
+	/*USART_Open(&motorController.rbogPort, 2, MOTOR_CONTROLLER_BAUD, 10, 10, true, true);
 	USART_Open(&motorController.lbogPort, 4, MOTOR_CONTROLLER_BAUD, 10, 10, true, true);
-	USART_Open(&motorController.bbogPort, 3, MOTOR_CONTROLLER_BAUD, 10, 10, true, true);
+	USART_Open(&motorController.bbogPort, 3, MOTOR_CONTROLLER_BAUD, 10, 10, true, true);*/
 	
-	CommInterfaceInit(&motorController.rbog, &motorController.rbogPort);
+	USART_Open(&motorController.bogiePort, 4, MOTOR_CONTROLLER_BAUD, 10, 10, false, true);
+
+	// set bogie enable:
+	PORTE.DIRSET = PIN4_bm | PIN0_bm;
+	PORTE.OUTSET = PIN4_bm;
+	PORTE.OUTCLR = PIN0_bm;
+
+	/*CommInterfaceInit(&motorController.rbog, &motorController.rbogPort);
 	CommInterfaceInit(&motorController.lbog, &motorController.lbogPort);
-	CommInterfaceInit(&motorController.bbog, &motorController.bbogPort);
+	CommInterfaceInit(&motorController.bbog, &motorController.bbogPort);*/
+	CommInterfaceInit(&motorController.bogie, &motorController.bogiePort);
 
 	//PacketQueueInit2()
 }
@@ -85,20 +96,39 @@ void MotorControllerHandleMessage(Rover * rov, CommPacket * pkt){
 		respPkt.data = dat;
 		SendMessage(rov,&respPkt);
 	}else if(pkt->data[0]=='M'){ //movement packet
-		
+		/*
 		//just packaging
 		int c = 1; //Counts so that you increment through the pkt->data array
-		for(int i = 0; i < 6; i++){
+		int i;
+		for(i = 0; i < 6; i++){
 			Bogies[i].position = pkt->data[c];
 			c++;
 			Bogies[i].velocity = pkt->data[c];
 			c++;
 		}
-		
+		*/
+		dat[0]='M';
+	
+		dat[1]=pkt->data[0];
+		dat[2]=pkt->data[1];
+		v = pkt->data[1];
+		//dat[6]=pkt->data[1];
+		//dat[7]=pkt->data[2];
+	
+		CommPacket respPkt;
+		respPkt.target = TARGET_GUI;
+		respPkt.length = 3;
+		respPkt.data = dat;
+		SendMessage(rov,&respPkt);
+
+		//SendBogieData(rov,TARGET_GUI);
+
 	}else if(pkt->data[0]=='D'){ // request data
-		dat[0] = 'D'
-		c = 1;
-		for(int i = 0; i < 6; i++){
+
+		dat[0] = 'D';
+		int c = 1;
+		int i;
+		for(i = 0; i < 6; i++){
 			dat[c] = Bogies[i].currentPosition;
 			c++;
 			dat[c] = Bogies[i].currentVelocity;
@@ -119,43 +149,42 @@ void MotorControllerHandleMessage(Rover * rov, CommPacket * pkt){
 		dat[4]='R';
 	
 		dat[5]=pkt->data[0];
-		dat[6]=pkt->data[1];
-		dat[7]=pkt->data[2];
+		//dat[6]=pkt->data[1];
+		//dat[7]=pkt->data[2];
 	
 		CommPacket respPkt;
 		respPkt.target = TARGET_GUI;
-		respPkt.length = 8;
+		respPkt.length = 6;
 		respPkt.data = dat;
 		SendMessage(rov,&respPkt);
 	}
 }
 
-void SendBogieData(bogie_index){
+void SendBogieData(Rover * rov,int bogie_index){
 	char dat[3];
-	dat[0] = 'D';
-	dat[1] = Bogies[bogie_index].position;
-	dat[2] = Bogies[bogie_index].velocity;
+	dat[0] = v;
 
 	CommPacket respPkt;
 	respPkt.target = bogie_index;
-	respPkt.length = 3;
+	respPkt.length = 1;
 	respPkt.data = dat;
 
 	/* testing */
 	SendMessage(rov,&respPkt);
 
-	/*
-	CommSendPacket(&motorController.rbogPort, &respPkt);
-	CommSendPacket(&motorController.lbogPort, &respPkt);
-	CommSendPacket(&motorController.bbogPort, &respPkt);
-	*/
+	
+	//SendMessage(rov,&respPkt);
+	//CommSendPacket(&motorController.rbogPort, &respPkt);
+	CommSendPacket(&motorController.bogie, &respPkt);
+	//CommSendPacket(&motorController.bbogPort, &respPkt);
+	
 }
 
 
 void MotorControllerTick(Rover * rov){
-
+/*
 	if(waitingForReply == 0){ // not waiting for bogie reply so send message
-		SendBogieData(currentBogie);
+		SendBogieData(rov, currentBogie);
 	}else if(waitingForReply == 1){ //waiting
 		if (GetSpanUs(&pingTimer) > FROM_uS(1000000)) { //passed timeout
 			//currentBogie not working
@@ -168,7 +197,7 @@ void MotorControllerTick(Rover * rov){
 			respPkt.target = TARGET_GUI;
 			respPkt.length = 2;
 			respPkt.data = dat;
-			SendMessage(rov,&respPkt);
+			//SendMessage(rov,&respPkt);
 
 			//set data so next message will be sent
 			waitingForReply = 0;
@@ -178,29 +207,52 @@ void MotorControllerTick(Rover * rov){
 			}
 		}
 	}
+*/
+	
+	//SendBogieData(rov,TARGET_GUI);
+	recieveMessage(rov); // see if message is ready to recieve	
+	//USART_Write(&motorController.bogiePort, "\xAA", 1);
 
-	recieveMessage(); // see if message is ready to recieve	
 }
 
-void recieveMessage(){
+void recieveMessage(Rover * rov){
 	
 	CommPacket commPkt;
 	unsigned char data[20];
 	commPkt.data=data;
 	char ret;
 
-	if (CommRXPacketsAvailable(&motorController.rbogPort)) { // got message
-		CommGetPacket(&motorController.rbogPort, &commPkt, 20);
+	if (CommRXPacketsAvailable(&motorController.bogie)) { // got message
+		char dat[20];
+		dat[0]='M';
+		dat[1]='O';
+		dat[2]='T';
+		dat[3]='O';
+		//dat[6]=pkt->data[1];
+		//dat[7]=pkt->data[2];
+	
+		CommPacket respPkt;
+		respPkt.target = TARGET_GUI;
+		respPkt.length = 4;
+		respPkt.data = dat;
+		//SendMessage(rov,&respPkt);
 
 
-		Bogies[currentBogie].currentPosition = commPkt.data[0];
+		CommGetPacket(&motorController.bogie, &commPkt, 20);
+		commPkt.target = TARGET_GUI;
+		//SendMessage(rov, &commPkt);
+
+
+	/*	Bogies[currentBogie].currentPosition = commPkt.data[0];
 		Bogies[currentBogie].currentVelocity = commPkt.data[1];
 
 		waitingForReply = 0;
 		currentBogie++;
 		if (currentBogie >= 6) {
 			currentBogie = 0;
-		}
+		}*/
+
+
 		
 	}
 

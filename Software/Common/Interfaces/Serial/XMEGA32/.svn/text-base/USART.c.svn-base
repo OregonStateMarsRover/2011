@@ -88,7 +88,7 @@ void USART_InitPortStructs() {
 	usart_ports[2].gpio_port = &PORTD;
 	usart_ports[2].tx_pin_bm = PIN3_bm;
 	usart_ports[2].rx_pin_bm = PIN2_bm;
-	usart_ports[2].txen_pin_bm = PIN4_bm;
+	usart_ports[2].txen_pin_bm = PIN1_bm;
 	
 	// USART3
 	usart_ports[3].usart_port = &USARTD1;
@@ -102,7 +102,7 @@ void USART_InitPortStructs() {
 	usart_ports[4].gpio_port = &PORTE;
 	usart_ports[4].tx_pin_bm = PIN3_bm;
 	usart_ports[4].rx_pin_bm = PIN2_bm;
-	usart_ports[4].txen_pin_bm = PIN4_bm;
+	usart_ports[4].txen_pin_bm = PIN1_bm;
 	
 	// USART5
 	usart_ports[5].usart_port = &USARTE1;
@@ -413,7 +413,7 @@ ISR(USARTE1_TXC_vect)
 
 ISR(USARTE1_DRE_vect)
 {
-	USART_DataRegEmpty(5);
+//	USART_DataRegEmpty(5);
 }
 
 ISR(USARTF0_RXC_vect)

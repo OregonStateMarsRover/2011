@@ -1,0 +1,86 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+void bufferreader();
+
+/*
+ * Expected types of input string
+ * GPRMC
+ * GPVTG
+ * Created Struct for each
+ */
+typedef struct {
+   char status;
+   int  lat_degrees;
+   int  lat_mins;
+   int  long_degrees;
+   int  long_mins;
+   int  speed_knots;
+}rmc_string;
+
+typedef struct {
+	int true_track;
+	int magnetic_track;
+	int speed_knots;
+	int speed_kmph;
+}vtg_string;
+
+
+int main(){
+	bufferreader();
+}
+
+void bufferreader(){
+	// example strings to test
+	char test[] ="$GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,003.1,W*6A\n";
+	//char test[] = "$GPVTG,360.0,T,348.7,M,000.0,N,000.0,K*43\n";
+	char str2[70]; //alocating space for string array
+	char *data[15]; //array of pointers to beginning of strings - parsed data
+	//printf("%s\n",str);  // for testing
+	int i = 0;
+	int t = 0;
+	int j = 0;
+	char c;
+	//setting pointer to first string
+	data[t++] = &str2[0];
+	do{
+		c = test[i++];//buffer input
+		if(c==','||c=='.'){ // if comma make it the end of string
+			str2[j] = '\0';
+			data[t++] = &str2[++j]; // set pointer to the next char
+		}else if(c!='\n'){ // skip periods to make all numbers integers
+			str2[j++] = c;
+		}
+	}while(c!='\n'); // loops to the end of stream
+	str2[j] = '\0';
+	//if statements for parsing the right way
+	if(strcmp(data[0],"$GPRMC")==0){
+		rmc_string g = {
+			data[2][0],
+			atoi(data[3]),
+			atoi(data[4]),
+			atoi(data[6]),
+			atoi(data[7]),
+			atoi(data[9])
+		};
+		printf("status %c\n",g.status);
+		printf("lat_degrees %i\n",g.lat_degrees);
+		printf("lat_mins %i\n",g.lat_mins);
+		printf("long_degrees %i\n",g.long_degrees);
+		printf("long_mins %i\n",g.long_mins);
+		printf("speed_knots %i\n",g.speed_knots);
+		
+	}else if(strcmp(data[0],"$GPVTG")==0){
+		vtg_string g = {
+			atoi(data[1]),
+			atoi(data[3]),
+			atoi(data[5]),
+			atoi(data[7])
+		};
+		printf("true_track %i\n",g.true_track);
+		printf("magnetic_track %i\n",g.magnetic_track);
+		printf("speed_knots %i\n",g.speed_knots);
+		printf("speed_kmph %i\n",g.speed_kmph);
+	}
+}

@@ -8,10 +8,10 @@ void TestControllerInit() {
 	testController.timeoutCounter = 0;
 	
 	//CommInterfaceInit(&testController.inf, &testController.port);
-	StartTimer(&testController.pingTimer);
-	testController.inc='A';
+	//StartTimer(&testController.pingTimer);
+	//testController.inc='A';
 	
-	USART_Open(&testController.cameraPort, 1, USART_BAUD_9600, 10, 10, true, true);
+	//USART_Open(&testController.cameraPort, 1, USART_BAUD_9600, 10, 10, true, true);
 }
 
 void TestControllerHandleMessage(Rover * rov, CommPacket * pkt) {
@@ -61,6 +61,7 @@ void TestControllerHandleMessage(Rover * rov, CommPacket * pkt) {
 }
 
 void TestControllerTick(Rover * rov) {
+/*	
 	char dat[2];
 	char serDat[15];
 	char len;
@@ -91,7 +92,7 @@ void TestControllerTick(Rover * rov) {
 		dat[1]=serDat[0];
 		SendMessage(rov,&respPkt);
 	}
-
+*/
 /*	char data[2] = { 'X', 'a' };
 	CommPacket reqPacket;
 	CommPacket confPacket;

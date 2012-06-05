@@ -83,8 +83,9 @@ struct SMotorBus {
 typedef struct SMotorBus MotorBus;
 
 struct MotorControllerData {
-	CommInterface rbog, lbog, bbog;
+	CommInterface rbog, lbog, bbog, bogie;
 	USART rbogPort, lbogPort, bbogPort;
+	USART bogiePort;
 	
 	short currentSpeed, currentHeading;
 	short strafeX, strafeY, strafeRot;
@@ -105,6 +106,7 @@ struct MotorControllerData {
 	
 	MotorBus *busIdMap[10];
 	MotorBus lbogBus, rbogBus, bbogBus;
+	MotorBus bogieBus;
 	char doPwmMode;
 };
 

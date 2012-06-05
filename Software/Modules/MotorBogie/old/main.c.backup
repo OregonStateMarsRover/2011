@@ -1,0 +1,26 @@
+#include <stdlib.h>
+#include <util/delay.h>
+
+#include "USART.h"
+#include "Common/CommInterface/CommInterface.h"
+#include "LEDController.h"
+
+int main(void) {
+	USART gps_out;
+	USART_InitPortStructs();
+	
+	USART_Open(&gps_out, 3, USART_BAUD_9600, 255, 255, true);
+	LedInit();
+	
+	PORTF.DIRSET |= PIN1_bm;
+	while(1) {
+		LedAllToggle();
+	
+		PORTF.OUTSET |= PIN1_bm;
+		USART_Write(&gps_out,"GPSOUT\n",7);
+		_delay_ms(500);
+		
+	}
+	
+}
+

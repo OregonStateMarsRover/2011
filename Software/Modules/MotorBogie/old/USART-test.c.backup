@@ -1,0 +1,29 @@
+#include "USART.h"
+#include <util/delay.h>
+#include <avr/interrupt.h>
+
+#include "GPS.h"
+
+static USART port6;
+
+int main() {
+	USART port0;
+	//USART port6;
+	USART gps;
+	USART_InitPortStructs();
+	USART_Open(&port6, 6, USART_BAUD_9600, 255, 255, true);
+	USART_Open(&port0, 0, USART_BAUD_9600, 255, 255, true);
+	USART_Open(&gps, 4, USART_BAUD_4800, 255, 255, true);
+	PORTE.DIRSET = 1<<1;
+	int i=0;
+	char buffer;
+	unsigned char ret = 0;
+	while(1) {
+		if (USART_RXUsed(&gps)) {
+			buffer = USART_ReadByte(&gps);
+			//USART_Write(&port6, &buffer, 1);
+			GPSinput(buffer);
+		}
+		
+	}
+}

@@ -1,0 +1,1176 @@
+Archive member included because of file (symbol)
+
+../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+                              BogieController.o (CommRXPacketsAvailable)
+../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+                              ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4) (SerialDataInitialize)
+../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+                              BogieController.o (USART_InitPortStructs)
+../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+                              ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4) (RingBufferAddByte)
+/usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_udivmodhi4.o)
+                              BogieCommon.o (__udivmodhi4)
+/usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_divmodhi4.o)
+                              PacketQueuer.o (__divmodhi4)
+/usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o (exit)
+/usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_copy_data.o)
+                              ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4) (__do_copy_data)
+/usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_clear_bss.o)
+                              BogieCommon.o (__do_clear_bss)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(malloc.o)
+                              ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4) (malloc)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(memcpy.o)
+                              ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4) (memcpy)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(memset.o)
+                              ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4) (memset)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(printf.o)
+                              ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4) (printf)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(vfprintf_std.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(printf.o) (vfprintf)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(strnlen_P.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(vfprintf_std.o) (strnlen_P)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(strnlen.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(vfprintf_std.o) (strnlen)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(fputc.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(vfprintf_std.o) (fputc)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(iob.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(printf.o) (__iob)
+/usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(ultoa_invert.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(vfprintf_std.o) (__ultoa_invert)
+/usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_prologue.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(printf.o) (__prologue_saves__)
+/usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_epilogue.o)
+                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(printf.o) (__epilogue_restores__)
+
+Allocating common symbols
+Common symbol       size              file
+
+USART_mainboard     0x27              BogieController.o
+bogie_controller    0x15e             BogieController.o
+usart_ports         0x31              BogieCommon.o
+__brkval            0x2               /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(malloc.o)
+USART_BSCALE_TABLE  0x8               BogieCommon.o
+USART_BAUD_TABLE    0x10              BogieCommon.o
+USART_motor         0x27              BogieController.o
+act_pid             0xc               BogieController.o
+__flp               0x2               /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(malloc.o)
+port                0x2               Sabertooth.o
+__iob               0x6               /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(iob.o)
+USART_Table         0xe               BogieCommon.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00100000         xr
+data             0x00802000         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+LOAD BogieCommon.o
+LOAD BogieController.o
+LOAD Encoders.o
+LOAD PacketQueuer.o
+LOAD qdec_driver.o
+LOAD Sabertooth.o
+LOAD TC_driver.o
+LOAD ../../../Common/CommInterface/libCommInterface.a-xmegad4
+LOAD ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libm.a
+LOAD /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a
+LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a
+LOAD /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x2050
+ *(.vectors)
+ .vectors       0x00000000      0x16c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x0000016c                . = ALIGN (0x2)
+                0x0000016c                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000016c        0x0 linker stubs
+ *(.trampolines*)
+                0x0000016c                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000016c                __ctors_start = .
+ *(.ctors)
+                0x0000016c                __ctors_end = .
+                0x0000016c                __dtors_start = .
+ *(.dtors)
+                0x0000016c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000016c        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+                0x0000016c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000016c        0xc /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000178       0x16 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_copy_data.o)
+                0x00000178                __do_copy_data
+ .init4         0x0000018e       0x10 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_clear_bss.o)
+                0x0000018e                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000019e        0x8 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+ *(.init9)
+ *(.text)
+ .text          0x000001a6        0x4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+                0x000001a6                __vector_38
+                0x000001a6                __vector_22
+                0x000001a6                __vector_63
+                0x000001a6                __vector_28
+                0x000001a6                __vector_67
+                0x000001a6                __vector_1
+                0x000001a6                __vector_32
+                0x000001a6                __vector_75
+                0x000001a6                __vector_71
+                0x000001a6                __vector_34
+                0x000001a6                __vector_62
+                0x000001a6                __vector_24
+                0x000001a6                __vector_12
+                0x000001a6                __vector_55
+                0x000001a6                __vector_69
+                0x000001a6                __vector_81
+                0x000001a6                __vector_46
+                0x000001a6                __bad_interrupt
+                0x000001a6                __vector_72
+                0x000001a6                __vector_6
+                0x000001a6                __vector_31
+                0x000001a6                __vector_35
+                0x000001a6                __vector_78
+                0x000001a6                __vector_74
+                0x000001a6                __vector_39
+                0x000001a6                __vector_3
+                0x000001a6                __vector_23
+                0x000001a6                __vector_68
+                0x000001a6                __vector_30
+                0x000001a6                __vector_73
+                0x000001a6                __vector_45
+                0x000001a6                __vector_61
+                0x000001a6                __vector_11
+                0x000001a6                __vector_54
+                0x000001a6                __vector_13
+                0x000001a6                __vector_17
+                0x000001a6                __vector_19
+                0x000001a6                __vector_56
+                0x000001a6                __vector_7
+                0x000001a6                __vector_49
+                0x000001a6                __vector_41
+                0x000001a6                __vector_86
+                0x000001a6                __vector_64
+                0x000001a6                __vector_43
+                0x000001a6                __vector_5
+                0x000001a6                __vector_33
+                0x000001a6                __vector_76
+                0x000001a6                __vector_47
+                0x000001a6                __vector_52
+                0x000001a6                __vector_37
+                0x000001a6                __vector_4
+                0x000001a6                __vector_44
+                0x000001a6                __vector_82
+                0x000001a6                __vector_51
+                0x000001a6                __vector_9
+                0x000001a6                __vector_2
+                0x000001a6                __vector_21
+                0x000001a6                __vector_15
+                0x000001a6                __vector_66
+                0x000001a6                __vector_36
+                0x000001a6                __vector_79
+                0x000001a6                __vector_58
+                0x000001a6                __vector_70
+                0x000001a6                __vector_83
+                0x000001a6                __vector_29
+                0x000001a6                __vector_60
+                0x000001a6                __vector_40
+                0x000001a6                __vector_85
+                0x000001a6                __vector_8
+                0x000001a6                __vector_48
+                0x000001a6                __vector_80
+                0x000001a6                __vector_14
+                0x000001a6                __vector_84
+                0x000001a6                __vector_57
+                0x000001a6                __vector_53
+                0x000001a6                __vector_10
+                0x000001a6                __vector_50
+                0x000001a6                __vector_16
+                0x000001a6                __vector_59
+                0x000001a6                __vector_18
+                0x000001a6                __vector_20
+                0x000001a6                __vector_42
+                0x000001a6                __vector_87
+                0x000001a6                __vector_65
+ .text          0x000001aa       0x84 BogieCommon.o
+                0x000001aa                usart_send_byte
+                0x000001b6                pid
+ .text          0x0000022e      0x2f0 BogieController.o
+                0x0000022e                CCPWrite
+                0x00000258                __vector_77
+                0x0000026c                ChangeClockFreq
+                0x000002f6                parse_command
+                0x00000308                reply
+                0x00000346                bogie_controller_init
+                0x00000470                main
+ .text          0x0000051e        0x6 Encoders.o
+                0x0000051e                get_actuator_pos
+ .text          0x00000524      0x1f0 PacketQueuer.o
+                0x00000524                PacketQueueInit
+                0x00000582                PacketQueueInit2
+                0x000005e6                PacketQueueAddPacket
+                0x00000672                PacketQueueGetPacket
+                0x000006ea                PacketQueueDropFront
+                0x0000070e                PacketQueueCount
+ .text          0x00000714      0x1b2 qdec_driver.o
+                0x00000714                QDEC_Port_Setup
+                0x0000079c                QDEC_EVSYS_Setup
+                0x000007f4                QDEC_Total_Setup
+                0x00000872                QDEC_TC_Dec_Setup
+                0x00000890                QDEC_TC_Freq_Setup
+                0x000008bc                QDEC_Get_Direction
+ .text          0x000008c6       0x7e Sabertooth.o
+                0x000008c6                sabertooth_init
+                0x000008d0                send_command
+                0x0000091a                motor_set
+                0x00000930                drive_set
+                0x0000093a                actuator_set
+ .text          0x00000944      0x114 TC_driver.o
+                0x00000944                TC0_ConfigClockSource
+                0x00000950                TC1_ConfigClockSource
+                0x0000095c                TC0_ConfigWGM
+                0x00000968                TC1_ConfigWGM
+                0x00000974                TC0_ConfigInputCapture
+                0x00000982                TC1_ConfigInputCapture
+                0x00000990                TC0_EnableCCChannels
+                0x0000099c                TC1_EnableCCChannels
+                0x000009a8                TC0_DisableCCChannels
+                0x000009b6                TC1_DisableCCChannels
+                0x000009c4                TC0_SetOverflowIntLevel
+                0x000009d0                TC1_SetOverflowIntLevel
+                0x000009dc                TC0_SetErrorIntLevel
+                0x000009e8                TC1_SetErrorIntLevel
+                0x000009f4                TC0_SetCCAIntLevel
+                0x00000a00                TC1_SetCCAIntLevel
+                0x00000a0c                TC0_SetCCBIntLevel
+                0x00000a18                TC1_SetCCBIntLevel
+                0x00000a24                TC0_SetCCCIntLevel
+                0x00000a30                TC0_SetCCDIntLevel
+                0x00000a3c                TC0_Reset
+                0x00000a4a                TC1_Reset
+ .text          0x00000a58      0x3a6 ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+                0x00000a58                CommInterfaceSetRXCallback
+                0x00000a64                CommInterfaceSetTXCallback
+                0x00000a70                CommRXPacketsAvailable
+                0x00000a82                CommReceiveDataError
+                0x00000a9e                CommTransmissionInProgress
+                0x00000aaa                CommPacketReceived
+                0x00000b20                CommPeekPacket
+                0x00000b84                CommGetPacket
+                0x00000bf0                CommQueueForTx
+                0x00000c04                CommByteTransmitted
+                0x00000c12                CommByteReceived
+                0x00000c20                CommDeletePacket
+                0x00000c44                CommDeleteInterface
+                0x00000c7e                CommPktTxComplete
+                0x00000cc0                CommSendPacket
+                0x00000d38                CommInterfaceInit
+ .text          0x00000dfe      0x2dc ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+                0x00000dfe                SerialError
+                0x00000e10                SerialDataInitialize
+                0x00000e3a                SerialStateMachineProcess
+                0x00000eca                ProcessDataChar
+                0x00000f4c                SerialByteTransmitComplete
+                0x00001058                SerialTransferInProgress
+                0x00001068                SerialTransmit
+ .text          0x000010da      0x5ba ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+                0x000010da                USART_InitPortStructs
+                0x000011bc                USART_TransmitMode
+                0x0000120a                USART_TXIntComplete
+                0x00001234                __vector_27
+                0x0000127e                __vector_90
+                0x000012c8                USART_RXUsed
+                0x000012d0                USART_TXUsed
+                0x000012d8                USART_DataRegEmpty
+                0x0000132e                __vector_89
+                0x00001378                __vector_26
+                0x000013c2                USART_ReadByte
+                0x000013ca                USART_RXIntComplete
+                0x00001430                __vector_88
+                0x0000147a                __vector_25
+                0x000014c4                USART_RXFree
+                0x000014cc                USART_TXFree
+                0x000014d4                USART_Read
+                0x000014dc                USART_Write
+                0x00001518                USART_WriteByte
+                0x0000154e                USART_Open
+ .text          0x00001694      0x1ae ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+                0x00001694                RingBufferAddByte
+                0x000016f0                RingBufferAdd
+                0x0000173a                RingBufferGetByte
+                0x0000177e                RingBufferGetData
+                0x000017d2                RingBufferBytesUsed
+                0x000017da                RingBufferBytesFree
+                0x000017ec                RingBufferDelete
+                0x00001810                RingBufferInit
+ .text          0x00001842        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_udivmodhi4.o)
+ .text          0x00001842        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_divmodhi4.o)
+ .text          0x00001842        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_exit.o)
+ .text          0x00001842        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_copy_data.o)
+ .text          0x00001842        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_clear_bss.o)
+ .text          0x00001842        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(malloc.o)
+ .text          0x00001842        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(memcpy.o)
+ .text          0x00001842        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(memset.o)
+ .text          0x00001842        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(printf.o)
+ .text          0x00001842        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(vfprintf_std.o)
+ .text          0x00001842        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(strnlen_P.o)
+ .text          0x00001842        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(strnlen.o)
+ .text          0x00001842        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(fputc.o)
+ .text          0x00001842        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(iob.o)
+ .text          0x00001842        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(ultoa_invert.o)
+ .text          0x00001842        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_prologue.o)
+ .text          0x00001842        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_epilogue.o)
+                0x00001842                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00001842       0x28 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_udivmodhi4.o)
+                0x00001842                __udivmodhi4
+ .text.libgcc   0x0000186a       0x26 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_divmodhi4.o)
+                0x0000186a                __divmodhi4
+                0x0000186a                _div
+ .text.libgcc   0x00001890        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_exit.o)
+ .text.libgcc   0x00001890        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_copy_data.o)
+ .text.libgcc   0x00001890        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_clear_bss.o)
+ .text.avr-libc
+                0x00001890      0x20a /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(malloc.o)
+                0x00001890                malloc
+                0x000019ea                free
+ .text.avr-libc
+                0x00001a9a       0x12 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(memcpy.o)
+                0x00001a9a                memcpy
+ .text.avr-libc
+                0x00001aac        0xe /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(memset.o)
+                0x00001aac                memset
+ .text.avr-libc
+                0x00001aba       0x2a /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(printf.o)
+                0x00001aba                printf
+ .text.avr-libc
+                0x00001ae4      0x3ba /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(vfprintf_std.o)
+                0x00001ae4                vfprintf
+ .text.avr-libc
+                0x00001e9e       0x16 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(strnlen_P.o)
+                0x00001e9e                strnlen_P
+ .text.avr-libc
+                0x00001eb4       0x16 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(strnlen.o)
+                0x00001eb4                strnlen
+ .text.avr-libc
+                0x00001eca       0x58 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(fputc.o)
+                0x00001eca                fputc
+ .text.avr-libc
+                0x00001f22       0xbc /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(ultoa_invert.o)
+                0x00001f22                __ultoa_invert
+ .text.libgcc   0x00001fde       0x38 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_prologue.o)
+                0x00001fde                __prologue_saves__
+ .text.libgcc   0x00002016       0x36 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_epilogue.o)
+                0x00002016                __epilogue_restores__
+                0x0000204c                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000204c        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_exit.o)
+                0x0000204c                exit
+                0x0000204c                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000204c        0x4 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_exit.o)
+ *(.fini0)
+                0x00002050                _etext = .
+
+.data           0x00802000        0xa load address 0x00002050
+                0x00802000                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00802000        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+ .data          0x00802000        0x0 BogieCommon.o
+ .data          0x00802000        0x0 BogieController.o
+ .data          0x00802000        0x0 Encoders.o
+ .data          0x00802000        0x0 PacketQueuer.o
+ .data          0x00802000        0x0 qdec_driver.o
+ .data          0x00802000        0x0 Sabertooth.o
+ .data          0x00802000        0x0 TC_driver.o
+ .data          0x00802000        0x0 ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+ .data          0x00802000        0x3 ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+ .data          0x00802003        0x0 ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+ .data          0x00802003        0x0 ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+ .data          0x00802003        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_udivmodhi4.o)
+ .data          0x00802003        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_divmodhi4.o)
+ .data          0x00802003        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_exit.o)
+ .data          0x00802003        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_copy_data.o)
+ .data          0x00802003        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_clear_bss.o)
+ .data          0x00802003        0x6 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(malloc.o)
+                0x00802003                __malloc_margin
+                0x00802005                __malloc_heap_start
+                0x00802007                __malloc_heap_end
+ .data          0x00802009        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(memcpy.o)
+ .data          0x00802009        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(memset.o)
+ .data          0x00802009        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(printf.o)
+ .data          0x00802009        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(vfprintf_std.o)
+ .data          0x00802009        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(strnlen_P.o)
+ .data          0x00802009        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(strnlen.o)
+ .data          0x00802009        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(fputc.o)
+ .data          0x00802009        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(iob.o)
+ .data          0x00802009        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(ultoa_invert.o)
+ .data          0x00802009        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_prologue.o)
+ .data          0x00802009        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_epilogue.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0080200a                . = ALIGN (0x2)
+ *fill*         0x00802009        0x1 00
+                0x0080200a                _edata = .
+                0x0080200a                PROVIDE (__data_end, .)
+
+.bss            0x0080200a      0x21d
+                0x0080200a                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0080200a        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+ .bss           0x0080200a        0x0 BogieCommon.o
+ .bss           0x0080200a        0x2 BogieController.o
+                0x0080200a                desired_speed
+                0x0080200b                desired_angle
+ .bss           0x0080200c        0x0 Encoders.o
+ .bss           0x0080200c        0x0 PacketQueuer.o
+ .bss           0x0080200c        0x0 qdec_driver.o
+ .bss           0x0080200c        0x0 Sabertooth.o
+ .bss           0x0080200c        0x0 TC_driver.o
+ .bss           0x0080200c        0x0 ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+ .bss           0x0080200c        0x0 ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+ .bss           0x0080200c        0x0 ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+ .bss           0x0080200c        0x0 ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+ .bss           0x0080200c        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_udivmodhi4.o)
+ .bss           0x0080200c        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_divmodhi4.o)
+ .bss           0x0080200c        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_exit.o)
+ .bss           0x0080200c        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_copy_data.o)
+ .bss           0x0080200c        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_clear_bss.o)
+ .bss           0x0080200c        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(malloc.o)
+ .bss           0x0080200c        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(memcpy.o)
+ .bss           0x0080200c        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(memset.o)
+ .bss           0x0080200c        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(printf.o)
+ .bss           0x0080200c        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(vfprintf_std.o)
+ .bss           0x0080200c        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(strnlen_P.o)
+ .bss           0x0080200c        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(strnlen.o)
+ .bss           0x0080200c        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(fputc.o)
+ .bss           0x0080200c        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(iob.o)
+ .bss           0x0080200c        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(ultoa_invert.o)
+ .bss           0x0080200c        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_prologue.o)
+ .bss           0x0080200c        0x0 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_epilogue.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x0080200c       0x57 BogieCommon.o
+                0x0080200c                usart_ports
+                0x0080203d                USART_BSCALE_TABLE
+                0x00802045                USART_BAUD_TABLE
+                0x00802055                USART_Table
+ COMMON         0x00802063      0x1b8 BogieController.o
+                0x00802063                USART_mainboard
+                0x0080208a                bogie_controller
+                0x008021e8                USART_motor
+                0x0080220f                act_pid
+ COMMON         0x0080221b        0x2 Sabertooth.o
+                0x0080221b                port
+ COMMON         0x0080221d        0x4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(malloc.o)
+                0x0080221d                __brkval
+                0x0080221f                __flp
+ COMMON         0x00802221        0x6 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(iob.o)
+                0x00802221                __iob
+                0x00802227                PROVIDE (__bss_end, .)
+                0x00002050                __data_load_start = LOADADDR (.data)
+                0x0000205a                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00802227        0x0
+                0x00802227                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00802227                PROVIDE (__noinit_end, .)
+                0x00802227                _end = .
+                0x00802227                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x2274
+ *(.stab)
+ .stab          0x00000000      0x6b4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+ .stab          0x000006b4      0x6f0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(malloc.o)
+                                0x6fc (size before relaxing)
+ .stab          0x00000da4       0x84 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(memcpy.o)
+                                 0x90 (size before relaxing)
+ .stab          0x00000e28       0x6c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(memset.o)
+                                 0x78 (size before relaxing)
+ .stab          0x00000e94      0x1e0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(printf.o)
+                                0x36c (size before relaxing)
+ .stab          0x00001074      0x948 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(vfprintf_std.o)
+                                0xb58 (size before relaxing)
+ .stab          0x000019bc       0x9c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(strnlen_P.o)
+                                 0xa8 (size before relaxing)
+ .stab          0x00001a58       0x9c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(strnlen.o)
+                                 0xa8 (size before relaxing)
+ .stab          0x00001af4      0x1d4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(fputc.o)
+                                0x3b4 (size before relaxing)
+ .stab          0x00001cc8      0x12c /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(iob.o)
+                                0x30c (size before relaxing)
+ .stab          0x00001df4      0x480 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(ultoa_invert.o)
+                                0x48c (size before relaxing)
+
+.stabstr        0x00000000      0xec8
+ *(.stabstr)
+ .stabstr       0x00000000      0xec8 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x160
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 BogieCommon.o
+ .debug_aranges
+                0x00000020       0x20 BogieController.o
+ .debug_aranges
+                0x00000040       0x20 Encoders.o
+ .debug_aranges
+                0x00000060       0x20 PacketQueuer.o
+ .debug_aranges
+                0x00000080       0x20 qdec_driver.o
+ .debug_aranges
+                0x000000a0       0x20 Sabertooth.o
+ .debug_aranges
+                0x000000c0       0x20 TC_driver.o
+ .debug_aranges
+                0x000000e0       0x20 ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+ .debug_aranges
+                0x00000100       0x20 ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+ .debug_aranges
+                0x00000120       0x20 ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+ .debug_aranges
+                0x00000140       0x20 ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+
+.debug_pubnames
+                0x00000000      0xb8e
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x7a BogieCommon.o
+ .debug_pubnames
+                0x0000007a      0x137 BogieController.o
+ .debug_pubnames
+                0x000001b1       0x73 Encoders.o
+ .debug_pubnames
+                0x00000224       0xe7 PacketQueuer.o
+ .debug_pubnames
+                0x0000030b       0x94 qdec_driver.o
+ .debug_pubnames
+                0x0000039f       0xb9 Sabertooth.o
+ .debug_pubnames
+                0x00000458      0x216 TC_driver.o
+ .debug_pubnames
+                0x0000066e      0x1d7 ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+ .debug_pubnames
+                0x00000845       0xbc ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+ .debug_pubnames
+                0x00000901      0x1cf ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+ .debug_pubnames
+                0x00000ad0       0xbe ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+
+.debug_info     0x00000000     0x73c8
+ *(.debug_info)
+ .debug_info    0x00000000      0x608 BogieCommon.o
+ .debug_info    0x00000608     0x1dc3 BogieController.o
+ .debug_info    0x000023cb      0x4ef Encoders.o
+ .debug_info    0x000028ba      0x797 PacketQueuer.o
+ .debug_info    0x00003051      0xff9 qdec_driver.o
+ .debug_info    0x0000404a      0x605 Sabertooth.o
+ .debug_info    0x0000464f     0x129b TC_driver.o
+ .debug_info    0x000058ea      0xb45 ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+ .debug_info    0x0000642f      0x35a ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+ .debug_info    0x00006789      0x985 ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+ .debug_info    0x0000710e      0x2ba ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000     0x114d
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x179 BogieCommon.o
+ .debug_abbrev  0x00000179      0x2e2 BogieController.o
+ .debug_abbrev  0x0000045b      0x106 Encoders.o
+ .debug_abbrev  0x00000561      0x175 PacketQueuer.o
+ .debug_abbrev  0x000006d6      0x199 qdec_driver.o
+ .debug_abbrev  0x0000086f      0x142 Sabertooth.o
+ .debug_abbrev  0x000009b1      0x165 TC_driver.o
+ .debug_abbrev  0x00000b16      0x195 ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+ .debug_abbrev  0x00000cab      0x152 ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+ .debug_abbrev  0x00000dfd      0x21f ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+ .debug_abbrev  0x0000101c      0x131 ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+
+.debug_line     0x00000000     0x2021
+ *(.debug_line)
+ .debug_line    0x00000000      0x19b BogieCommon.o
+ .debug_line    0x0000019b      0x4a3 BogieController.o
+ .debug_line    0x0000063e      0x13f Encoders.o
+ .debug_line    0x0000077d      0x2cc PacketQueuer.o
+ .debug_line    0x00000a49      0x266 qdec_driver.o
+ .debug_line    0x00000caf      0x1d1 Sabertooth.o
+ .debug_line    0x00000e80      0x2e6 TC_driver.o
+ .debug_line    0x00001166      0x42c ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+ .debug_line    0x00001592      0x3a9 ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+ .debug_line    0x0000193b      0x541 ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+ .debug_line    0x00001e7c      0x1a5 ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+
+.debug_frame    0x00000000      0x6f0
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x30 BogieCommon.o
+ .debug_frame   0x00000030       0x80 BogieController.o
+ .debug_frame   0x000000b0       0x20 Encoders.o
+ .debug_frame   0x000000d0       0x70 PacketQueuer.o
+ .debug_frame   0x00000140       0x70 qdec_driver.o
+ .debug_frame   0x000001b0       0x60 Sabertooth.o
+ .debug_frame   0x00000210      0x170 TC_driver.o
+ .debug_frame   0x00000380      0x110 ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+ .debug_frame   0x00000490       0x80 ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+ .debug_frame   0x00000510      0x150 ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+ .debug_frame   0x00000660       0x90 ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+
+.debug_str      0x00000000     0x2938
+ *(.debug_str)
+ .debug_str     0x00000000      0x329 BogieCommon.o
+                                0x389 (size before relaxing)
+ .debug_str     0x00000329     0x162a BogieController.o
+                               0x19ae (size before relaxing)
+ .debug_str     0x00001953       0x1c Encoders.o
+                                0x32d (size before relaxing)
+ .debug_str     0x0000196f       0xbf PacketQueuer.o
+                                0x41a (size before relaxing)
+ .debug_str     0x00001a2e      0x2ae qdec_driver.o
+                               0x14e6 (size before relaxing)
+ .debug_str     0x00001cdc       0x6a Sabertooth.o
+                                0x38f (size before relaxing)
+ .debug_str     0x00001d46      0x502 TC_driver.o
+                                0xb8c (size before relaxing)
+ .debug_str     0x00002248      0x1ad ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+                                0x653 (size before relaxing)
+ .debug_str     0x000023f5       0xa8 ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+                                0x2c6 (size before relaxing)
+ .debug_str     0x0000249d      0x3c1 ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+                                0x6aa (size before relaxing)
+ .debug_str     0x0000285e       0xda ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+                                0x14a (size before relaxing)
+
+.debug_loc      0x00000000     0x1628
+ *(.debug_loc)
+ .debug_loc     0x00000000       0xb0 BogieCommon.o
+ .debug_loc     0x000000b0       0x78 BogieController.o
+ .debug_loc     0x00000128      0x221 PacketQueuer.o
+ .debug_loc     0x00000349      0x2aa qdec_driver.o
+ .debug_loc     0x000005f3       0xcf Sabertooth.o
+ .debug_loc     0x000006c2      0x370 TC_driver.o
+ .debug_loc     0x00000a32      0x3b5 ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+ .debug_loc     0x00000de7      0x22e ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+ .debug_loc     0x00001015      0x327 ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+ .debug_loc     0x0000133c      0x2ec ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(MotorBogie.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000       0x90
+ .debug_ranges  0x00000000       0x90 BogieController.o
+
+Cross Reference Table
+
+Symbol                                            File
+CCPWrite                                          BogieController.o
+ChangeClockFreq                                   BogieController.o
+CommByteReceived                                  ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+CommByteTransmitted                               ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+CommDeleteInterface                               ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+CommDeletePacket                                  ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+CommGetPacket                                     ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+                                                  BogieController.o
+CommInterfaceInit                                 ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+                                                  BogieController.o
+CommInterfaceSetRXCallback                        ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+CommInterfaceSetTXCallback                        ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+CommPacketReceived                                ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+CommPeekPacket                                    ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+CommPktTxComplete                                 ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+CommQueueForTx                                    ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+CommRXPacketsAvailable                            ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+                                                  BogieController.o
+CommReceiveDataError                              ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+CommSendPacket                                    ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+                                                  BogieController.o
+CommTransmissionInProgress                        ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+PacketQueueAddPacket                              PacketQueuer.o
+PacketQueueCount                                  PacketQueuer.o
+PacketQueueDropFront                              PacketQueuer.o
+PacketQueueGetPacket                              PacketQueuer.o
+PacketQueueInit                                   PacketQueuer.o
+PacketQueueInit2                                  PacketQueuer.o
+                                                  BogieController.o
+ProcessDataChar                                   ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+                                                  ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+QDEC_EVSYS_Setup                                  qdec_driver.o
+QDEC_Get_Direction                                qdec_driver.o
+QDEC_Port_Setup                                   qdec_driver.o
+QDEC_TC_Dec_Setup                                 qdec_driver.o
+QDEC_TC_Freq_Setup                                qdec_driver.o
+QDEC_Total_Setup                                  qdec_driver.o
+                                                  BogieController.o
+RingBufferAdd                                     ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+                                                  ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+RingBufferAddByte                                 ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+                                                  ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+RingBufferBytesFree                               ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+                                                  ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+RingBufferBytesUsed                               ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+                                                  ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+RingBufferDelete                                  ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+RingBufferGetByte                                 ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+                                                  ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+RingBufferGetData                                 ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+                                                  ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+RingBufferInit                                    ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+                                                  ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+SerialByteTransmitComplete                        ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+                                                  ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+SerialDataInitialize                              ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+                                                  ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+SerialError                                       ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+SerialStateMachineProcess                         ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+SerialTransferInProgress                          ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+                                                  ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+SerialTransmit                                    ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+                                                  ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+TC0_ConfigClockSource                             TC_driver.o
+                                                  BogieController.o
+TC0_ConfigInputCapture                            TC_driver.o
+TC0_ConfigWGM                                     TC_driver.o
+TC0_DisableCCChannels                             TC_driver.o
+TC0_EnableCCChannels                              TC_driver.o
+TC0_Reset                                         TC_driver.o
+TC0_SetCCAIntLevel                                TC_driver.o
+TC0_SetCCBIntLevel                                TC_driver.o
+TC0_SetCCCIntLevel                                TC_driver.o
+TC0_SetCCDIntLevel                                TC_driver.o
+TC0_SetErrorIntLevel                              TC_driver.o
+TC0_SetOverflowIntLevel                           TC_driver.o
+                                                  BogieController.o
+TC1_ConfigClockSource                             TC_driver.o
+                                                  BogieController.o
+TC1_ConfigInputCapture                            TC_driver.o
+TC1_ConfigWGM                                     TC_driver.o
+TC1_DisableCCChannels                             TC_driver.o
+TC1_EnableCCChannels                              TC_driver.o
+TC1_Reset                                         TC_driver.o
+TC1_SetCCAIntLevel                                TC_driver.o
+TC1_SetCCBIntLevel                                TC_driver.o
+TC1_SetErrorIntLevel                              TC_driver.o
+TC1_SetOverflowIntLevel                           TC_driver.o
+USART_BAUD_TABLE                                  ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+                                                  ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+                                                  Sabertooth.o
+                                                  PacketQueuer.o
+                                                  Encoders.o
+                                                  BogieController.o
+                                                  BogieCommon.o
+USART_BSCALE_TABLE                                ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+                                                  ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+                                                  Sabertooth.o
+                                                  PacketQueuer.o
+                                                  Encoders.o
+                                                  BogieController.o
+                                                  BogieCommon.o
+USART_DataRegEmpty                                ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+USART_InitPortStructs                             ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+                                                  BogieController.o
+USART_Open                                        ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+                                                  BogieController.o
+USART_RXFree                                      ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+USART_RXIntComplete                               ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+USART_RXUsed                                      ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+USART_Read                                        ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+USART_ReadByte                                    ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+USART_TXFree                                      ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+USART_TXIntComplete                               ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+USART_TXUsed                                      ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+USART_Table                                       ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+                                                  ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+                                                  Sabertooth.o
+                                                  PacketQueuer.o
+                                                  Encoders.o
+                                                  BogieController.o
+                                                  BogieCommon.o
+USART_TransmitMode                                ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+                                                  ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+USART_Write                                       ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+USART_WriteByte                                   ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+                                                  ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+                                                  Sabertooth.o
+USART_mainboard                                   BogieController.o
+USART_motor                                       BogieController.o
+__bad_interrupt                                   /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__brkval                                          /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(malloc.o)
+__bss_end                                         /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_copy_data.o)
+__data_start                                      /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_copy_data.o)
+__divmodhi4                                       /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_divmodhi4.o)
+                                                  PacketQueuer.o
+__do_clear_bss                                    /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_clear_bss.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(iob.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(malloc.o)
+                                                  ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+                                                  ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+                                                  Sabertooth.o
+                                                  PacketQueuer.o
+                                                  Encoders.o
+                                                  BogieController.o
+                                                  BogieCommon.o
+__do_copy_data                                    /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_copy_data.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(malloc.o)
+                                                  ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+__epilogue_restores__                             /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_epilogue.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(vfprintf_std.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(printf.o)
+__flp                                             /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(malloc.o)
+__heap_end                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(malloc.o)
+__heap_start                                      /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(malloc.o)
+__init                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__iob                                             /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(iob.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(printf.o)
+__malloc_heap_end                                 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(malloc.o)
+__malloc_heap_start                               /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(malloc.o)
+__malloc_margin                                   /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(malloc.o)
+__prologue_saves__                                /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_prologue.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(vfprintf_std.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(printf.o)
+__stack                                           /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__udivmodhi4                                      /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_udivmodhi4.o)
+                                                  /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_divmodhi4.o)
+                                                  ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+                                                  BogieCommon.o
+__ultoa_invert                                    /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(ultoa_invert.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(vfprintf_std.o)
+__vector_1                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_10                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_11                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_12                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_13                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_14                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_15                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_16                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_17                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_18                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_19                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_2                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_20                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_21                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_22                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_23                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_24                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_25                                       ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_26                                       ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_27                                       ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_28                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_29                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_3                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_30                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_31                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_32                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_33                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_34                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_35                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_36                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_37                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_38                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_39                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_4                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_40                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_41                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_42                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_43                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_44                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_45                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_46                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_47                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_48                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_49                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_5                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_50                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_51                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_52                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_53                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_54                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_55                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_56                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_57                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_58                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_59                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_6                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_60                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_61                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_62                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_63                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_64                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_65                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_66                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_67                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_68                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_69                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_7                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_70                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_71                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_72                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_73                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_74                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_75                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_76                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_77                                       BogieController.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_78                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_79                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_8                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_80                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_81                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_82                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_83                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_84                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_85                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_86                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_87                                       /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_88                                       ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_89                                       ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_9                                        /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_90                                       ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vector_default                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+__vectors                                         /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+_div                                              /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_divmodhi4.o)
+_exit                                             /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_exit.o)
+act_pid                                           BogieController.o
+actuator_set                                      Sabertooth.o
+bogie_controller                                  BogieController.o
+bogie_controller_init                             BogieController.o
+desired_angle                                     BogieController.o
+desired_speed                                     BogieController.o
+drive_set                                         Sabertooth.o
+                                                  BogieController.o
+exit                                              /usr/lib/gcc/avr/4.3.5/avrxmega2/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+fputc                                             /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(fputc.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(vfprintf_std.o)
+free                                              /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(malloc.o)
+                                                  ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+                                                  ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+get_actuator_pos                                  Encoders.o
+main                                              BogieController.o
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/crtx32d4.o
+malloc                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(malloc.o)
+                                                  ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(RingBuffer.o-xmegad4)
+memcpy                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(memcpy.o)
+                                                  ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+memset                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(memset.o)
+                                                  ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+motor_set                                         Sabertooth.o
+parse_command                                     BogieController.o
+pid                                               BogieCommon.o
+port                                              Sabertooth.o
+printf                                            /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(printf.o)
+                                                  ../../../Common/CommInterface/libCommInterface.a-xmegad4(SerialProtocol.o-xmegad4)
+reply                                             BogieController.o
+sabertooth_init                                   Sabertooth.o
+                                                  BogieController.o
+send_command                                      Sabertooth.o
+strnlen                                           /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(strnlen.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(vfprintf_std.o)
+strnlen_P                                         /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(strnlen_P.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(vfprintf_std.o)
+usart_ports                                       ../../../Common/Interfaces/Serial/XMEGA32/libUSART.a-xmegad4(USART.o-xmegad4)
+                                                  ../../../Common/CommInterface/libCommInterface.a-xmegad4(CommInterface.o-xmegad4)
+                                                  Sabertooth.o
+                                                  PacketQueuer.o
+                                                  Encoders.o
+                                                  BogieController.o
+                                                  BogieCommon.o
+usart_send_byte                                   BogieCommon.o
+vfprintf                                          /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(vfprintf_std.o)
+                                                  /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avrxmega2/libc.a(printf.o)
