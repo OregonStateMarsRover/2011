@@ -87,7 +87,6 @@ int main(void)
 	
 	//wdt_reset();
 	//wdt_disable();
-	char replyDat[2];
 	i2c_init();
 	USART roverPort;
 	USART devicePort;
@@ -96,7 +95,6 @@ int main(void)
 	char commData[20];
 	char commRet;
 	Timer accelTimer;
-	Timer dataTimer;
 	int sensorError;
 	
 	//PORTA = 1;
@@ -131,8 +129,6 @@ int main(void)
 	
 	char textBuffer[40];
 	char length;
-	unsigned char aclBuf[6];
-	//ServiceBarometer(3);
 	
 	//Enable Watchdog
 	//wdt_enable(0b111);

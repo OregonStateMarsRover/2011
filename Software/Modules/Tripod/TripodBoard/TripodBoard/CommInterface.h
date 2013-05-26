@@ -46,7 +46,7 @@ struct CommInterface {
  */
 void CommInterfaceInit(CommInterface * inf, USART * serPort);
 
-void CommInterfaceSetRXCallback(CommInterface * inf, void (*func)());
+void CommInterfaceSetRXCallback(CommInterface * inf, void (*func)(void));
 
 /**
  * Queues a packet for transmission. Data is deep-copied
