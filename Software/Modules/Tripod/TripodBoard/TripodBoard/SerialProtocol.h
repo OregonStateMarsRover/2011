@@ -1,4 +1,4 @@
-
+/* Serial_Protocol.h */
 #ifndef _SERIAL_PROTOCOL_H
 #define _SERIAL_PROTOCOL_H
 
@@ -37,7 +37,7 @@ extern "C" {
 
 /* Error Codes */
 #define ERR_START_BYTE_INSIDE_PACKET 1
-#define ERR_UNEXPECTED_START_BYTE 2
+#define ERR_EXPECTED_START_BYTE 2
 #define ERR_UNKNOWN_ESCAPED_CHARACTER 3
 #define ERR_EXCESSIVE_PACKET_LENGTH 4
 #define ERR_CHECKSUM_MISMATCH 5
@@ -76,7 +76,7 @@ struct SSerialData
 
     /* Function Pointers */
     void (*Transmit)(SerialData * s, byte data);
-    void (*TransmitPacketComplete)(void);
+    void (*TransmitPacketComplete)(SerialData * s);
     void (*ReceivePacketComplete)(SerialData * s);
     void (*ReceiveDataError)(SerialData * s, byte errCode);
     

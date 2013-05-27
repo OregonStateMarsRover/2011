@@ -2,24 +2,24 @@
 #include "SerialProtocol.h"
 
 
-/** Serial Packet Definition:
-//
-// START_BYTE     start byte
-// address
-// length
-// data(n bytes)
-// Checksum ~(address + length + data)
-
-// Escape Character and Byte Stuffing:
-// Any control character is replaced
-// with an escape character followed
-// by it's "escaped" value.  All data
-// in the transmission except for the
-// start byte can be escaped.  This
-// means the transmission may take up
-// to twice as long as expected from
-// just transmitting escape characters.
-**/
+/* Serial Packet Definition:
+ * 
+ * START_BYTE     start byte
+ * address
+ * length
+ * data(n bytes)
+ * Checksum ~(start_byte + address + length + data)
+ * 
+ * Escape Character and Byte Stuffing:
+ * Any control character is replaced
+ * with an escape character followed
+ * by it's "escaped" value.  All data
+ * in the transmission except for the
+ * start byte can be escaped.  This
+ * means the transmission may take up
+ * to twice as long as expected from
+ * just transmitting escape characters.
+ */
 
 
 /* Private helper function declarations */
@@ -33,10 +33,10 @@ void SerialError(SerialData *s, byte errCode);
  */
 void SerialError(SerialData *s, byte errCode)
 {
-    if (s->ReceiveDataError!=NULL)
-    {
-        s->ReceiveDataError(s, errCode);
-    }
+	if (s->ReceiveDataError!=NULL)
+	{
+		s->ReceiveDataError(s, errCode);
+	}
 }
 
 /**
@@ -45,24 +45,24 @@ void SerialError(SerialData *s, byte errCode)
  */
 void SerialDataInitialize(SerialData * s)
 {
-    /* Receive State Variables */
-    s->receive_state = PROC_STATE_AWAITING_START_BYTE;
-    s->receive_next_char_is_escaped = false;
+	/* Receive State Variables */
+	s->receive_state = PROC_STATE_AWAITING_START_BYTE;
+	s->receive_next_char_is_escaped = false;
 
-    /* Function Pointers */
-    s->Transmit = NULL;
-    s->TransmitPacketComplete = NULL;
-    s->ReceivePacketComplete = NULL;
-    s->ReceiveDataError = NULL;
+	/* Function Pointers */
+	s->Transmit = NULL;
+	s->TransmitPacketComplete = NULL;
+	s->ReceivePacketComplete = NULL;
+	s->ReceiveDataError = NULL;
 
-    /* Transmit State Variables */
-    s->transmit_state = PROC_STATE_TRANSMIT_COMPLETE;
-    s->transmit_address = 0;
-    s->transmit_length = 0;
-    s->transmit_checksum = 0;
-    s->transmit_data_ptr = 0;
+	/* Transmit State Variables */
+	s->transmit_state = PROC_STATE_TRANSMIT_COMPLETE;
+	s->transmit_address = 0;
+	s->transmit_length = 0;
+	s->transmit_checksum = 0;
+	s->transmit_data_ptr = 0;
 
-    s->ref = NULL;
+	s->ref = NULL;
 }
 
 /** Processes a character from a serial stream
@@ -71,144 +71,165 @@ void SerialDataInitialize(SerialData * s)
  */
 void ProcessDataChar (SerialData * s, byte data)
 {
-    /* Unstuff bytes and locate start bytes here */
+	/* Unstuff bytes and locate start bytes here */
 
-    /* See if the data received is value to ignore
-     * This most likely occurs in conjunction with
-     * a frame error: start byte detected, but no
-     * valid data afterwards. */
-    if (data == NULL_BYTE || data == MAX_BYTE)
-    {
-        SerialError(s, ERR_RECEIVED_IGNORE_BYTE);
-        return;
-    }
+	/* The checksum byte should not be escaped.
+	 * It includes the values of the escaped bytes and their escape
+	 * characters, and so escaping it would change its value.
+	 */
+	if (s->receive_state == PROC_STATE_AWAITING_CHECKSUM) {
+		SerialStateMachineProcess(s, data);
+	}
+
+	/* See if the data received is value to ignore
+	 * This most likely occurs in conjunction with
+	 * a frame error: start byte detected, but no
+	 * valid data afterwards. 
+	 * Because of the nature of the checksum, we have to leave it
+	 * unescaped, because escaping it will change its value, meaning
+	 * it would no longer need escaping.
+	 */
+	else if (data == NULL_BYTE || data == MAX_BYTE)
+	{
+		SerialError(s, ERR_RECEIVED_IGNORE_BYTE);
+		return;
+	}
 
 
-    /* If any start byte is found, any current data
-     * transfer will be reset, and a new data transfer
-     * will begin.
-     */
-    if (data == START_BYTE) /* Start byte */
-    {
-        if (s->receive_state != PROC_STATE_AWAITING_START_BYTE)
-        {
-            SerialError(s, ERR_START_BYTE_INSIDE_PACKET);
-        }
+	/* If any start byte is found, any current data
+	 * transfer will be reset, and a new data transfer
+	 * will begin.
+	 */
+	else if (data == START_BYTE)/* Start byte */
+	{
+		if (s->receive_state != PROC_STATE_AWAITING_START_BYTE)
+		{
+			SerialError(s, ERR_START_BYTE_INSIDE_PACKET);
+		}
 
-        /* Reset state */
-        s->receive_state = PROC_STATE_AWAITING_ADDRESS;
-        s->receive_data_count = 0;
-        s->receive_next_char_is_escaped = false;
-    }
-    else
-    {
-        if (s->receive_state == PROC_STATE_AWAITING_START_BYTE)
-        {
-            SerialError(s, ERR_UNEXPECTED_START_BYTE);
-            //printf("Unexpected Start Byte: Expected 0x%x, Got 0x%x\n", START_BYTE, data);
-        }
-        else
-        {
-            /* Otherwise, unstuff bytes and send data to the state machine */
-            if (data == ESCAPE_CHAR) // Escape Character
-            {
-                s->receive_next_char_is_escaped = true;
-            }
-            else
-            {
-                if (s->receive_next_char_is_escaped)
-                {
-                    s->receive_next_char_is_escaped = false;
-                    switch (data)
-                    {
-                        case ESCAPE_CHAR_ESCAPED:
-                            data = ESCAPE_CHAR;
-                        break;
+		/* Reset state */
+		s->receive_state = PROC_STATE_AWAITING_ADDRESS;
+		s->receive_data_count = 0;
+		s->receive_next_char_is_escaped = false;
+		s->receive_checksum = START_BYTE;
+	}
+	else
+	{
+		if (s->receive_state == PROC_STATE_AWAITING_START_BYTE)
+		{
+			SerialError(s, ERR_EXPECTED_START_BYTE);
+			//printf("Unexpected Start Byte: Expected 0x%x, Got 0x%x\n", START_BYTE, data);
+		}
+		else
+		{
+			/* Otherwise, unstuff bytes and send data to the state machine */
+					s->receive_length--;
+					s->receive_checksum += data;
+			if (data == ESCAPE_CHAR) // Escape Character
+			{
+				s->receive_next_char_is_escaped = true;
+			}
+			else
+			{
+				if (s->receive_next_char_is_escaped)
+				{
+					s->receive_next_char_is_escaped = false;
+					/* For now, length includes the escape characters.
+					 * Note that this could cause a segfault because
+					 * the number of bytes after processing will not
+					 * include the escape characters.
+					 * Actually, since the buffer is staticly sized
+					 * to 20 bytes, it won't cause a segfault, but it
+					 * does mean we can't use the length byte to
+					 * determine what message is being sent.
+					 * That sounds like a poor protocol in the first
+					 * place, so whatever.
+					 */
+					switch (data)
+					{
+						case ESCAPE_CHAR_ESCAPED:
+							data = ESCAPE_CHAR;
+							break;
 
-                        case START_BYTE_ESCAPED:
-                            data = START_BYTE;
-                        break;
+						case START_BYTE_ESCAPED:
+							data = START_BYTE;
+							break;
 
-                        case NULL_BYTE_ESCAPED:
-                            data = NULL_BYTE;
-                        break;
+						case NULL_BYTE_ESCAPED:
+							data = NULL_BYTE;
+							break;
 
-                        case MAX_BYTE_ESCAPED:
-                            data = MAX_BYTE;
-                        break;
-                    }
-                }
-                SerialStateMachineProcess(s, data);
-            }
-        }
-    }
+						case MAX_BYTE_ESCAPED:
+							data = MAX_BYTE;
+							break;
+					}
+				}
+				SerialStateMachineProcess(s, data);
+			}
+		}
+	}
 }
 
 void SerialStateMachineProcess(SerialData *s, byte data)
 {
-    switch (s->receive_state)
-    {
-        case PROC_STATE_AWAITING_ADDRESS:
-            s->receive_address = data;
-            s->receive_checksum = data;
-            s->receive_state = PROC_STATE_AWAITING_LENGTH;
-        break;
+	switch (s->receive_state)
+	{
+		case PROC_STATE_AWAITING_ADDRESS:
+			s->receive_address = data;
+			s->receive_state = PROC_STATE_AWAITING_LENGTH;
+			break;
 
-        case PROC_STATE_AWAITING_LENGTH:
-            if (data > SERIAL_RECEIVE_BUFFER_SIZE)
-            {
-                /* Error, length too long.  Ignore packet. */
-                s->receive_state = PROC_STATE_AWAITING_START_BYTE;
+		case PROC_STATE_AWAITING_LENGTH:
+			if (data > SERIAL_RECEIVE_BUFFER_SIZE)
+			{
+				/* Error, length too long.  Ignore packet. */
+				s->receive_state = PROC_STATE_AWAITING_START_BYTE;
 
-                /* Look for the next start byte.  Note: this
-                 * will likey produce unexpected start byte errors.
-                 */
-                SerialError(s, ERR_EXCESSIVE_PACKET_LENGTH);
-            }
-            else
-            {
-                s->receive_length = data;
-                s->receive_checksum += data;
-                s->receive_state = PROC_STATE_AWAITING_DATA;
-            }
-        break;
+				/* Look for the next start byte.  Note: this
+				 * will likey produce unexpected start byte errors.
+				 */
+				SerialError(s, ERR_EXCESSIVE_PACKET_LENGTH);
+			}
+			else
+			{
+				s->receive_length = data;
+				s->receive_state = PROC_STATE_AWAITING_DATA;
+			}
+			break;
 
-        case PROC_STATE_AWAITING_DATA:
+		case PROC_STATE_AWAITING_DATA:
 
-            s->receive_length--;
+			s->receive_data[s->receive_data_count] = data;
+			s->receive_data_count++;
 
-            s->receive_checksum += data;
-            s->receive_data[s->receive_data_count] = data;
-            s->receive_data_count++;
+			if (s->receive_length == 1)	// if this was our last byte
+			{
+				s->receive_state = PROC_STATE_AWAITING_CHECKSUM;
+			}
 
-            if (s->receive_length == 0)
-            {
-                s->receive_state = PROC_STATE_AWAITING_CHECKSUM;
-            }
+			break;
 
-        break;
+		case PROC_STATE_AWAITING_CHECKSUM:
+			s->receive_checksum = ~s->receive_checksum;
+			if (data == s->receive_checksum)
+			{
+				if (s->ReceivePacketComplete != NULL)
+				{
+					s->ReceivePacketComplete (s);
+				}
+			}
+			else
+			{
+				SerialError(s, ERR_CHECKSUM_MISMATCH);
+				//printf("Error: Checksum Mismatch.  Expected 0x%x, Got 0x%x\n", s->receive_checksum, data);
+			}
+			s->receive_state = PROC_STATE_AWAITING_START_BYTE;
+			break;
 
-        case PROC_STATE_AWAITING_CHECKSUM:
-            s->receive_checksum = ~s->receive_checksum;
-            if (data == s->receive_checksum)
-            {
-                if (s->ReceivePacketComplete != NULL)
-                {
-                    s->ReceivePacketComplete (s);
-                }
-            }
-            else
-            {
-                SerialError(s, ERR_CHECKSUM_MISMATCH);
-                //printf("Error: Checksum Mismatch.  Expected 0x%x, Got 0x%x\n", s->receive_checksum, data);
-            }
-            s->receive_state = PROC_STATE_AWAITING_START_BYTE;
-        break;
-
-        default:
-            // (It'll never get here)
-        break;
-    }
+		default:
+			// (It'll never get here)
+			break;
+	}
 }
 
 
@@ -218,96 +239,96 @@ void SerialStateMachineProcess(SerialData *s, byte data)
  */
 void SerialByteTransmitComplete(SerialData * s)
 {
-    byte dataToTx = 0;
+	byte dataToTx = 0;
 
-    // Check if we need to transmit an escaped character:
-    if (s->transmit_escaped_char != 0)
-    {
-        dataToTx = s->transmit_escaped_char;
-        s->transmit_escaped_char = 0;
+	// Check if we need to transmit an escaped character:
+	if (s->transmit_escaped_char != 0)
+	{
+		dataToTx = s->transmit_escaped_char;
+		s->transmit_escaped_char = 0;
 
-    }
-    else
-    {
-        switch (s->transmit_state)
-        {
-            case PROC_STATE_TRANSMIT_ADDRESS:
-                dataToTx = s->transmit_address;
-                s->transmit_checksum = dataToTx;
-                s->transmit_state = PROC_STATE_TRANSMIT_LENGTH;
-            break;
+	}
+	else
+	{
+		switch (s->transmit_state)
+		{
+			case PROC_STATE_TRANSMIT_ADDRESS:
+				dataToTx = s->transmit_address;
+				s->transmit_checksum = dataToTx;
+				s->transmit_state = PROC_STATE_TRANSMIT_LENGTH;
+				break;
 
-            case PROC_STATE_TRANSMIT_LENGTH:
-                dataToTx = s->transmit_length;
-                s->transmit_checksum += dataToTx;
-                s->transmit_state = PROC_STATE_TRANSMIT_DATA;
-            break;
+			case PROC_STATE_TRANSMIT_LENGTH:
+				dataToTx = s->transmit_length;
+				s->transmit_checksum += dataToTx;
+				s->transmit_state = PROC_STATE_TRANSMIT_DATA;
+				break;
 
-            case PROC_STATE_TRANSMIT_DATA:
-                dataToTx = *(s->transmit_data_ptr);
-                s->transmit_checksum += dataToTx;
-                s->transmit_data_ptr++;
-                s->transmit_length--;
-                if (s->transmit_length == 0)
-                {
-                    s->transmit_state = PROC_STATE_TRANSMIT_CHECKSUM;
-                }
-            break;
+			case PROC_STATE_TRANSMIT_DATA:
+				dataToTx = *(s->transmit_data_ptr);
+				s->transmit_checksum += dataToTx;
+				s->transmit_data_ptr++;
+				s->transmit_length--;
+				if (s->transmit_length == 0)
+				{
+					s->transmit_state = PROC_STATE_TRANSMIT_CHECKSUM;
+				}
+				break;
 
-            case PROC_STATE_TRANSMIT_CHECKSUM:
-                dataToTx = ~s->transmit_checksum;
-                s->transmit_state = PROC_STATE_TRANSMIT_ALMOST_COMPLETE;
-            break;
+			case PROC_STATE_TRANSMIT_CHECKSUM:
+				dataToTx = ~s->transmit_checksum;
+				s->transmit_state = PROC_STATE_TRANSMIT_ALMOST_COMPLETE;
+				break;
 
-            case PROC_STATE_TRANSMIT_ALMOST_COMPLETE:
-                // Done transmitting!
-                s->transmit_state = PROC_STATE_TRANSMIT_COMPLETE;
-                if (s->TransmitPacketComplete!=NULL)
-                {
-                    s->TransmitPacketComplete();
-                }
-                return;
-            break;
+			case PROC_STATE_TRANSMIT_ALMOST_COMPLETE:
+				// Done transmitting!
+				s->transmit_state = PROC_STATE_TRANSMIT_COMPLETE;
+				if (s->TransmitPacketComplete!=NULL)
+				{
+					s->TransmitPacketComplete(s);
+				}
+				return;
+				break;
 
-            default:
-                // Shouldn't ever get here.
-            break;
-        }
+			default:
+				// Shouldn't ever get here.
+				break;
+		}
 
-        // Check for control characters
-        switch(dataToTx)
-        {
-            case START_BYTE:
-                s->transmit_escaped_char = START_BYTE_ESCAPED;
-                dataToTx = ESCAPE_CHAR;
-            break;
+		// Check for control characters
+		switch(dataToTx)
+		{
+			case START_BYTE:
+				s->transmit_escaped_char = START_BYTE_ESCAPED;
+				dataToTx = ESCAPE_CHAR;
+				break;
 
-            case ESCAPE_CHAR:
-                s->transmit_escaped_char = ESCAPE_CHAR_ESCAPED;
-                dataToTx = ESCAPE_CHAR;
-            break;
+			case ESCAPE_CHAR:
+				s->transmit_escaped_char = ESCAPE_CHAR_ESCAPED;
+				dataToTx = ESCAPE_CHAR;
+				break;
 
-            case NULL_BYTE:
-                s->transmit_escaped_char = NULL_BYTE_ESCAPED;
-                dataToTx = ESCAPE_CHAR;
-            break;
+			case NULL_BYTE:
+				s->transmit_escaped_char = NULL_BYTE_ESCAPED;
+				dataToTx = ESCAPE_CHAR;
+				break;
 
-            case MAX_BYTE:
-                s->transmit_escaped_char = MAX_BYTE_ESCAPED;
-                dataToTx = ESCAPE_CHAR;
-            break;
+			case MAX_BYTE:
+				s->transmit_escaped_char = MAX_BYTE_ESCAPED;
+				dataToTx = ESCAPE_CHAR;
+				break;
 
-            default:
-                s->transmit_escaped_char = 0;
-            break;
-        }
-    }
+			default:
+				s->transmit_escaped_char = 0;
+				break;
+		}
+	}
 
-    // Transmit the data!
-    if (s->Transmit!=NULL)
-    {
-        s->Transmit(s, dataToTx);
-    }
+	// Transmit the data!
+	if (s->Transmit!=NULL)
+	{
+		s->Transmit(s, dataToTx);
+	}
 
 }
 
@@ -317,7 +338,7 @@ void SerialByteTransmitComplete(SerialData * s)
  */
 char SerialTransferInProgress(SerialData * s)
 {
-    return (s->transmit_state != PROC_STATE_TRANSMIT_COMPLETE);
+	return (s->transmit_state != PROC_STATE_TRANSMIT_COMPLETE);
 }
 
 /**
@@ -330,28 +351,28 @@ char SerialTransferInProgress(SerialData * s)
  */
 char SerialTransmit(SerialData * s, byte address, byte length)
 {
-    if (SerialTransferInProgress(s))
-    {
-        return -1;
-    }
+	if (SerialTransferInProgress(s))
+	{
+		return -1;
+	}
 
-    if (s->Transmit == NULL)
-    {
-        return -2;
-    }
+	if (s->Transmit == NULL)
+	{
+		return -2;
+	}
 
-    if (length > SERIAL_TRANSMIT_BUFFER_SIZE)
-    {
-        return -3;
-    }
+	if (length > SERIAL_TRANSMIT_BUFFER_SIZE)
+	{
+		return -3;
+	}
 
-    s->transmit_address = address;
-    s->transmit_length = length;
-    s->transmit_data_ptr = s->transmit_data;
-    s->transmit_escaped_char = 0;
-    s->transmit_state = PROC_STATE_TRANSMIT_ADDRESS;
+	s->transmit_address = address;
+	s->transmit_length = length;
+	s->transmit_data_ptr = s->transmit_data;
+	s->transmit_escaped_char = 0;
+	s->transmit_state = PROC_STATE_TRANSMIT_ADDRESS;
 
-    s->Transmit(s, START_BYTE);
+	s->Transmit(s, START_BYTE);
 
-    return 0;
+	return 0;
 }

@@ -160,7 +160,7 @@ void CommQueueForTx(SerialData * ser, unsigned char data) {
 	#ifdef X86GCC
 	ProcessDataChar(ser, data);
 	#else
-	USART_WriteByte(((CommInterface*)(ser->ref))->port, data);
+	//USART_WriteByte(((CommInterface*)(ser->ref))->port, data);
 	#endif
 	SerialByteTransmitComplete(ser); // byte successfully queued for transmission - get the next one
 }
